@@ -11,17 +11,51 @@
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
 
-    <header class="bg-slate-800 text-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-2">
-                <img src="https://placehold.co/150x50/ffffff/1a2a4a?text=RV+Logo" alt="Viac Ako Štandard Logo" class="h-10 rounded" onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';">
-            </a>
-             <button id="mobile-menu-button" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Toggle menu" aria-expanded="false">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+    <div id="side-menu" class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+        <div class="p-4 flex justify-between items-center border-b border-slate-700">
+            <h2 class="text-xl font-bold">Menu</h2>
+            <button id="close-menu-button" class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Close menu">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
             </button>
-            <nav id="mobile-menu" class="hidden md:flex md:items-center w-full md:w-auto mt-2 md:mt-0">
-                 <ul class="flex flex-col md:flex-row md:space-x-4 text-sm font-medium w-full md:w-auto">
+        </div>
+        <nav class="p-4">
+            <ul class="space-y-4">
+                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Home</a></li>
+                <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Our RVs</a></li>
+                <li><a href="pricing.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page">Pricing</a></li>
+                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Contact</a></li>
+            </ul>
+            <div class="mt-8 pt-6 border-t border-slate-700">
+                <p class="text-sm text-gray-400 mb-2">Contact Us:</p>
+                <p class="text-sm text-gray-300 mb-1">
+                    <i class="fas fa-phone fa-fw mr-2"></i> 0911 468 941
+                </p>
+                <p class="text-sm text-gray-300">
+                    <i class="fas fa-envelope fa-fw mr-2"></i> info@nasekaravany.sk
+                </p>
+            </div>
+        </nav>
+    </div>
+
+    <header class="bg-slate-800 text-white sticky top-0 z-30 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+            <div class="flex items-center">
+                <button id="mobile-menu-button" class="p-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Toggle menu" aria-expanded="false">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="https://placehold.co/150x50/ffffff/1a2a4a?text=RV+Logo" alt="Viac Ako Štandard Logo" class="h-10 rounded" onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';">
+                </a>
+            </div>
+
+            <nav class="hidden md:flex md:items-center">
+                <ul class="flex flex-row space-x-4 text-sm font-medium">
                     <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Home</a></li>
                     <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Our RVs</a></li>
                     <li><a href="pricing.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Pricing</a></li>
@@ -120,7 +154,6 @@
             </ul>
             <p class="mt-6">Please review our full <a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a> for complete details before booking.</p>
         </div>
-
     </main>
 
     <footer class="bg-slate-800 text-gray-400 py-8 mt-12">
