@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viac Ako Štandard RV Rentals - Your Adventure Starts Here</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Optional: Add custom styles or overrides here */
+        .hero-bg {
+            /* Replace with your actual hero image URL */
+            background-image: url('https://placehold.co/1920x1080/4682B4/FFFFFF?text=Beautiful+RV+Scene');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-secondary-bg {
+             /* Replace with your actual CTA background image URL */
+            background-image: url('https://placehold.co/1920x600/6a5acd/ffffff?text=Scenic+Road');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Add shadow for better text visibility on background images */
+        .shadow-text {
+             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-slate-800 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="https://placehold.co/150x50/ffffff/1a2a4a?text=RV+Logo" alt="Viac Ako Štandard Logo" class="h-10 rounded" onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';">
+                </a>
+
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Toggle menu" aria-expanded="false">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <nav id="mobile-menu" class="hidden md:flex md:items-center w-full md:w-auto mt-2 md:mt-0">
+                <ul class="flex flex-col md:flex-row md:space-x-4 text-sm font-medium w-full md:w-auto">
+                    <li><a href="index.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Home</a></li>
+                    <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Our RVs</a></li>
+                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Pricing</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-bg relative text-white">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative container mx-auto px-4 py-24 md:py-32 lg:py-40 text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight shadow-text">VIAC AKO ŠTANDARD</h1>
+                <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto shadow-text">Pohodlné postele veľké ako letisko, praktická kuchyňa a otočné predné sedadlá. Užite si každý kilometer v našich luxusných karavanoch.</p>
+                <a href="rvs.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Explore Our RVs
+                </a>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-slate-800 mb-12">Rodinná dovolenka snov s poriadnym karavanom?</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <i class="fas fa-infinity fa-2x text-blue-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-2">Neobmedzené KM</h3>
+                        <p class="text-sm text-gray-600">Travel without limits with our generous mileage options.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <i class="fas fa-star fa-2x text-yellow-500 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-2">Vyšší Štandard</h3>
+                        <p class="text-sm text-gray-600">Modern, clean, and well-maintained RVs for your comfort.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <i class="fas fa-gift fa-2x text-green-500 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-2">Doplnková Výbava</h3>
+                        <p class="text-sm text-gray-600">From kitchen kits to bike racks, we have the extras you need.</p>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
+                        <i class="fas fa-parking fa-2x text-red-500 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-2">Vaše Auto u Nás</h3>
+                        <p class="text-sm text-gray-600">Secure parking available for your vehicle while you travel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-slate-800 mb-12 text-center">Featured RV Rentals</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/778899/ffffff?text=RV+Family+Cruiser" alt="Modern Family Cruiser" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-slate-800 mb-2">Modern Family Cruiser</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Sleeps 4 | Automatic | Pet Friendly. Ideal for families seeking comfort and space on the road.</p>
+                            <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/b0c4de/ffffff?text=RV+Compact+Explorer" alt="Compact Explorer" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-slate-800 mb-2">Compact Explorer</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Sleeps 2 | Manual | Easy to Drive. Perfect for couples or solo adventurers seeking maneuverability.</p>
+                            <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/600x400/2f4f4f/ffffff?text=RV+Luxury+Liner" alt="Luxury Liner" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-slate-800 mb-2">Luxury Liner</h3>
+                            <p class="text-gray-600 text-sm mb-4 flex-grow">Sleeps 6 | Automatic | All Amenities. Experience the ultimate in road trip luxury and comfort.</p>
+                            <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                     <a href="rvs.html" class="inline-block bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow hover:shadow-md">
+                        View All RVs
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-slate-800 mb-12 text-center">What Our Renters Say</h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow border-l-4 border-blue-500">
+                        <p class="text-gray-700 italic mb-4">"Fantastická dovolenka! Karavan bol presne ako na fotkách, čistý a plne vybavený. Komunikácia bola bezproblémová. Určite odporúčame!"</p>
+                        <p class="text-right font-semibold text-slate-700">- Rodina Nováková</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow border-l-4 border-green-500">
+                        <p class="text-gray-700 italic mb-4">"Amazing experience renting from Viac Ako Štandard. The RV was perfect for our road trip through Slovakia. Easy pickup and return process."</p>
+                        <p class="text-right font-semibold text-slate-700">- John & Sarah P.</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="cta-secondary-bg relative text-white">
+             <div class="absolute inset-0 bg-slate-800 opacity-70"></div>
+             <div class="relative container mx-auto px-4 py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 shadow-text">Naplánujte si rodinnú dovolenku snov.</h2>
+                <p class="text-lg md:text-xl mb-8 shadow-text">Kontaktujte nás už dnes a rezervujte si svoj karavan!</p>
+                <p class="text-lg mb-2 shadow-text">Volajte: <a href="tel:+421911468941" class="hover:underline font-semibold">0911 468 941</a></p>
+                <p class="text-lg mb-8 shadow-text">Email: <a href="mailto:info@nasekaravany.sk" class="hover:underline font-semibold">info@nasekaravany.sk</a></p>
+                <a href="contact.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                    Get in Touch Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; <span id="currentYear"></span> Viac Ako Štandard RV Rentals. Všetky práva vyhradené.</p>
+            <p class="mt-2">
+                <a href="contact.html" class="hover:text-white">Kontaktujte nás</a> |
+                <a href="#" class="hover:text-white mx-2">Terms & Conditions</a> |
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+            </p>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

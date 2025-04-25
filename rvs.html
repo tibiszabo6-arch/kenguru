@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our RV Fleet - Viac Ako Štandard RV Rentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <style>
+        /* Optional custom styles */
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-slate-800 text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="https://placehold.co/150x50/ffffff/1a2a4a?text=RV+Logo" alt="Viac Ako Štandard Logo" class="h-10 rounded" onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';">
+            </a>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Toggle menu" aria-expanded="false">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+            </button>
+            <nav id="mobile-menu" class="hidden md:flex md:items-center w-full md:w-auto mt-2 md:mt-0">
+                <ul class="flex flex-col md:flex-row md:space-x-4 text-sm font-medium w-full md:w-auto">
+                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Home</a></li>
+                    <li><a href="rvs.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Our RVs</a></li>
+                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Pricing</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-slate-800 mb-4 text-center">Our RV Fleet</h1>
+        <p class="text-lg text-gray-600 mb-10 text-center">Browse our selection of modern and comfortable RVs. Please <a href="contact.html" class="text-blue-600 hover:underline">contact us</a> to confirm availability for your desired dates.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/778899/ffffff?text=RV+Family+Cruiser+Exterior" alt="Modern Family Cruiser" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Modern Family Cruiser</h3>
+                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> Sleeps 4 | <i class="fas fa-cogs mr-1 text-blue-500"></i> Automatic | <i class="fas fa-paw mr-1 text-green-500"></i> Pet Friendly</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Spacious and comfortable, perfect for family getaways.</p>
+                    <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                        View Details & Specs
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/b0c4de/ffffff?text=RV+Compact+Explorer+Exterior" alt="Compact Explorer" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Compact Explorer</h3>
+                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> Sleeps 2 | <i class="fas fa-cogs mr-1 text-blue-500"></i> Manual | <i class="fas fa-gas-pump mr-1 text-green-500"></i> Economical</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Easy to handle and park, ideal for couples or solo trips.</p>
+                     <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                        View Details & Specs
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/2f4f4f/ffffff?text=RV+Luxury+Liner+Exterior" alt="Luxury Liner" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Luxury Liner</h3>
+                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> Sleeps 6 | <i class="fas fa-cogs mr-1 text-blue-500"></i> Automatic | <i class="fas fa-tv mr-1 text-purple-500"></i> Premium Features</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Travel in style with all the comforts of home.</p>
+                     <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                        View Details & Specs
+                    </a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition duration-300">
+                <img src="https://placehold.co/600x400/d2b48c/ffffff?text=RV+Adventure+Van" alt="Adventure Van" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Adventure Van</h3>
+                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> Sleeps 2 | <i class="fas fa-cogs mr-1 text-blue-500"></i> Automatic | <i class="fas fa-mountain mr-1 text-orange-500"></i> Off-Grid Ready</p>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Compact campervan built for exploring remote places.</p>
+                     <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                        View Details & Specs
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-800 text-gray-400 py-8 mt-12">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; <span id="currentYear"></span> Viac Ako Štandard RV Rentals. Všetky práva vyhradené.</p>
+             <p class="mt-2">
+                <a href="contact.html" class="hover:text-white">Kontaktujte nás</a> |
+                <a href="#" class="hover:text-white mx-2">Terms & Conditions</a> |
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
