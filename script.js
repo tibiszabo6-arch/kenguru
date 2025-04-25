@@ -1,44 +1,56 @@
-    /**
-     * Basic JavaScript for RV Rental Static Site
-     */
+/**
+ * Enhanced JavaScript for RV Rental Site with Hamburger Menu
+ */
 
-    document.addEventListener('DOMContentLoaded', () => {
-        console.log("DOM fully loaded and parsed"); // Debug log
+document.addEventListener('DOMContentLoaded', () => {
+    console.log("DOM fully loaded and parsed");
 
-        // --- Mobile Menu Toggle ---
-        const menuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+    // --- Hamburger Menu Toggle ---
+    const menuButton = document.getElementById('mobile-menu-button');
+    const sideMenu = document.getElementById('side-menu');
+    const overlay = document.getElementById('menu-overlay');
+    const closeButton = document.getElementById('close-menu-button');
 
-        console.log("Menu Button:", menuButton); // Debug log
-        console.log("Mobile Menu:", mobileMenu); // Debug log
+    if (menuButton && sideMenu) {
+        // Open menu when hamburger is clicked
+        menuButton.addEventListener('click', () => {
+            sideMenu.classList.remove('-translate-x-full'); // Changed to target left-hidden state
+            sideMenu.classList.add('translate-x-0');
+            overlay.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden'); // Prevent scrolling when menu is open
+            menuButton.setAttribute('aria-expanded', 'true');
+        });
 
-        if (menuButton && mobileMenu) {
-            menuButton.addEventListener('click', () => {
-                console.log("Menu button clicked"); // Debug log
-                const isHidden = mobileMenu.classList.contains('hidden');
-                mobileMenu.classList.toggle('hidden');
-                // Toggle aria-expanded attribute for accessibility
-                menuButton.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
-                console.log("Menu toggled, hidden:", !isHidden); // Debug log
+        // Close menu when overlay is clicked
+        if (overlay) {
+            overlay.addEventListener('click', () => {
+                sideMenu.classList.remove('translate-x-0');
+                sideMenu.classList.add('-translate-x-full'); // Changed to hide to the left
+                overlay.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+                menuButton.setAttribute('aria-expanded', 'false');
             });
-        } else {
-            console.error("Mobile menu button or menu element not found.");
         }
 
-        // --- Footer Copyright Year ---
-        const currentYearSpan = document.getElementById('currentYear');
-        if (currentYearSpan) {
-            currentYearSpan.textContent = new Date().getFullYear();
-            console.log("Copyright year updated."); // Debug log
-        } else {
-            console.error("Current year span not found.");
+        // Close menu when X button is clicked
+        if (closeButton) {
+            closeButton.addEventListener('click', () => {
+                sideMenu.classList.remove('translate-x-0');
+                sideMenu.classList.add('-translate-x-full'); // Changed to hide to the left
+                overlay.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+                menuButton.setAttribute('aria-expanded', 'false');
+            });
         }
+    } else {
+        console.error("Menu elements not found");
+    }
 
-        // --- Potential Future Enhancements ---
-        // 1. Simple Image Gallery Interaction (e.g., click thumbnail to change main image)
-        // 2. Contact Form AJAX Submission (example provided in contact.html comments)
-        // 3. Smooth Scrolling for anchor links
+    // --- Footer Copyright Year ---
+    const currentYearSpan = document.getElementById('currentYear');
+    if (currentYearSpan) {
+        currentYearSpan.textContent = new Date().getFullYear();
+    }
 
-        console.log("RV Rental Site Script Initialized.");
-    });
-    
+    console.log("RV Rental Site Script Initialized with Hamburger Menu");
+});
