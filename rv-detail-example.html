@@ -26,20 +26,20 @@
         </div>
         <nav class="p-4">
             <ul class="space-y-4">
-                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Home</a></li>
-                <li><a href="rvs.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page">Our RVs</a></li>
-                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Pricing</a></li>
-                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Contact</a></li>
+                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.home">Home</a></li>
+                <li><a href="rvs.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page" data-i18n="nav.our_rvs">Our RVs</a></li>
+                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="mt-4 border-t border-slate-700 pt-4">
-                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2">Language:</label>
+                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2" data-i18n="language_selector.title">Language:</label>
                 <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="en" data-i18n="language.en">English</option>
                     <option value="sk" data-i18n="language.sk">Slovak</option>
                 </select>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700">
-                <p class="text-sm text-gray-400 mb-2">Contact Us:</p>
+                <p class="text-sm text-gray-400 mb-2" data-i18n="side_menu.contact_us">Contact Us:</p>
                 <p class="text-sm text-gray-300 mb-1">
                     <i class="fas fa-phone fa-fw mr-2"></i> 0911 468 941
                 </p>
@@ -65,10 +65,10 @@
 
             <nav class="hidden md:flex md:items-center">
                 <ul class="flex flex-row space-x-4 text-sm font-medium">
-                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Home</a></li>
-                    <li><a href="rvs.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Our RVs</a></li>
-                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Pricing</a></li>
-                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Contact</a></li>
+                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.home">Home</a></li>
+                    <li><a href="rvs.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page" data-i18n="nav.our_rvs">Our RVs</a></li>
+                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.contact">Contact</a></li>
                 </ul>
                 <div class="ml-6 relative text-gray-300">
                     <select id="language-selector" class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -97,23 +97,23 @@
             </div>
 
             <div class="lg:col-span-1">
-                <div class="bg-white p-6 rounded-lg shadow-lg sticky top-24"> <h2 class="text-2xl font-semibold text-slate-700 mb-4 border-b pb-2">Key Details</h2>
+                <div class="bg-white p-6 rounded-lg shadow-lg sticky top-24"> <h2 class="text-2xl font-semibold text-slate-700 mb-4 border-b pb-2" data-i18n="rv_detail.key_details">Key Details</h2>
                     <ul class="space-y-2 text-gray-700 mb-6">
-                        <li><i class="fas fa-users w-5 mr-2 text-blue-500" aria-hidden="true"></i> Sleeps: <strong>4</strong></li>
-                        <li><i class="fas fa-cogs w-5 mr-2 text-blue-500" aria-hidden="true"></i> Transmission: <strong>Automatic</strong></li>
-                        <li><i class="fas fa-ruler-combined w-5 mr-2 text-blue-500" aria-hidden="true"></i> Length: <strong>7.5 meters</strong></li>
-                        <li><i class="fas fa-paw w-5 mr-2 text-green-500" aria-hidden="true"></i> Pet Friendly: <strong>Yes</strong> (conditions apply)</li>
-                        <li><i class="fas fa-gas-pump w-5 mr-2 text-green-500" aria-hidden="true"></i> Fuel Type: <strong>Diesel</strong></li>
+                        <li><i class="fas fa-users w-5 mr-2 text-blue-500" aria-hidden="true"></i> <span data-i18n="rv_detail.sleeps">Sleeps</span>: <strong>4</strong></li>
+                        <li><i class="fas fa-cogs w-5 mr-2 text-blue-500" aria-hidden="true"></i> <span data-i18n="rv_detail.transmission">Transmission</span>: <strong data-i18n="rvs_page.automatic">Automatic</strong></li>
+                        <li><i class="fas fa-ruler-combined w-5 mr-2 text-blue-500" aria-hidden="true"></i> <span data-i18n="rv_detail.length">Length</span>: <strong>7.5 meters</strong></li>
+                        <li><i class="fas fa-paw w-5 mr-2 text-green-500" aria-hidden="true"></i> <span data-i18n="rv_detail.pet_friendly">Pet Friendly</span>: <strong>Yes</strong> (conditions apply)</li>
+                        <li><i class="fas fa-gas-pump w-5 mr-2 text-green-500" aria-hidden="true"></i> <span data-i18n="rv_detail.fuel_type">Fuel Type</span>: <strong>Diesel</strong></li>
                         </ul>
 
-                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Pricing</h3>
-                    <p class="text-gray-700 mb-1">From <strong class="text-2xl text-green-600">€130</strong> / night (Low Season)</p>
-                    <p class="text-sm text-gray-500 mb-4">Rates vary by season. See <a href="pricing.html" class="text-blue-600 hover:underline">full pricing details</a>.</p>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3" data-i18n="rv_detail.pricing">Pricing</h3>
+                    <p class="text-gray-700 mb-1"><span data-i18n="rv_detail.from">From</span> <strong class="text-2xl text-green-600">€130</strong> <span data-i18n="rv_detail.night">/ night (Low Season)</span></p>
+                    <p class="text-sm text-gray-500 mb-4" data-i18n="rv_detail.rates_vary">Rates vary by season. See <a href="pricing.html" class="text-blue-600 hover:underline">full pricing details</a>.</p>
 
-                    <h3 class="text-xl font-semibold text-slate-700 mb-3">Availability</h3>
-                    <p class="text-gray-700 mb-6">Please contact us to check availability for your desired dates.</p>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-3" data-i18n="rv_detail.availability">Availability</h3>
+                    <p class="text-gray-700 mb-6" data-i18n="rv_detail.availability_note">Please contact us to check availability for your desired dates.</p>
 
-                    <a href="contact.html?inquiry=Modern%20Family%20Cruiser" class="w-full block text-center bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-6 rounded-lg text-lg transition duration-300 shadow hover:shadow-md">
+                    <a href="contact.html?inquiry=Modern%20Family%20Cruiser" class="w-full block text-center bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-6 rounded-lg text-lg transition duration-300 shadow hover:shadow-md" data-i18n="rv_detail.inquire">
                         Inquire About This RV
                     </a>
                 </div>
@@ -121,7 +121,7 @@
         </div>
 
         <div class="bg-white p-8 rounded-lg shadow-lg mt-8">
-            <h2 class="text-2xl font-semibold text-slate-700 mb-4">Description</h2>
+            <h2 class="text-2xl font-semibold text-slate-700 mb-4" data-i18n="rv_detail.description">Description</h2>
             <p class="text-gray-700 mb-6 leading-relaxed">
                 This spacious and modern Class C RV is perfect for family adventures. Easy to drive with an automatic transmission, it offers comfortable sleeping for four, a fully equipped kitchen with fridge, stove, and microwave, and a convenient bathroom with shower and toilet.
             </p>
@@ -129,7 +129,7 @@
                 Enjoy the great outdoors under the large awning. Ample storage space inside and out ensures you can bring everything you need. Features modern entertainment options for relaxing evenings. Pet-friendly for well-behaved companions!
             </p>
 
-            <h2 class="text-2xl font-semibold text-slate-700 mt-8 mb-4">Features & Amenities</h2>
+            <h2 class="text-2xl font-semibold text-slate-700 mt-8 mb-4" data-i18n="rv_detail.features">Features & Amenities</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
                 <ul class="space-y-2">
                     <li><i class="fas fa-bed w-5 mr-2 text-blue-500" aria-hidden="true"></i> Double Bed (Over Cab)</li>

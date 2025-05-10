@@ -25,20 +25,20 @@
         </div>
         <nav class="p-4">
             <ul class="space-y-4">
-                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Home</a></li>
-                <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Our RVs</a></li>
-                <li><a href="pricing.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page">Pricing</a></li>
-                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Contact</a></li>
+                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.home">Home</a></li>
+                <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.our_rvs">Our RVs</a></li>
+                <li><a href="pricing.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="mt-4 border-t border-slate-700 pt-4">
-                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2">Language:</label>
+                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2" data-i18n="language_selector.title">Language:</label>
                 <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="en" data-i18n="language.en">English</option>
                     <option value="sk" data-i18n="language.sk">Slovak</option>
                 </select>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700">
-                <p class="text-sm text-gray-400 mb-2">Contact Us:</p>
+                <p class="text-sm text-gray-400 mb-2" data-i18n="side_menu.contact_us">Contact Us:</p>
                 <p class="text-sm text-gray-300 mb-1">
                     <i class="fas fa-phone fa-fw mr-2"></i> 0911 468 941
                 </p>
@@ -64,10 +64,10 @@
 
             <nav class="hidden md:flex md:items-center">
                 <ul class="flex flex-row space-x-4 text-sm font-medium">
-                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Home</a></li>
-                    <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Our RVs</a></li>
-                    <li><a href="pricing.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Pricing</a></li>
-                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Contact</a></li>
+                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.home">Home</a></li>
+                    <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.our_rvs">Our RVs</a></li>
+                    <li><a href="pricing.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.contact">Contact</a></li>
                 </ul>
                 <div class="ml-6 relative text-gray-300">
                     <select id="language-selector" class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -80,18 +80,18 @@
     </header>
 
     <main class="container mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold text-slate-800 mb-4 text-center">Rental Pricing</h1>
-        <p class="text-lg text-gray-600 mb-10 text-center">Transparent pricing for your perfect RV adventure. Rates vary by season and rental duration.</p>
+        <h1 class="text-4xl font-bold text-slate-800 mb-4 text-center" data-i18n="pricing_page.title">Rental Pricing</h1>
+        <p class="text-lg text-gray-600 mb-10 text-center" data-i18n="pricing_page.subtitle">Transparent pricing for your perfect RV adventure. Rates vary by season and rental duration.</p>
 
         <div class="bg-white p-6 rounded-lg shadow-lg mb-10 overflow-x-auto">
-            <h2 class="text-2xl font-semibold text-slate-700 mb-4">Seasonal Rates (Example Per Night)</h2>
+            <h2 class="text-2xl font-semibold text-slate-700 mb-4" data-i18n="pricing_page.seasonal_rates">Seasonal Rates (Example Per Night)</h2>
             <table class="min-w-full table-auto border-collapse border border-gray-300">
                 <thead class="bg-slate-700 text-white">
                     <tr>
-                        <th class="border border-gray-300 px-4 py-2 text-left">RV Type</th>
-                        <th class="border border-gray-300 px-4 py-2 text-center">Low Season (Oct - Apr)</th>
-                        <th class="border border-gray-300 px-4 py-2 text-center">Mid Season (May, Jun, Sep)</th>
-                        <th class="border border-gray-300 px-4 py-2 text-center">High Season (Jul - Aug)</th>
+                        <th class="border border-gray-300 px-4 py-2 text-left" data-i18n="pricing_page.rv_type">RV Type</th>
+                        <th class="border border-gray-300 px-4 py-2 text-center" data-i18n="pricing_page.low_season">Low Season (Oct - Apr)</th>
+                        <th class="border border-gray-300 px-4 py-2 text-center" data-i18n="pricing_page.mid_season">Mid Season (May, Jun, Sep)</th>
+                        <th class="border border-gray-300 px-4 py-2 text-center" data-i18n="pricing_page.high_season">High Season (Jul - Aug)</th>
                     </tr>
                 </thead>
                 <tbody class="text-gray-700">
@@ -121,12 +121,12 @@
                     </tr>
                     </tbody>
             </table>
-            <p class="text-sm text-gray-500 mt-4 italic">Discounts may apply for weekly or long-term rentals. Minimum rental periods may apply during peak season. All prices are indicative and subject to change. Please <a href="contact.html" class="text-blue-600 hover:underline">contact us</a> for a precise quote.</p>
+            <p class="text-sm text-gray-500 mt-4 italic" data-i18n="pricing_page.pricing_note">Discounts may apply for weekly or long-term rentals. Minimum rental periods may apply during peak season. All prices are indicative and subject to change. Please <a href="contact.html" class="text-blue-600 hover:underline">contact us</a> for a precise quote.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold text-slate-700 mb-4"><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>What's Included</h2>
+                <h2 class="text-2xl font-semibold text-slate-700 mb-4"><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i><span data-i18n="pricing_page.whats_included">What's Included</span></h2>
                 <ul class="list-disc list-inside space-y-2 text-gray-700">
                     <li>Standard Vehicle Insurance (deductible applies)</li>
                     <li>Mileage Allowance (e.g., 200 km per rental day included)</li>
@@ -140,7 +140,7 @@
             </div>
 
             <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold text-slate-700 mb-4"><i class="fas fa-plus-circle text-blue-500 mr-2" aria-hidden="true"></i>Optional Add-ons</h2>
+                <h2 class="text-2xl font-semibold text-slate-700 mb-4"><i class="fas fa-plus-circle text-blue-500 mr-2" aria-hidden="true"></i><span data-i18n="pricing_page.optional_addons">Optional Add-ons</span></h2>
                 <ul class="space-y-2 text-gray-700">
                     <li>Bedding Kit (duvet, pillow, linens - per person): <strong>€25 / rental</strong></li>
                     <li>Towel Set (per person): <strong>€10 / rental</strong></li>
@@ -151,22 +151,22 @@
                     <li>GPS Navigation Unit: <strong>€5 / day</strong></li>
                     <li>Child Safety Seat: <strong>€20 / rental</strong></li>
                     </ul>
-                 <p class="text-sm text-gray-500 mt-4 italic">Add-ons are subject to availability. Please request when booking.</p>
+                 <p class="text-sm text-gray-500 mt-4 italic" data-i18n="pricing_page.addons_note">Add-ons are subject to availability. Please request when booking.</p>
             </div>
         </div>
 
         <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-semibold text-slate-700 mb-4"><i class="fas fa-exclamation-triangle text-yellow-500 mr-2" aria-hidden="true"></i>Important Information</h2>
+            <h2 class="text-2xl font-semibold text-slate-700 mb-4"><i class="fas fa-exclamation-triangle text-yellow-500 mr-2" aria-hidden="true"></i><span data-i18n="pricing_page.important_info">Important Information</span></h2>
             <ul class="list-disc list-inside space-y-2 text-gray-700">
-                <li><strong>Security Deposit:</strong> A refundable security deposit (typically €1000 - €1500 depending on RV) is required at pickup via credit card authorization.</li>
-                <li><strong>Driver Requirements:</strong> Minimum driver age (e.g., 25 years) and valid driving license held for minimum period (e.g., 2 years). Specific license categories may be required for larger vehicles.</li>
-                <li><strong>Insurance:</strong> Standard insurance included has a deductible (excess). Options for reduced deductible may be available.</li>
-                <li><strong>Fuel Policy:</strong> Pick up full, return full. Refueling charges apply otherwise.</li>
-                <li><strong>Cleaning:</strong> RV must be returned reasonably clean inside. Toilet cassette must be emptied. Cleaning fees apply if requirements are not met (e.g., €100+).</li>
-                <li><strong>Smoking Policy:</strong> Strictly non-smoking inside all vehicles.</li>
-                <li><strong>Travel Restrictions:</strong> Please inform us of your intended travel destinations. Some country restrictions may apply.</li>
+                <li><strong data-i18n="pricing_page.security_deposit">Security Deposit:</strong> A refundable security deposit (typically €1000 - €1500 depending on RV) is required at pickup via credit card authorization.</li>
+                <li><strong data-i18n="pricing_page.driver_requirements">Driver Requirements:</strong> Minimum driver age (e.g., 25 years) and valid driving license held for minimum period (e.g., 2 years). Specific license categories may be required for larger vehicles.</li>
+                <li><strong data-i18n="pricing_page.insurance">Insurance:</strong> Standard insurance included has a deductible (excess). Options for reduced deductible may be available.</li>
+                <li><strong data-i18n="pricing_page.fuel_policy">Fuel Policy:</strong> Pick up full, return full. Refueling charges apply otherwise.</li>
+                <li><strong data-i18n="pricing_page.cleaning">Cleaning:</strong> RV must be returned reasonably clean inside. Toilet cassette must be emptied. Cleaning fees apply if requirements are not met (e.g., €100+).</li>
+                <li><strong data-i18n="pricing_page.smoking_policy">Smoking Policy:</strong> Strictly non-smoking inside all vehicles.</li>
+                <li><strong data-i18n="pricing_page.travel_restrictions">Travel Restrictions:</strong> Please inform us of your intended travel destinations. Some country restrictions may apply.</li>
             </ul>
-            <p class="mt-6">Please review our full <a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a> for complete details before booking.</p>
+            <p class="mt-6" data-i18n="pricing_page.terms_note">Please review our full <a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a> for complete details before booking.</p>
         </div>
     </main>
 

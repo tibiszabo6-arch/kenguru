@@ -52,5 +52,80 @@
   "language": {
     "en": "English",
     "sk": "Slovak"
+  },
+  "language_selector": {
+    "title": "Language:"
+  },
+  "side_menu": {
+    "contact_us": "Contact Us:"
+  },
+  "rvs_page": {
+    "title": "Our RV Fleet",
+    "subtitle": "Browse our selection of modern and comfortable RVs. Please contact us to confirm availability for your desired dates.",
+    "sleeps": "Sleeps",
+    "view_details_specs": "View Details & Specs",
+    "automatic": "Automatic",
+    "manual": "Manual",
+    "pet_friendly": "Pet Friendly",
+    "economical": "Economical",
+    "premium_features": "Premium Features",
+    "bike_rack": "Bike Rack"
+  },
+  "pricing_page": {
+    "title": "Rental Pricing",
+    "subtitle": "Transparent pricing for your perfect RV adventure. Rates vary by season and rental duration.",
+    "seasonal_rates": "Seasonal Rates (Example Per Night)",
+    "rv_type": "RV Type",
+    "low_season": "Low Season (Oct - Apr)",
+    "mid_season": "Mid Season (May, Jun, Sep)",
+    "high_season": "High Season (Jul - Aug)",
+    "pricing_note": "Discounts may apply for weekly or long-term rentals. Minimum rental periods may apply during peak season. All prices are indicative and subject to change. Please contact us for a precise quote.",
+    "whats_included": "What's Included",
+    "optional_addons": "Optional Add-ons",
+    "addons_note": "Add-ons are subject to availability. Please request when booking.",
+    "important_info": "Important Information",
+    "security_deposit": "Security Deposit",
+    "driver_requirements": "Driver Requirements",
+    "insurance": "Insurance",
+    "fuel_policy": "Fuel Policy",
+    "cleaning": "Cleaning",
+    "smoking_policy": "Smoking Policy",
+    "travel_restrictions": "Travel Restrictions",
+    "terms_note": "Please review our full Terms & Conditions for complete details before booking."
+  },
+  "contact_page": {
+    "title": "Contact Us",
+    "subtitle": "Have questions or ready to inquire about an RV rental? We'd love to hear from you!",
+    "get_in_touch": "Get In Touch Directly",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "appointment_note": "(Please call for appointment)",
+    "hours": "Hours",
+    "send_message": "Send Us a Message",
+    "name": "Name",
+    "email_address": "Email Address",
+    "phone_number": "Phone Number (Optional)",
+    "subject": "Subject",
+    "message": "Message",
+    "message_placeholder": "Please include your desired rental dates, number of travelers, and preferred RV if known...",
+    "send_inquiry": "Send Inquiry"
+  },
+  "rv_detail": {
+    "key_details": "Key Details",
+    "sleeps": "Sleeps",
+    "transmission": "Transmission",
+    "length": "Length",
+    "pet_friendly": "Pet Friendly",
+    "fuel_type": "Fuel Type",
+    "pricing": "Pricing",
+    "from": "From",
+    "night": "/ night (Low Season)",
+    "rates_vary": "Rates vary by season. See full pricing details.",
+    "availability": "Availability",
+    "availability_note": "Please contact us to check availability for your desired dates.",
+    "inquire": "Inquire About This RV",
+    "description": "Description",
+    "features": "Features & Amenities"
   }
 }

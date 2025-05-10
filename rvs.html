@@ -27,20 +27,20 @@
         </div>
         <nav class="p-4">
             <ul class="space-y-4">
-                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Home</a></li>
-                <li><a href="rvs.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page">Our RVs</a></li>
-                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Pricing</a></li>
-                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Contact</a></li>
+                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.home">Home</a></li>
+                <li><a href="rvs.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page" data-i18n="nav.our_rvs">Our RVs</a></li>
+                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="mt-4 border-t border-slate-700 pt-4">
-                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2">Language:</label>
+                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2" data-i18n="language_selector.title">Language:</label>
                 <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="en" data-i18n="language.en">English</option>
                     <option value="sk" data-i18n="language.sk">Slovak</option>
                 </select>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700">
-                <p class="text-sm text-gray-400 mb-2">Contact Us:</p>
+                <p class="text-sm text-gray-400 mb-2" data-i18n="side_menu.contact_us">Contact Us:</p>
                 <p class="text-sm text-gray-300 mb-1">
                     <i class="fas fa-phone fa-fw mr-2"></i> 0911 468 941
                 </p>
@@ -66,10 +66,10 @@
 
             <nav class="hidden md:flex md:items-center">
                 <ul class="flex flex-row space-x-4 text-sm font-medium">
-                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Home</a></li>
-                    <li><a href="rvs.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Our RVs</a></li>
-                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Pricing</a></li>
-                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Contact</a></li>
+                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.home">Home</a></li>
+                    <li><a href="rvs.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page" data-i18n="nav.our_rvs">Our RVs</a></li>
+                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.contact">Contact</a></li>
                 </ul>
                 <div class="ml-6 relative text-gray-300">
                     <select id="language-selector" class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -82,8 +82,8 @@
     </header>
 
     <main class="container mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold text-slate-800 mb-4 text-center">Our RV Fleet</h1>
-        <p class="text-lg text-gray-600 mb-10 text-center">Browse our selection of modern and comfortable RVs. Please <a href="contact.html" class="text-blue-600 hover:underline">contact us</a> to confirm availability for your desired dates.</p>
+        <h1 class="text-4xl font-bold text-slate-800 mb-4 text-center" data-i18n="rvs_page.title">Our RV Fleet</h1>
+        <p class="text-lg text-gray-600 mb-10 text-center" data-i18n="rvs_page.subtitle">Browse our selection of modern and comfortable RVs. Please <a href="contact.html" class="text-blue-600 hover:underline">contact us</a> to confirm availability for your desired dates.</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- RV Card 1 -->
@@ -91,9 +91,9 @@
                 <img src="https://placehold.co/600x400/778899/ffffff?text=RV+Family+Cruiser+Exterior" alt="Modern Family Cruiser" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">Modern Family Cruiser</h3>
-                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> Sleeps 4 | <i class="fas fa-cogs mr-1 text-blue-500"></i> Automatic | <i class="fas fa-paw mr-1 text-green-500"></i> Pet Friendly</p>
+                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> <span data-i18n="rvs_page.sleeps">Sleeps</span> 4 | <i class="fas fa-cogs mr-1 text-blue-500"></i> <span data-i18n="rvs_page.automatic">Automatic</span> | <i class="fas fa-paw mr-1 text-green-500"></i> <span data-i18n="rvs_page.pet_friendly">Pet Friendly</span></p>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">Spacious and comfortable, perfect for family getaways.</p>
-                    <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                    <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300" data-i18n="rvs_page.view_details_specs">
                         View Details & Specs
                     </a>
                 </div>
@@ -103,9 +103,9 @@
                 <img src="https://placehold.co/600x400/b0c4de/ffffff?text=RV+Compact+Explorer+Exterior" alt="Compact Explorer" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">Compact Explorer</h3>
-                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> Sleeps 2 | <i class="fas fa-cogs mr-1 text-blue-500"></i> Manual | <i class="fas fa-gas-pump mr-1 text-green-500"></i> Economical</p>
+                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> <span data-i18n="rvs_page.sleeps">Sleeps</span> 2 | <i class="fas fa-cogs mr-1 text-blue-500"></i> <span data-i18n="rvs_page.manual">Manual</span> | <i class="fas fa-gas-pump mr-1 text-green-500"></i> <span data-i18n="rvs_page.economical">Economical</span></p>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">Easy to handle and park, ideal for couples or solo trips.</p>
-                     <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                     <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300" data-i18n="rvs_page.view_details_specs">
                         View Details & Specs
                     </a>
                 </div>
@@ -115,9 +115,9 @@
                 <img src="https://placehold.co/600x400/2f4f4f/ffffff?text=RV+Luxury+Liner+Exterior" alt="Luxury Liner" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">Luxury Liner</h3>
-                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> Sleeps 6 | <i class="fas fa-cogs mr-1 text-blue-500"></i> Automatic | <i class="fas fa-tv mr-1 text-purple-500"></i> Premium Features</p>
+                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> <span data-i18n="rvs_page.sleeps">Sleeps</span> 6 | <i class="fas fa-cogs mr-1 text-blue-500"></i> <span data-i18n="rvs_page.automatic">Automatic</span> | <i class="fas fa-tv mr-1 text-purple-500"></i> <span data-i18n="rvs_page.premium_features">Premium Features</span></p>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">Travel in style with all the comforts of home.</p>
-                     <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                     <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300" data-i18n="rvs_page.view_details_specs">
                         View Details & Specs
                     </a>
                 </div>
@@ -128,9 +128,9 @@
                 <img src="https://placehold.co/600x400/d2b48c/ffffff?text=RV+Adventure+Van+Exterior" alt="Adventure Van" class="w-full h-48 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-semibold text-slate-800 mb-2">Adventure Van</h3>
-                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> Sleeps 2 | <i class="fas fa-cogs mr-1 text-blue-500"></i> Automatic | <i class="fas fa-bicycle mr-1 text-orange-500"></i> Bike Rack</p>
+                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-users mr-1 text-blue-500"></i> <span data-i18n="rvs_page.sleeps">Sleeps</span> 2 | <i class="fas fa-cogs mr-1 text-blue-500"></i> <span data-i18n="rvs_page.automatic">Automatic</span> | <i class="fas fa-bicycle mr-1 text-orange-500"></i> <span data-i18n="rvs_page.bike_rack">Bike Rack</span></p>
                     <p class="text-gray-600 text-sm mb-4 flex-grow">Compact yet fully equipped for your next adventure.</p>
-                     <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300">
+                     <a href="rv-detail-example.html" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 rounded-lg transition duration-300" data-i18n="rvs_page.view_details_specs">
                         View Details & Specs
                     </a>
                 </div>

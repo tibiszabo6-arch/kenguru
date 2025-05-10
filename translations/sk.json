@@ -52,5 +52,80 @@
   "language": {
     "en": "Angličtina",
     "sk": "Slovenčina"
+  },
+  "language_selector": {
+    "title": "Jazyk:"
+  },
+  "side_menu": {
+    "contact_us": "Kontaktujte Nás:"
+  },
+  "rvs_page": {
+    "title": "Naša Flotila Karavanov",
+    "subtitle": "Prezrite si náš výber moderných a pohodlných karavanov. Prosím, kontaktujte nás pre potvrdenie dostupnosti v požadovaných termínoch.",
+    "sleeps": "Spanie pre",
+    "view_details_specs": "Zobraziť Detaily a Špecifikácie",
+    "automatic": "Automatická",
+    "manual": "Manuálna",
+    "pet_friendly": "Vhodné pre Domácich Miláčikov",
+    "economical": "Ekonomické",
+    "premium_features": "Prémiové Funkcie",
+    "bike_rack": "Nosič Bicyklov"
+  },
+  "pricing_page": {
+    "title": "Cenník Prenájmu",
+    "subtitle": "Transparentné ceny pre vaše dokonalé dobrodružstvo s karavanom. Sadzby sa líšia podľa sezóny a dĺžky prenájmu.",
+    "seasonal_rates": "Sezónne Sadzby (Príklad za Noc)",
+    "rv_type": "Typ Karavanu",
+    "low_season": "Nízka Sezóna (Okt - Apr)",
+    "mid_season": "Stredná Sezóna (Máj, Jún, Sept)",
+    "high_season": "Vysoká Sezóna (Júl - Aug)",
+    "pricing_note": "Pri týždenných alebo dlhodobých prenájmoch sa môžu uplatniť zľavy. Počas hlavnej sezóny môžu platiť minimálne doby prenájmu. Všetky ceny sú orientačné a môžu sa zmeniť. Prosím, kontaktujte nás pre presnú cenovú ponuku.",
+    "whats_included": "Čo Je Zahrnuté",
+    "optional_addons": "Voliteľné Doplnky",
+    "addons_note": "Doplnky sú k dispozícii podľa dostupnosti. Prosím, vyžiadajte si ich pri rezervácii.",
+    "important_info": "Dôležité Informácie",
+    "security_deposit": "Bezpečnostná Záloha",
+    "driver_requirements": "Požiadavky na Vodiča",
+    "insurance": "Poistenie",
+    "fuel_policy": "Palivová Politika",
+    "cleaning": "Čistenie",
+    "smoking_policy": "Zákaz Fajčenia",
+    "travel_restrictions": "Cestovné Obmedzenia",
+    "terms_note": "Pred rezerváciou si prosím prečítajte naše úplné Obchodné Podmienky."
+  },
+  "contact_page": {
+    "title": "Kontaktujte Nás",
+    "subtitle": "Máte otázky alebo ste pripravení informovať sa o prenájme karavanu? Radi Vás budeme počuť!",
+    "get_in_touch": "Kontaktujte Nás Priamo",
+    "phone": "Telefón",
+    "email": "Email",
+    "address": "Adresa",
+    "appointment_note": "(Prosím, volajte pre dohodnutie termínu)",
+    "hours": "Otváracie Hodiny",
+    "send_message": "Pošlite Nám Správu",
+    "name": "Meno",
+    "email_address": "Emailová Adresa",
+    "phone_number": "Telefónne Číslo (Voliteľné)",
+    "subject": "Predmet",
+    "message": "Správa",
+    "message_placeholder": "Prosím, uveďte požadované dátumy prenájmu, počet cestujúcich a preferovaný karavan, ak ho poznáte...",
+    "send_inquiry": "Odoslať Dopyt"
+  },
+  "rv_detail": {
+    "key_details": "Kľúčové Detaily",
+    "sleeps": "Spanie pre",
+    "transmission": "Prevodovka",
+    "length": "Dĺžka",
+    "pet_friendly": "Vhodné pre Domácich Miláčikov",
+    "fuel_type": "Typ Paliva",
+    "pricing": "Cenník",
+    "from": "Od",
+    "night": "/ noc (Nízka Sezóna)",
+    "rates_vary": "Sadzby sa líšia podľa sezóny. Pozrite si kompletný cenník.",
+    "availability": "Dostupnosť",
+    "availability_note": "Prosím kontaktujte nás pre kontrolu dostupnosti v požadovaných termínoch.",
+    "inquire": "Informujte Sa O Tomto Karavane",
+    "description": "Popis",
+    "features": "Funkcie a Vybavenie"
   }
 }
