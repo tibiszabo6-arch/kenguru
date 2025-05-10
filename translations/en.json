@@ -59,6 +59,10 @@
   "side_menu": {
     "contact_us": "Contact Us:"
   },
+  "storage_notice": {
+    "message": "This website uses local storage to improve your experience, such as remembering your language preference and visitor status.",
+    "accept": "Accept"
+  },
   "rvs_page": {
     "title": "Our RV Fleet",
     "subtitle": "Browse our selection of modern and comfortable RVs. Please contact us to confirm availability for your desired dates.",

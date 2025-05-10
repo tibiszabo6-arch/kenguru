@@ -59,6 +59,10 @@
   "side_menu": {
     "contact_us": "Kontaktujte Nás:"
   },
+  "storage_notice": {
+    "message": "Táto webová stránka používa lokálne úložisko na zlepšenie vašich skúseností, napríklad na zapamätanie jazyka a status návštevníka.",
+    "accept": "Prijať"
+  },
   "rvs_page": {
     "title": "Naša Flotila Karavanov",
     "subtitle": "Prezrite si náš výber moderných a pohodlných karavanov. Prosím, kontaktujte nás pre potvrdenie dostupnosti v požadovaných termínoch.",
