@@ -6,6 +6,7 @@
     <title>Our RV Fleet - Viac Ako Štandard RV Rentals</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="i18n.js"></script>
      <style>
         /* Optional custom styles */
         body { display: flex; flex-direction: column; min-height: 100vh; }
@@ -31,6 +32,13 @@
                 <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Pricing</a></li>
                 <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Contact</a></li>
             </ul>
+            <div class="mt-4 border-t border-slate-700 pt-4">
+                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2">Language:</label>
+                <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="en" data-i18n="language.en">English</option>
+                    <option value="sk" data-i18n="language.sk">Slovak</option>
+                </select>
+            </div>
             <div class="mt-8 pt-6 border-t border-slate-700">
                 <p class="text-sm text-gray-400 mb-2">Contact Us:</p>
                 <p class="text-sm text-gray-300 mb-1">
@@ -63,6 +71,12 @@
                     <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Pricing</a></li>
                     <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Contact</a></li>
                 </ul>
+                <div class="ml-6 relative text-gray-300">
+                    <select id="language-selector" class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="en" data-i18n="language.en">English</option>
+                        <option value="sk" data-i18n="language.sk">Slovak</option>
+                    </select>
+                </div>
             </nav>
         </div>
     </header>

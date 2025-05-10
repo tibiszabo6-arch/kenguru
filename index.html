@@ -6,6 +6,7 @@
     <title>Viac Ako Štandard RV Rentals - Your Adventure Starts Here</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="i18n.js"></script>
     <style>
         /* Optional: Add custom styles or overrides here */
         .hero-bg {
@@ -24,6 +25,22 @@
         .shadow-text {
              text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
         }
+        
+        /* Welcome animation styles */
+        .welcome-overlay {
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -40,11 +57,18 @@
         </div>
         <nav class="p-4">
             <ul class="space-y-4">
-                <li><a href="index.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page">Home</a></li>
-                <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Our RVs</a></li>
-                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Pricing</a></li>
-                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white">Contact</a></li>
+                <li><a href="index.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page" data-i18n="nav.home">Home</a></li>
+                <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.our_rvs">Our RVs</a></li>
+                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <div class="mt-4 border-t border-slate-700 pt-4">
+                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2">Language:</label>
+                <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="en" data-i18n="language.en">English</option>
+                    <option value="sk" data-i18n="language.sk">Slovak</option>
+                </select>
+            </div>
             <div class="mt-8 pt-6 border-t border-slate-700">
                 <p class="text-sm text-gray-400 mb-2">Contact Us:</p>
                 <p class="text-sm text-gray-300 mb-1">
@@ -72,11 +96,17 @@
 
             <nav class="hidden md:flex md:items-center">
                 <ul class="flex flex-row space-x-4 text-sm font-medium">
-                    <li><a href="index.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page">Home</a></li>
-                    <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Our RVs</a></li>
-                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Pricing</a></li>
-                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0">Contact</a></li>
+                    <li><a href="index.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page" data-i18n="nav.home">Home</a></li>
+                    <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.our_rvs">Our RVs</a></li>
+                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.contact">Contact</a></li>
                 </ul>
+                <div class="ml-6 relative text-gray-300">
+                    <select id="language-selector" class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="en" data-i18n="language.en">English</option>
+                        <option value="sk" data-i18n="language.sk">Slovak</option>
+                    </select>
+                </div>
             </nav>
         </div>
     </header>
@@ -85,9 +115,9 @@
         <section class="hero-bg relative text-white">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="relative container mx-auto px-4 py-24 md:py-32 lg:py-40 text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight shadow-text">VIAC AKO ŠTANDARD</h1>
-                <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto shadow-text">Pohodlné postele veľké ako letisko, praktická kuchyňa a otočné predné sedadlá. Užite si každý kilometer v našich luxusných karavanoch.</p>
-                <a href="rvs.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight shadow-text" data-i18n="hero.title">VIAC AKO ŠTANDARD</h1>
+                <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto shadow-text" data-i18n="hero.subtitle">Pohodlné postele veľké ako letisko, praktická kuchyňa a otočné predné sedadlá. Užite si každý kilometer v našich luxusných karavanoch.</p>
+                <a href="rvs.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5" data-i18n="hero.cta">
                     Explore Our RVs
                 </a>
             </div>
@@ -95,27 +125,27 @@
 
         <section class="py-16 bg-white">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold text-slate-800 mb-12">Rodinná dovolenka snov s poriadnym karavanom?</h2>
+                <h2 class="text-3xl font-bold text-slate-800 mb-12" data-i18n="features.section_title">Rodinná dovolenka snov s poriadnym karavanom?</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
                         <i class="fas fa-infinity fa-2x text-blue-600 mb-4"></i>
-                        <h3 class="text-lg font-semibold text-slate-700 mb-2">Neobmedzené KM</h3>
-                        <p class="text-sm text-gray-600">Travel without limits with our generous mileage options.</p>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-2" data-i18n="features.feature1.title">Neobmedzené KM</h3>
+                        <p class="text-sm text-gray-600" data-i18n="features.feature1.description">Travel without limits with our generous mileage options.</p>
                     </div>
                     <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
                         <i class="fas fa-star fa-2x text-yellow-500 mb-4"></i>
-                        <h3 class="text-lg font-semibold text-slate-700 mb-2">Vyšší Štandard</h3>
-                        <p class="text-sm text-gray-600">Modern, clean, and well-maintained RVs for your comfort.</p>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-2" data-i18n="features.feature2.title">Vyšší Štandard</h3>
+                        <p class="text-sm text-gray-600" data-i18n="features.feature2.description">Modern, clean, and well-maintained RVs for your comfort.</p>
                     </div>
                     <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
                         <i class="fas fa-gift fa-2x text-green-500 mb-4"></i>
-                        <h3 class="text-lg font-semibold text-slate-700 mb-2">Doplnková Výbava</h3>
-                        <p class="text-sm text-gray-600">From kitchen kits to bike racks, we have the extras you need.</p>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-2" data-i18n="features.feature3.title">Doplnková Výbava</h3>
+                        <p class="text-sm text-gray-600" data-i18n="features.feature3.description">From kitchen kits to bike racks, we have the extras you need.</p>
                     </div>
                     <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
                         <i class="fas fa-parking fa-2x text-red-500 mb-4"></i>
-                        <h3 class="text-lg font-semibold text-slate-700 mb-2">Vaše Auto u Nás</h3>
-                        <p class="text-sm text-gray-600">Secure parking available for your vehicle while you travel.</p>
+                        <h3 class="text-lg font-semibold text-slate-700 mb-2" data-i18n="features.feature4.title">Vaše Auto u Nás</h3>
+                        <p class="text-sm text-gray-600" data-i18n="features.feature4.description">Secure parking available for your vehicle while you travel.</p>
                     </div>
                 </div>
             </div>

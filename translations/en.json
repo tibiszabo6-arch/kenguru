@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "our_rvs": "Our RVs",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "MORE THAN STANDARD",
+    "subtitle": "Comfortable beds as big as an airport, practical kitchen and rotating front seats. Enjoy every kilometer in our luxury caravans.",
+    "cta": "Explore Our RVs"
+  },
+  "features": {
+    "section_title": "Dream family vacation with a proper caravan?",
+    "feature1": {
+      "title": "Unlimited KM",
+      "description": "Travel without limits with our generous mileage options."
+    },
+    "feature2": {
+      "title": "Higher Standard",
+      "description": "Modern, clean, and well-maintained RVs for your comfort."
+    },
+    "feature3": {
+      "title": "Additional Equipment",
+      "description": "From kitchen kits to bike racks, we have the extras you need."
+    },
+    "feature4": {
+      "title": "Your Car With Us",
+      "description": "Secure parking available for your vehicle while you travel."
+    }
+  },
+  "rv_section": {
+    "title": "Featured RV Rentals",
+    "view_details": "View Details",
+    "view_all": "View All RVs"
+  },
+  "testimonials": {
+    "title": "What Our Renters Say"
+  },
+  "cta_section": {
+    "title": "Plan your dream family vacation.",
+    "subtitle": "Contact us today and book your caravan!",
+    "call": "Call:",
+    "email": "Email:",
+    "button": "Get in Touch Now"
+  },
+  "footer": {
+    "all_rights_reserved": "All rights reserved.",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy"
+  },
+  "language": {
+    "en": "English",
+    "sk": "Slovak"
+  }
+}

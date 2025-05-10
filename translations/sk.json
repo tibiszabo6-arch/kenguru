@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Domov",
+    "our_rvs": "Naše Karavany",
+    "pricing": "Cenník",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "VIAC AKO ŠTANDARD",
+    "subtitle": "Pohodlné postele veľké ako letisko, praktická kuchyňa a otočné predné sedadlá. Užite si každý kilometer v našich luxusných karavanoch.",
+    "cta": "Prehliadať Karavany"
+  },
+  "features": {
+    "section_title": "Rodinná dovolenka snov s poriadnym karavanom?",
+    "feature1": {
+      "title": "Neobmedzené KM",
+      "description": "Cestujte bez obmedzení s našimi veľkorysými možnosťami kilometráže."
+    },
+    "feature2": {
+      "title": "Vyšší Štandard",
+      "description": "Moderné, čisté a dobre udržiavané karavany pre váš komfort."
+    },
+    "feature3": {
+      "title": "Doplnková Výbava",
+      "description": "Od kuchynských súprav po nosiče bicyklov, máme všetko, čo potrebujete."
+    },
+    "feature4": {
+      "title": "Vaše Auto u Nás",
+      "description": "Bezpečné parkovanie pre vaše vozidlo počas vašej cesty."
+    }
+  },
+  "rv_section": {
+    "title": "Odporúčané Karavany na Prenájom",
+    "view_details": "Zobraziť Detail",
+    "view_all": "Zobraziť Všetky Karavany"
+  },
+  "testimonials": {
+    "title": "Čo Hovoria Naši Zákazníci"
+  },
+  "cta_section": {
+    "title": "Naplánujte si rodinnú dovolenku snov.",
+    "subtitle": "Kontaktujte nás už dnes a rezervujte si svoj karavan!",
+    "call": "Volajte:",
+    "email": "Email:",
+    "button": "Kontaktujte Nás Teraz"
+  },
+  "footer": {
+    "all_rights_reserved": "Všetky práva vyhradené.",
+    "terms": "Obchodné Podmienky",
+    "privacy": "Ochrana Súkromia"
+  },
+  "language": {
+    "en": "Angličtina",
+    "sk": "Slovenčina"
+  }
+}
