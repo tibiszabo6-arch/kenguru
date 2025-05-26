@@ -9,6 +9,15 @@
     <script src="i18n.js"></script>
      <style>
         /* Optional custom styles */
+        .pricing-hero-bg {
+            background-image: url('3.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .shadow-text {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -79,9 +88,16 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold text-slate-800 mb-4 text-center" data-i18n="pricing_page.title">Rental Pricing</h1>
-        <p class="text-lg text-gray-600 mb-10 text-center" data-i18n="pricing_page.subtitle">Transparent pricing for your perfect RV adventure. Rates vary by season and rental duration.</p>
+    <main>
+        <section class="pricing-hero-bg text-white py-16">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative container mx-auto px-4">
+                <h1 class="text-4xl font-bold mb-4 text-center shadow-text" data-i18n="pricing_page.title">Rental Pricing</h1>
+                <p class="text-lg mb-10 text-center shadow-text" data-i18n="pricing_page.subtitle">Transparent pricing for your perfect RV adventure. Rates vary by season and rental duration.</p>
+            </div>
+        </section>
+        
+        <section class="container mx-auto px-4 py-12">
 
         <div class="bg-white p-6 rounded-lg shadow-lg mb-10 overflow-x-auto">
             <h2 class="text-2xl font-semibold text-slate-700 mb-4" data-i18n="pricing_page.seasonal_rates">Seasonal Rates (Example Per Night)</h2>
@@ -168,6 +184,7 @@
             </ul>
             <p class="mt-6" data-i18n="pricing_page.terms_note">Please review our full <a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a> for complete details before booking.</p>
         </div>
+        </section>
     </main>
 
     <footer class="bg-slate-800 text-gray-400 py-8 mt-12">

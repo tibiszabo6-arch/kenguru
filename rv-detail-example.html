@@ -10,6 +10,15 @@
     <style>
         /* Optional custom styles */
         /* Consider a simple JS image gallery/slider library for better UX */
+        .rv-detail-hero-bg {
+            background-image: url('2.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .shadow-text {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -80,8 +89,15 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
-        <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Modern Family Cruiser</h1>
+    <main>
+        <section class="rv-detail-hero-bg text-white py-12 mb-8">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative container mx-auto px-4">
+                <h1 class="text-3xl md:text-4xl font-bold shadow-text">Modern Family Cruiser</h1>
+            </div>
+        </section>
+        
+        <section class="container mx-auto px-4 pb-12">
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="lg:col-span-2">
@@ -151,6 +167,7 @@
                     </ul>
             </div>
         </div>
+        </section>
 
         </main>
 

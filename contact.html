@@ -9,6 +9,15 @@
     <script src="i18n.js"></script>
     <style>
         /* Optional custom styles */
+        .contact-hero-bg {
+            background-image: url('4.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .shadow-text {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -79,9 +88,16 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-12">
-        <h1 class="text-4xl font-bold text-slate-800 mb-4 text-center" data-i18n="contact_page.title">Contact Us</h1>
-        <p class="text-lg text-gray-600 mb-10 text-center" data-i18n="contact_page.subtitle">Have questions or ready to inquire about an RV rental? We'd love to hear from you!</p>
+    <main>
+        <section class="contact-hero-bg text-white py-16">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative container mx-auto px-4">
+                <h1 class="text-4xl font-bold mb-4 text-center shadow-text" data-i18n="contact_page.title">Contact Us</h1>
+                <p class="text-lg mb-10 text-center shadow-text" data-i18n="contact_page.subtitle">Have questions or ready to inquire about an RV rental? We'd love to hear from you!</p>
+            </div>
+        </section>
+        
+        <section class="container mx-auto px-4 py-12">
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div class="bg-white p-8 rounded-lg shadow-lg">
@@ -139,6 +155,7 @@
                 </form>
             </div>
         </div>
+        </section>
     </main>
 
     <footer class="bg-slate-800 text-gray-400 py-8 mt-12">
