@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="i18n.js"></script>
     <style>
-        /* Optional custom styles */
-        /* Consider a simple JS image gallery/slider library for better UX */
+        /* Hero background */
         .rv-detail-hero-bg {
             background-image: url('2.jpg');
             background-size: cover;
@@ -19,9 +18,156 @@
         .shadow-text {
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
         }
+        
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .lightbox-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+        
+        .lightbox-image {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+            transition: opacity 0.3s ease;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            z-index: 1001;
+            transition: color 0.3s ease;
+        }
+        
+        .lightbox-close:hover {
+            color: #ccc;
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+            user-select: none;
+        }
+        
+        .lightbox-nav:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .lightbox-prev {
+            left: 20px;
+        }
+        
+        .lightbox-next {
+            right: 20px;
+        }
+        
+        .lightbox-counter {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+        
+        /* Gallery image hover effect */
+        .gallery-image {
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .gallery-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Prevent body scroll when lightbox is open */
+        body.lightbox-open {
+            overflow: hidden;
+        }
+        
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+            .lightbox-close {
+                top: 10px;
+                right: 20px;
+                font-size: 30px;
+            }
+            
+            .lightbox-nav {
+                font-size: 24px;
+                padding: 15px;
+            }
+            
+            .lightbox-prev {
+                left: 10px;
+            }
+            
+            .lightbox-next {
+                right: 10px;
+            }
+            
+            .lightbox-image {
+                max-width: 95%;
+                max-height: 85vh;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <span class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <img id="lightbox-image" class="lightbox-image" src="" alt="">
+            <span class="lightbox-nav lightbox-next" onclick="changeImage(1)">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+            <div class="lightbox-counter">
+                <span id="image-counter">1 / 4</span>
+            </div>
+        </div>
+    </div>
+
     <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
 
     <div id="side-menu" class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
@@ -102,16 +248,15 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div class="lg:col-span-2">
                  <div class="grid grid-cols-1 gap-4">
-                     <img src="https://placehold.co/800x500/778899/ffffff?text=RV+Family+Cruiser+Main" alt="Family Cruiser Main View" class="w-full h-auto rounded-lg shadow-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/800x500/cccccc/333333?text=Image+Error';">
+                     <img src="2.jpg" alt="Family Cruiser Main View" class="w-full h-auto rounded-lg shadow-md object-cover gallery-image" onclick="openLightbox(0)" onerror="this.onerror=null; this.src='https://placehold.co/800x500/cccccc/333333?text=Image+Error';">
                     <div class="grid grid-cols-3 sm:grid-cols-4 gap-2">
-                        <img src="https://placehold.co/200x150/778899/ffffff?text=Interior+1" alt="Family Cruiser Interior 1" class="w-full h-auto rounded shadow cursor-pointer hover:opacity-80 transition duration-200 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/200x150/cccccc/333333?text=Image+Error';">
-                        <img src="https://placehold.co/200x150/778899/ffffff?text=Interior+2" alt="Family Cruiser Interior 2" class="w-full h-auto rounded shadow cursor-pointer hover:opacity-80 transition duration-200 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/200x150/cccccc/333333?text=Image+Error';">
-                        <img src="https://placehold.co/200x150/778899/ffffff?text=Kitchen" alt="Family Cruiser Kitchen" class="w-full h-auto rounded shadow cursor-pointer hover:opacity-80 transition duration-200 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/200x150/cccccc/333333?text=Image+Error';">
-                        <img src="https://placehold.co/200x150/778899/ffffff?text=Exterior+Detail" alt="Family Cruiser Exterior Detail" class="w-full h-auto rounded shadow cursor-pointer hover:opacity-80 transition duration-200 object-cover" onerror="this.onerror=null; this.src='https://placehold.co/200x150/cccccc/333333?text=Image+Error';">
+                        <img src="3.jpg" alt="Family Cruiser Interior" class="w-full h-auto rounded shadow gallery-image object-cover" onclick="openLightbox(1)" onerror="this.onerror=null; this.src='https://placehold.co/200x150/cccccc/333333?text=Image+Error';">
+                        <img src="4.jpg" alt="Family Cruiser Kitchen" class="w-full h-auto rounded shadow gallery-image object-cover" onclick="openLightbox(2)" onerror="this.onerror=null; this.src='https://placehold.co/200x150/cccccc/333333?text=Image+Error';">
+                        <img src="logo.jpg" alt="Family Cruiser Detail" class="w-full h-auto rounded shadow gallery-image object-cover" onclick="openLightbox(3)" onerror="this.onerror=null; this.src='https://placehold.co/200x150/cccccc/333333?text=Image+Error';">
+                        <img src="2.jpg" alt="Family Cruiser Exterior" class="w-full h-auto rounded shadow gallery-image object-cover" onclick="openLightbox(0)" onerror="this.onerror=null; this.src='https://placehold.co/200x150/cccccc/333333?text=Image+Error';">
                         </div>
                 </div>
             </div>
-
             <div class="lg:col-span-1">
                 <div class="bg-white p-6 rounded-lg shadow-lg sticky top-24"> <h2 class="text-2xl font-semibold text-slate-700 mb-4 border-b pb-2" data-i18n="rv_detail.key_details">Key Details</h2>
                     <ul class="space-y-2 text-gray-700 mb-6">
@@ -184,5 +329,108 @@
 
     <script src="script.js"></script>
     <script src="storage-notice.js"></script>
+    
+    <!-- Lightbox JavaScript -->
+    <script>
+        // Gallery images array
+        const galleryImages = [
+            '2.jpg',
+            '3.jpg',
+            '4.jpg',
+            'logo.jpg'
+        ];
+        
+        let currentImageIndex = 0;
+        
+        // Open lightbox function
+        function openLightbox(index) {
+            currentImageIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const imageCounter = document.getElementById('image-counter');
+            
+            // Set image source and counter
+            lightboxImage.src = galleryImages[currentImageIndex];
+            imageCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+            
+            // Show lightbox
+            lightbox.style.display = 'flex';
+            setTimeout(() => {
+                lightbox.classList.add('active');
+            }, 10);
+            
+            // Prevent body scroll
+            document.body.classList.add('lightbox-open');
+        }
+        
+        // Close lightbox function
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            setTimeout(() => {
+                lightbox.style.display = 'none';
+            }, 300);
+            
+            // Re-enable body scroll
+            document.body.classList.remove('lightbox-open');
+        }
+        
+        // Change image function
+        function changeImage(direction) {
+            const lightboxImage = document.getElementById('lightbox-image');
+            const imageCounter = document.getElementById('image-counter');
+            
+            // Fade out current image
+            lightboxImage.style.opacity = '0';
+            
+            setTimeout(() => {
+                // Update index
+                currentImageIndex += direction;
+                
+                // Loop around if necessary
+                if (currentImageIndex >= galleryImages.length) {
+                    currentImageIndex = 0;
+                } else if (currentImageIndex < 0) {
+                    currentImageIndex = galleryImages.length - 1;
+                }
+                
+                // Update image and counter
+                lightboxImage.src = galleryImages[currentImageIndex];
+                imageCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+                
+                // Fade in new image
+                lightboxImage.style.opacity = '1';
+            }, 300);
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'ArrowLeft') {
+                    changeImage(-1);
+                } else if (e.key === 'ArrowRight') {
+                    changeImage(1);
+                } else if (e.key === 'Escape') {
+                    closeLightbox();
+                }
+            }
+        });
+        
+        // Click outside image to close
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this || e.target.classList.contains('lightbox-content')) {
+                closeLightbox();
+            }
+        });
+        
+        // Preload images for better performance
+        window.addEventListener('load', function() {
+            galleryImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        });
+    </script>
     </body>
 </html>
