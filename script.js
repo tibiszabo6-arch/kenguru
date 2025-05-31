@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         // Set flag in localStorage so animation doesn't play again
                         localStorage.setItem('hasVisitedKenguru', 'true');
                     }, 1200);
-                }, 1300); // Show logo centered for 1.3 seconds before moving
+                }, 5000); // Show logo centered for 3.8 seconds before moving (total 5 seconds)
             }
         }
     };
