@@ -6,9 +6,26 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "VIAC AKO ŠTANDARD",
-    "subtitle": "Pohodlné postele veľké ako letisko, praktická kuchyňa a otočné predné sedadlá. Užite si každý kilometer v našich luxusných karavanoch.",
+    "title": "Vitajte v Kenguru Campers!",
+    "subtitle": "Sme vaším partnerom na cestách. Prenajmite si moderný a plne vybavený karavan a zažite nezabudnuteľné dobrodružstvo na Slovensku a v celej Európe.",
     "cta": "Prehliadať Karavany"
+  },
+  "about_section": {
+    "who_title": "Kto sme?",
+    "who_text": "Sme rodinná spoločnosť so skúsenosťami v oblasti karavaningu. Naším cieľom je poskytnúť vám pohodlné, bezpečné a nezabudnuteľné cestovanie.",
+    "what_title": "Čo ponúkame?",
+    "what_text": "Prenájom moderný karavan s kompletným vybavením – kuchyňa, kúpeľňa, pohodlné spanie a množstvo ďalšieho."
+  },
+  "new_caravan_section": {
+    "main_title": "Máme pre vás úplne nový karavan!",
+    "main_text": "S radosťou vám oznamujeme, že máme úplne nový karavan. Tento moderný a plne vybavený model vám poskytne maximálny komfort a bezpečnosť na cestách. Využite túto jedinečnú príležitosť a zažite nezabudnuteľné dobrodružstvo s naším novým karavanom.",
+    "feature1_title": "Úplne nový model",
+    "feature1_text": "bez opotrebenia, moderné technológie.",
+    "feature2_title": "Maximálny komfort a priestor",
+    "feature2_text": "ideálny pre rodiny alebo priateľov.",
+    "feature3_title": "Spoľahlivosť a bezpečnosť",
+    "feature3_text": "cestujte bez starostí.",
+    "closing_text": "Náš luxusný obytný karavan je ideálny pre rodiny, páry a všetkých, ktorí túžia po nezávislosti a pohodlí na cestách. Rezervujte si ho ešte dnes a zažite dokonalé dobrodružstvo bez starostí!"
   },
   "features": {
     "section_title": "Rodinná dovolenka snov s poriadnym karavanom?",
