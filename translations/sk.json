@@ -148,5 +148,52 @@
     "inquire": "Informujte Sa O Tomto Karavane",
     "description": "Popis",
     "features": "Funkcie a Vybavenie"
+  },
+  "rv_detail_content": {
+    "page_title": "Parametre Karavanu",
+    "main_title": "Luxusný obytný karavan – Vaša dokonalá voľba pre nezabudnuteľné dobrodružstvá",
+    "intro_text": "Hľadáte dokonalý spôsob, ako zažiť slobodu na cestách bez kompromisov v komforte? Predstavujeme vám náš luxusný obytný karavan, ktorý je vybavený najmodernejšími technológiami a ponúka všetko, čo potrebujete na pohodlné a bezpečné cestovanie.",
+    "driving_features": {
+      "title": "Výkonné a pohodlné jazdné vlastnosti:",
+      "feature1": "Motor s výkonom 165 PS a 8-stupňová automatická prevodovka pre plynulú a dynamickú jazdu.",
+      "feature2": "Elektrická parkovacia brzda pre jednoduché parkovanie.",
+      "feature3": "Adaptívny tempomat, ktorý udržuje bezpečnú vzdialenosť od ostatných vozidiel.",
+      "feature4": "Automatická klimatizácia kabíny a automatická klimatizácia nadstavby DOMETIC FJX4 2200, pre maximálny komfort počas horúcich dní."
+    },
+    "external_equipment": {
+      "title": "Vonkajšie vybavenie:",
+      "feature1": "Markíza s dĺžkou 4,5 metra THULE, ktorá poskytuje príjemný tieň.",
+      "feature2": "Nosič na 4 bicykle FIAMMA Black s nosnosťou až 60 kg.",
+      "feature3": "Cúvacia kamera s 12´´ multimediálnym systémom podporujúcim Apple CarPlay a Android Auto."
+    },
+    "interior_comfort": {
+      "title": "Pohodlný a priestranný interiér:",
+      "feature1": "Predná elektrická posteľ pre 2 osoby (126x196 cm).",
+      "feature2": "Zadná XXL posteľ pre 2-3 osoby (220x200 cm).",
+      "feature3": "Rozkladacia posteľ zo sedenia (103x206 cm).",
+      "feature4": "Elektrické okná a zrkadlá pre jednoduché ovládanie.",
+      "feature5": "24´´ LED SMART TV s Androidom a WiFi pripojením."
+    },
+    "energy_independence": {
+      "title": "Energetická nezávislosť a udržateľnosť:",
+      "feature1": "LIFePO4 100Ah batéria a solárny systém s výkonom 400W a MPPT regulátorom.",
+      "feature2": "Dobíjanie štartovacej batérie priamo zo solárneho systému.",
+      "feature3": "TRUMA COMBI kúrenie na plyn s integrovaným boilerom a CP Plus panelom.",
+      "feature4": "WINTER paket s vyhrievaním odpadnej nádrže a rámovými izolačnými oknami."
+    },
+    "practical_equipment": {
+      "title": "Praktické vybavenie:",
+      "feature1": "Nádrž na čistú vodu: 100l/20l pre maximálnu autonómiu.",
+      "feature2": "Veľká chladnička s objemom 160l.",
+      "feature3": "Rolety okien kabíny DOMETIC pre úplné súkromie.",
+      "feature4": "XL vstupné dvere s oknom a odpadkovým košom.",
+      "feature5": "LED osvetlenie markízy pre príjemné večerné posedenie.",
+      "feature6": "Booster 40A pre efektívne dobíjanie.",
+      "feature7": "Štýlové ALU disky v čiernej farbe."
+    },
+    "complete_equipment": {
+      "title": "Kompletná výbava pre váš komfort:",
+      "text": "Náš obytný karavan je plne vybavený všetkým, čo potrebujete pre pohodlný pobyt – taniere, príbor, všetky kuchynské potreby na varenie, náradie, vonkajší stôl so stoličkami. My vám odovzdáme kľúče a vy si určíte smer. Nič si nemusíte nosiť so sebou, stačí nasadnúť a užívať si cestu."
+    }
   }
 }
