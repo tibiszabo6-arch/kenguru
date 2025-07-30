@@ -92,97 +92,87 @@
         <section class="pricing-hero-bg text-white py-16">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="relative container mx-auto px-4">
-                <h1 class="text-4xl font-bold mb-4 text-center shadow-text" data-i18n="pricing_page.title">Rental Pricing</h1>
-                <p class="text-lg mb-10 text-center shadow-text" data-i18n="pricing_page.subtitle">Transparent pricing for your perfect RV adventure. Rates vary by season and rental duration.</p>
+                <h1 class="text-4xl font-bold mb-4 text-center shadow-text" data-i18n="pricing_page.title">Cenník</h1>
+                <p class="text-lg mb-10 text-center shadow-text" data-i18n="pricing_page.subtitle">Cenník - Kenguru Campers</p>
             </div>
         </section>
         
         <section class="container mx-auto px-4 py-12">
 
-        <div class="bg-white p-6 rounded-lg shadow-lg mb-10 overflow-x-auto">
-            <h2 class="text-2xl font-semibold text-slate-700 mb-4" data-i18n="pricing_page.seasonal_rates">Seasonal Rates (Example Per Night)</h2>
-            <table class="min-w-full table-auto border-collapse border border-gray-300">
-                <thead class="bg-slate-700 text-white">
-                    <tr>
-                        <th class="border border-gray-300 px-4 py-2 text-left" data-i18n="pricing_page.rv_type">RV Type</th>
-                        <th class="border border-gray-300 px-4 py-2 text-center" data-i18n="pricing_page.low_season">Low Season (Oct - Apr)</th>
-                        <th class="border border-gray-300 px-4 py-2 text-center" data-i18n="pricing_page.mid_season">Mid Season (May, Jun, Sep)</th>
-                        <th class="border border-gray-300 px-4 py-2 text-center" data-i18n="pricing_page.high_season">High Season (Jul - Aug)</th>
-                    </tr>
-                </thead>
-                <tbody class="text-gray-700">
-                    <tr>
-                        <td class="border border-gray-300 px-4 py-2 font-medium">Compact Explorer (Sleeps 2)</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€100</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€120</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€140</td>
-                    </tr>
-                    <tr class="bg-gray-50">
-                        <td class="border border-gray-300 px-4 py-2 font-medium">Modern Family Cruiser (Sleeps 4)</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€130</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€150</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€180</td>
-                    </tr>
-                     <tr>
-                        <td class="border border-gray-300 px-4 py-2 font-medium">Luxury Liner (Sleeps 6)</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€180</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€220</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€260</td>
-                    </tr>
-                     <tr class="bg-gray-50">
-                        <td class="border border-gray-300 px-4 py-2 font-medium">Adventure Van (Sleeps 2)</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€110</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€130</td>
-                        <td class="border border-gray-300 px-4 py-2 text-center">€150</td>
-                    </tr>
+        <div class="bg-white p-6 rounded-lg shadow-lg mb-10 max-w-2xl mx-auto">
+            <h2 class="text-2xl font-semibold text-slate-700 mb-6 text-center" data-i18n="pricing_page.seasonal_rates">Sezónne sadzby</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full table-auto border-collapse">
+                    <tbody class="text-gray-700">
+                        <tr class="border-b border-gray-300">
+                            <td class="py-4 px-6 font-medium text-lg" data-i18n="pricing_page.season_summer">Máj – September</td>
+                            <td class="py-4 px-6 text-right">
+                                <span class="text-3xl font-bold text-blue-600">160</span>
+                                <span class="text-lg text-gray-600" data-i18n="pricing_page.per_day">€ / deň</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-medium text-lg" data-i18n="pricing_page.season_winter">Október – Apríl</td>
+                            <td class="py-4 px-6 text-right">
+                                <span class="text-3xl font-bold text-blue-600">140</span>
+                                <span class="text-lg text-gray-600" data-i18n="pricing_page.per_day">€ / deň</span>
+                            </td>
+                        </tr>
                     </tbody>
-            </table>
-            <p class="text-sm text-gray-500 mt-4 italic" data-i18n="pricing_page.pricing_note">Discounts may apply for weekly or long-term rentals. Minimum rental periods may apply during peak season. All prices are indicative and subject to change. Please <a href="contact.html" class="text-blue-600 hover:underline">contact us</a> for a precise quote.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold text-slate-700 mb-4"><i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i><span data-i18n="pricing_page.whats_included">What's Included</span></h2>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
-                    <li>Standard Vehicle Insurance (deductible applies)</li>
-                    <li>Mileage Allowance (e.g., 200 km per rental day included)</li>
-                    <li>Basic Kitchen Utensils & Cookware</li>
-                    <li>Full Propane Bottle(s) at Pickup</li>
-                    <li>Full Fresh Water Tank at Pickup</li>
-                    <li>Vehicle Introduction & Operation Guide</li>
-                    <li>Roadside Assistance Information</li>
-                    <li>Parking for your car during rental (subject to availability)</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold text-slate-700 mb-4"><i class="fas fa-plus-circle text-blue-500 mr-2" aria-hidden="true"></i><span data-i18n="pricing_page.optional_addons">Optional Add-ons</span></h2>
-                <ul class="space-y-2 text-gray-700">
-                    <li>Bedding Kit (duvet, pillow, linens - per person): <strong>€25 / rental</strong></li>
-                    <li>Towel Set (per person): <strong>€10 / rental</strong></li>
-                    <li>Upgraded Kitchen Kit (more items, coffee maker): <strong>€30 / rental</strong></li>
-                    <li>Camping Chairs (per chair): <strong>€5 / rental</strong></li>
-                    <li>Camping Table: <strong>€10 / rental</strong></li>
-                    <li>Bike Rack (holds 2-3 bikes): <strong>€50 / rental</strong></li>
-                    <li>GPS Navigation Unit: <strong>€5 / day</strong></li>
-                    <li>Child Safety Seat: <strong>€20 / rental</strong></li>
-                    </ul>
-                 <p class="text-sm text-gray-500 mt-4 italic" data-i18n="pricing_page.addons_note">Add-ons are subject to availability. Please request when booking.</p>
+                </table>
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-semibold text-slate-700 mb-4"><i class="fas fa-exclamation-triangle text-yellow-500 mr-2" aria-hidden="true"></i><span data-i18n="pricing_page.important_info">Important Information</span></h2>
-            <ul class="list-disc list-inside space-y-2 text-gray-700">
-                <li><strong data-i18n="pricing_page.security_deposit">Security Deposit:</strong> A refundable security deposit (typically €1000 - €1500 depending on RV) is required at pickup via credit card authorization.</li>
-                <li><strong data-i18n="pricing_page.driver_requirements">Driver Requirements:</strong> Minimum driver age (e.g., 25 years) and valid driving license held for minimum period (e.g., 2 years). Specific license categories may be required for larger vehicles.</li>
-                <li><strong data-i18n="pricing_page.insurance">Insurance:</strong> Standard insurance included has a deductible (excess). Options for reduced deductible may be available.</li>
-                <li><strong data-i18n="pricing_page.fuel_policy">Fuel Policy:</strong> Pick up full, return full. Refueling charges apply otherwise.</li>
-                <li><strong data-i18n="pricing_page.cleaning">Cleaning:</strong> RV must be returned reasonably clean inside. Toilet cassette must be emptied. Cleaning fees apply if requirements are not met (e.g., €100+).</li>
-                <li><strong data-i18n="pricing_page.smoking_policy">Smoking Policy:</strong> Strictly non-smoking inside all vehicles.</li>
-                <li><strong data-i18n="pricing_page.travel_restrictions">Travel Restrictions:</strong> Please inform us of your intended travel destinations. Some country restrictions may apply.</li>
-            </ul>
-            <p class="mt-6" data-i18n="pricing_page.terms_note">Please review our full <a href="#" class="text-blue-600 hover:underline">Terms & Conditions</a> for complete details before booking.</p>
+        <!-- Deposit Section -->
+        <div class="bg-yellow-50 border-2 border-yellow-400 p-6 rounded-lg shadow-lg mb-10 max-w-2xl mx-auto">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-semibold text-slate-700" data-i18n="pricing_page.deposit_title">Kaucia (vratná záloha):</h3>
+                <span class="text-3xl font-bold text-slate-800" data-i18n="pricing_page.deposit_amount">1500 €</span>
+            </div>
+        </div>
+
+        <!-- What's Included Section -->
+        <div class="bg-white p-8 rounded-lg shadow-lg mb-10 max-w-3xl mx-auto">
+            <h2 class="text-2xl font-semibold text-slate-700 mb-6 text-center">
+                <i class="fas fa-check-circle text-green-500 mr-2" aria-hidden="true"></i>
+                <span data-i18n="pricing_page.price_includes">Cena zahŕňa:</span>
+            </h2>
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <i class="fas fa-road text-blue-500 text-xl mr-4 mt-1"></i>
+                    <p class="text-lg text-gray-700" data-i18n="pricing_page.unlimited_km">Neobmedzené kilometre</p>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-shield-alt text-green-500 text-xl mr-4 mt-1"></i>
+                    <p class="text-lg text-gray-700" data-i18n="pricing_page.full_insurance">Plné poistenie</p>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-home text-purple-500 text-xl mr-4 mt-1"></i>
+                    <p class="text-lg text-gray-700" data-i18n="pricing_page.fully_equipped">Plne vybavený karavan (kuchyňa, kúpeľňa, posteľná bielizeň)</p>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-phone-alt text-orange-500 text-xl mr-4 mt-1"></i>
+                    <p class="text-lg text-gray-700" data-i18n="pricing_page.support_24_7">Podpora 24/7 počas vášho výletu</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reservation Conditions Section -->
+        <div class="bg-gray-50 p-8 rounded-lg shadow-lg max-w-3xl mx-auto">
+            <h2 class="text-2xl font-semibold text-slate-700 mb-6 flex items-center justify-center">
+                <span class="text-3xl mr-3">📌</span>
+                <span data-i18n="pricing_page.reservation_conditions">Podmienky rezervácie:</span>
+            </h2>
+            <div class="space-y-4 text-lg text-gray-700">
+                <div class="flex items-start">
+                    <i class="fas fa-calendar-alt text-blue-500 mr-3 mt-1"></i>
+                    <p data-i18n="pricing_page.min_rental">Minimálna dĺžka prenájmu: 5 dni (v sezóne)</p>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-undo-alt text-green-500 mr-3 mt-1"></i>
+                    <p data-i18n="pricing_page.deposit_return">Kaucia sa vracia do 5 pracovných dní po vrátení karavanu v nepoškodenom stave.</p>
+                </div>
+            </div>
         </div>
         </section>
     </main>
