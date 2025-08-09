@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Domov",
-    "our_rvs": "Naše Karavany",
+    "our_rvs": "Ford Siena 395 F",
     "caravanning": "Karavánovanie",
     "pricing": "Cenník",
     "contact": "Kontakt"
@@ -9,7 +9,7 @@
   "hero": {
     "title": "Vitajte v Kenguru Campers!",
     "subtitle": "Sme vaším partnerom na cestách. Prenajmite si moderný a plne vybavený karavan a zažite nezabudnuteľné dobrodružstvo na Slovensku a v celej Európe.",
-    "cta": "Prehliadať Karavany"
+    "cta": "Pozrieť Ford Siena 395 F"
   },
   "about_section": {
     "who_title": "Kto sme?",
@@ -48,9 +48,9 @@
     }
   },
   "rv_section": {
-    "title": "Odporúčané Karavany na Prenájom",
+    "title": "Ford Siena 395 F",
     "view_details": "Zobraziť Detail",
-    "view_all": "Zobraziť Všetky Karavany"
+    "view_all": "Zobraziť Ford Siena 395 F"
   },
   "testimonials": {
     "title": "Čo Hovoria Naši Zákazníci"
@@ -99,8 +99,8 @@
     "lifestyle_text": "Napokon, karavanový štýl života podporuje spomalenie a návrat k jednoduchším hodnotám – čas strávený s rodinou, spojenie s prírodou a pocit skutočnej slobody. Je to dobrodružstvo, ktoré vás naučí byť flexibilným, vďačným a otvoreným svetu.",
     "closing_text": "Ak ste ešte nikdy necestovali karavanom, možno práve teraz je ten správny čas to vyskúšať. Stačí naštartovať, a cesta sa začína!",
     "cta_title": "Pripravení na dobrodružstvo?",
-    "cta_subtitle": "Prezrite si našu flotilu moderných karavanov a vyberte si ten pravý pre vašu cestu snov.",
-    "cta_button": "Pozrite naše karavany",
+    "cta_subtitle": "Prezrite si náš moderný karavan a vyberte si termín pre vašu cestu snov.",
+    "cta_button": "Pozrieť Ford Siena 395 F",
     "cta_contact": "Kontaktujte nás"
   },
   "storage_notice": {
@@ -108,8 +108,8 @@
     "accept": "Prijať"
   },
   "rvs_page": {
-    "title": "Naša Flotila Karavanov",
-    "subtitle": "Prezrite si náš výber moderných a pohodlných karavanov. Prosím, kontaktujte nás pre potvrdenie dostupnosti v požadovaných termínoch.",
+    "title": "Ford Siena 395 F",
+    "subtitle": "Prezrite si náš moderný a pohodlný karavan. Prosím, kontaktujte nás pre potvrdenie dostupnosti v požadovaných termínoch.",
     "sleeps": "Spanie pre",
     "view_details_specs": "Zobraziť Detaily a Špecifikácie",
     "automatic": "Automatická",

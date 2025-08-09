@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "our_rvs": "Our RVs",
+    "our_rvs": "Ford Siena 395 F",
     "caravanning": "Caravanning",
     "pricing": "Pricing",
     "contact": "Contact"
@@ -9,7 +9,7 @@
   "hero": {
     "title": "MORE THAN STANDARD",
     "subtitle": "Comfortable beds as big as an airport, practical kitchen and rotating front seats. Enjoy every kilometer in our luxury caravans.",
-    "cta": "Explore Our RVs"
+    "cta": "Explore Ford Siena 395 F"
   },
   "features": {
     "section_title": "Dream family vacation with a proper caravan?",
@@ -31,9 +31,9 @@
     }
   },
   "rv_section": {
-    "title": "Featured RV Rentals",
+    "title": "Ford Siena 395 F",
     "view_details": "View Details",
-    "view_all": "View All RVs"
+    "view_all": "View Ford Siena 395 F"
   },
   "testimonials": {
     "title": "What Our Renters Say"
@@ -82,8 +82,8 @@
     "lifestyle_text": "Finally, the caravan lifestyle encourages slowing down and returning to simpler values – time spent with family, connection with nature, and a sense of true freedom. It's an adventure that will teach you to be flexible, grateful, and open to the world.",
     "closing_text": "If you've never traveled by caravan before, perhaps now is the right time to try it. Just start the engine, and the journey begins!",
     "cta_title": "Ready for Adventure?",
-    "cta_subtitle": "Browse our fleet of modern caravans and choose the right one for your dream journey.",
-    "cta_button": "View Our RVs",
+    "cta_subtitle": "Browse our modern caravan and choose the date for your dream journey.",
+    "cta_button": "View Ford Siena 395 F",
     "cta_contact": "Contact Us"
   },
   "storage_notice": {
@@ -91,8 +91,8 @@
     "accept": "Accept"
   },
   "rvs_page": {
-    "title": "Our RV Fleet",
-    "subtitle": "Browse our selection of modern and comfortable RVs. Please contact us to confirm availability for your desired dates.",
+    "title": "Ford Siena 395 F",
+    "subtitle": "Browse our modern and comfortable RV. Please contact us to confirm availability for your desired dates.",
     "sleeps": "Sleeps",
     "view_details_specs": "View Details & Specs",
     "automatic": "Automatic",
