@@ -2,6 +2,7 @@
   "nav": {
     "home": "Domov",
     "our_rvs": "Naše Karavany",
+    "caravanning": "Karavánovanie",
     "pricing": "Cenník",
     "contact": "Kontakt"
   },
@@ -75,6 +76,32 @@
   },
   "side_menu": {
     "contact_us": "Kontaktujte Nás:"
+  },
+  "caravanning_page": {
+    "title": "Karavánovanie – Sloboda na kolesách!",
+    "subtitle": "Objavte jedinečnú kombináciu slobody, pohodlia a dobrodružstva",
+    "benefits_title": "Výhody cestovania karavanom",
+    "intro_text": "Cestovanie karavanom sa v posledných rokoch stáva čoraz populárnejším spôsobom, ako spoznávať svet. Ponúka jedinečnú kombináciu slobody, pohodlia a dobrodružstva, ktorú klasické formy cestovania jednoducho nemôžu poskytnúť. Predstavte si, že máte svoj domov vždy so sebou – kdekoľvek zaparkujete, tam ste doma.",
+    "benefit_1": "Absolútna nezávislosť",
+    "benefit_1_desc": "Cestujte podľa vlastného plánu",
+    "benefit_2": "Pohodlie domova",
+    "benefit_2_desc": "Vlastná posteľ a kuchyňa vždy so sebou",
+    "benefit_3": "Úspora nákladov",
+    "benefit_3_desc": "Ušetrite na ubytovaní a stravovaní",
+    "benefit_4": "Ekologické cestovanie",
+    "benefit_4_desc": "Šetrnejšie k prírode ako lietanie",
+    "independence_text": "Jednou z najväčších výhod karavanu je absolútna nezávislosť. Nemusíte sa riadiť otváracími hodinami hotelov ani reštaurácií, nemusíte rezervovať ubytovanie dopredu. Môžete sa vydať na cestu spontánne, podľa aktuálnej nálady alebo počasia. Ak sa vám na nejakom mieste páči, jednoducho tam zostanete dlhšie. Ak vás niečo neláka, pokračujete ďalej – bez stresu a obmedzení.",
+    "quote_1": "Kdekoľvek zaparkujete, tam ste doma.",
+    "comfort_text": "Karavan poskytuje pohodlie, ktoré ocení každá rodina. Máte vlastnú posteľ, vlastnú kúpeľňu, kuchyňu, chladničku aj úložný priestor. Nemusíte baliť a vybaľovať kufre na každom mieste, všetko máte vždy po ruke. Deti si môžu zobrať obľúbené hračky, a každý člen rodiny má svoje súkromie.",
+    "savings_text": "Ďalšou veľkou výhodou je úspora nákladov. Hoci počiatočné náklady na prenájom alebo kúpu karavanu môžu byť vyššie, z dlhodobého hľadiska ušetríte na ubytovaní, stravovaní a doprave. Môžete si variť vlastné jedlá, spať v prírode alebo v kempoch a navštíviť viacero miest za kratší čas.",
+    "ecological_text": "Cestovanie karavanom je tiež ekologickejšie ako lietanie a umožňuje vám objavovať menej známe miesta mimo turistických trás. Môžete sa prebudiť pri jazere, obedovať s výhľadom na hory a večer zaparkovať pri mori – všetko v jeden deň. Vďaka karavanu sa z každej cesty stáva osobný príbeh plný zážitkov, ktoré by ste v hoteli nikdy nezažili.",
+    "quote_2": "Môžete sa prebudiť pri jazere, obedovať s výhľadom na hory a večer zaparkovať pri mori – všetko v jeden deň.",
+    "lifestyle_text": "Napokon, karavanový štýl života podporuje spomalenie a návrat k jednoduchším hodnotám – čas strávený s rodinou, spojenie s prírodou a pocit skutočnej slobody. Je to dobrodružstvo, ktoré vás naučí byť flexibilným, vďačným a otvoreným svetu.",
+    "closing_text": "Ak ste ešte nikdy necestovali karavanom, možno práve teraz je ten správny čas to vyskúšať. Stačí naštartovať, a cesta sa začína!",
+    "cta_title": "Pripravení na dobrodružstvo?",
+    "cta_subtitle": "Prezrite si našu flotilu moderných karavanov a vyberte si ten pravý pre vašu cestu snov.",
+    "cta_button": "Pozrite naše karavany",
+    "cta_contact": "Kontaktujte nás"
   },
   "storage_notice": {
     "message": "Táto webová stránka používa lokálne úložisko na zlepšenie vašich skúseností, napríklad na zapamätanie jazyka a status návštevníka.",

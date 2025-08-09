@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karavánovanie - Kenguru Campers | Viac Ako Štandard RV Rentals</title>
+    <meta name="description" content="Objavte radosť z karavanovania. Sloboda na kolesách - jedinečná kombinácia pohodlia a dobrodružstva.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="i18n.js"></script>
+    <style>
+        /* Custom styles for Karavánovanie page */
+        .karavanovanie-hero-bg {
+            background-image: url('3.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .shadow-text {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+        .section-divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #eab308, #3b82f6);
+            margin: 3rem auto;
+        }
+        /* Ensure full height layout */
+        body { 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        main { 
+            flex-grow: 1; 
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
+
+    <div id="side-menu" class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+        <div class="p-4 flex justify-between items-center border-b border-slate-700">
+            <h2 class="text-xl font-bold">Menu</h2>
+            <button id="close-menu-button" class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Close menu">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav class="p-4">
+            <ul class="space-y-4">
+                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.home">Home</a></li>
+                <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.our_rvs">Our RVs</a></li>
+                <li><a href="karavanovanie.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page" data-i18n="nav.caravanning">Karavánovanie</a></li>
+                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.pricing">Pricing</a></li>
+                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="mt-4 border-t border-slate-700 pt-4">
+                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2" data-i18n="language_selector.title">Language:</label>
+                <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="en" data-i18n="language.en">English</option>
+                    <option value="sk" data-i18n="language.sk">Slovak</option>
+                </select>
+            </div>
+            <div class="mt-8 pt-6 border-t border-slate-700">
+                <p class="text-sm text-gray-400 mb-2" data-i18n="side_menu.contact_us">Contact Us:</p>
+                <p class="text-sm text-gray-300 mb-1">
+                    <i class="fas fa-phone fa-fw mr-2"></i> 0911 468 941
+                </p>
+                <p class="text-sm text-gray-300">
+                    <i class="fas fa-envelope fa-fw mr-2"></i> info@nasekaravany.sk
+                </p>
+            </div>
+        </nav>
+    </div>
+
+    <header class="bg-slate-800 text-white sticky top-0 z-30 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+            <div class="flex items-center">
+                <button id="mobile-menu-button" class="p-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Toggle menu" aria-expanded="false">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="logo.jpg" alt="Viac Ako Štandard Logo" class="h-20 rounded" onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';">
+                </a>
+            </div>
+
+            <nav class="hidden md:flex md:items-center">
+                <ul class="flex flex-row space-x-4 text-sm font-medium">
+                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.home">Home</a></li>
+                    <li><a href="rvs.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.our_rvs">Our RVs</a></li>
+                    <li><a href="karavanovanie.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page" data-i18n="nav.caravanning">Karavánovanie</a></li>
+                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.pricing">Pricing</a></li>
+                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+                <div class="ml-6 relative text-gray-300">
+                    <select id="language-selector" class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="en" data-i18n="language.en">English</option>
+                        <option value="sk" data-i18n="language.sk">Slovak</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="karavanovanie-hero-bg relative text-white">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative container mx-auto px-4 py-20 text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight shadow-text" data-i18n="caravanning_page.title">
+                    Karavánovanie – Sloboda na kolesách!
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto shadow-text" data-i18n="caravanning_page.subtitle">
+                    Objavte jedinečnú kombináciu slobody, pohodlia a dobrodružstva
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Section Title -->
+                    <h2 class="text-3xl font-bold text-slate-800 mb-8 text-center" data-i18n="caravanning_page.benefits_title">
+                        Výhody cestovania karavanom
+                    </h2>
+                    
+                    <!-- Introduction Paragraph -->
+                    <p class="text-lg leading-relaxed text-gray-700 mb-12" data-i18n="caravanning_page.intro_text">
+                        Cestovanie karavanom sa v posledných rokoch stáva čoraz populárnejším spôsobom, ako spoznávať svet. Ponúka jedinečnú kombináciu slobody, pohodlia a dobrodružstva, ktorú klasické formy cestovania jednoducho nemôžu poskytnúť. Predstavte si, že máte svoj domov vždy so sebou – kdekoľvek zaparkujete, tam ste doma.
+                    </p>
+
+                    <!-- Benefits Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                        <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition duration-300">
+                            <i class="fas fa-route fa-3x text-blue-600 mb-4"></i>
+                            <h3 class="font-bold text-lg mb-2 text-slate-700" data-i18n="caravanning_page.benefit_1">Absolútna nezávislosť</h3>
+                            <p class="text-sm text-gray-600" data-i18n="caravanning_page.benefit_1_desc">Cestujte podľa vlastného plánu</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition duration-300">
+                            <i class="fas fa-home fa-3x text-green-600 mb-4"></i>
+                            <h3 class="font-bold text-lg mb-2 text-slate-700" data-i18n="caravanning_page.benefit_2">Pohodlie domova</h3>
+                            <p class="text-sm text-gray-600" data-i18n="caravanning_page.benefit_2_desc">Vlastná posteľ a kuchyňa vždy so sebou</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition duration-300">
+                            <i class="fas fa-piggy-bank fa-3x text-yellow-600 mb-4"></i>
+                            <h3 class="font-bold text-lg mb-2 text-slate-700" data-i18n="caravanning_page.benefit_3">Úspora nákladov</h3>
+                            <p class="text-sm text-gray-600" data-i18n="caravanning_page.benefit_3_desc">Ušetrite na ubytovaní a stravovaní</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg text-center hover:shadow-lg transition duration-300">
+                            <i class="fas fa-leaf fa-3x text-green-500 mb-4"></i>
+                            <h3 class="font-bold text-lg mb-2 text-slate-700" data-i18n="caravanning_page.benefit_4">Ekologické cestovanie</h3>
+                            <p class="text-sm text-gray-600" data-i18n="caravanning_page.benefit_4_desc">Šetrnejšie k prírode ako lietanie</p>
+                        </div>
+                    </div>
+
+                    <!-- Main Content Text -->
+                    <div class="prose prose-lg max-w-none text-gray-700">
+                        <p class="mb-6 leading-relaxed" data-i18n="caravanning_page.independence_text">
+                            Jednou z najväčších výhod karavanu je absolútna nezávislosť. Nemusíte sa riadiť otváracími hodinami hotelov ani reštaurácií, nemusíte rezervovať ubytovanie dopredu. Môžete sa vydať na cestu spontánne, podľa aktuálnej nálady alebo počasia. Ak sa vám na nejakom mieste páči, jednoducho tam zostanete dlhšie. Ak vás niečo neláka, pokračujete ďalej – bez stresu a obmedzení.
+                        </p>
+
+                        <!-- Pull Quote -->
+                        <blockquote class="border-l-4 border-yellow-500 pl-6 my-8 text-xl italic text-slate-700">
+                            <span data-i18n="caravanning_page.quote_1">"Kdekoľvek zaparkujete, tam ste doma."</span>
+                        </blockquote>
+
+                        <p class="mb-6 leading-relaxed" data-i18n="caravanning_page.comfort_text">
+                            Karavan poskytuje pohodlie, ktoré ocení každá rodina. Máte vlastnú posteľ, vlastnú kúpeľňu, kuchyňu, chladničku aj úložný priestor. Nemusíte baliť a vybaľovať kufre na každom mieste, všetko máte vždy po ruke. Deti si môžu zobrať obľúbené hračky, a každý člen rodiny má svoje súkromie.
+                        </p>
+
+                        <p class="mb-6 leading-relaxed" data-i18n="caravanning_page.savings_text">
+                            Ďalšou veľkou výhodou je úspora nákladov. Hoci počiatočné náklady na prenájom alebo kúpu karavanu môžu byť vyššie, z dlhodobého hľadiska ušetríte na ubytovaní, stravovaní a doprave. Môžete si variť vlastné jedlá, spať v prírode alebo v kempoch a navštíviť viacero miest za kratší čas.
+                        </p>
+
+                        <div class="section-divider"></div>
+
+                        <p class="mb-6 leading-relaxed" data-i18n="caravanning_page.ecological_text">
+                            Cestovanie karavanom je tiež ekologickejšie ako lietanie a umožňuje vám objavovať menej známe miesta mimo turistických trás. Môžete sa prebudiť pri jazere, obedovať s výhľadom na hory a večer zaparkovať pri mori – všetko v jeden deň. Vďaka karavanu sa z každej cesty stáva osobný príbeh plný zážitkov, ktoré by ste v hoteli nikdy nezažili.
+                        </p>
+
+                        <!-- Second Pull Quote -->
+                        <blockquote class="border-l-4 border-blue-500 pl-6 my-8 text-xl italic text-slate-700">
+                            <span data-i18n="caravanning_page.quote_2">"Môžete sa prebudiť pri jazere, obedovať s výhľadom na hory a večer zaparkovať pri mori – všetko v jeden deň."</span>
+                        </blockquote>
+
+                        <p class="mb-6 leading-relaxed" data-i18n="caravanning_page.lifestyle_text">
+                            Napokon, karavanový štýl života podporuje spomalenie a návrat k jednoduchším hodnotám – čas strávený s rodinou, spojenie s prírodou a pocit skutočnej slobody. Je to dobrodružstvo, ktoré vás naučí byť flexibilným, vďačným a otvoreným svetu.
+                        </p>
+
+                        <p class="mb-8 leading-relaxed text-lg font-medium text-slate-800" data-i18n="caravanning_page.closing_text">
+                            Ak ste ešte nikdy necestovali karavanom, možno práve teraz je ten správny čas to vyskúšať. Stačí naštartovať, a cesta sa začína!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-slate-800 text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="caravanning_page.cta_title">Pripravení na dobrodružstvo?</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto" data-i18n="caravanning_page.cta_subtitle">
+                    Prezrite si našu flotilu moderných karavanov a vyberte si ten pravý pre vašu cestu snov.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="rvs.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5" data-i18n="caravanning_page.cta_button">
+                        Pozrite naše karavany
+                    </a>
+                    <a href="contact.html" class="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300" data-i18n="caravanning_page.cta_contact">
+                        Kontaktujte nás
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; <span id="currentYear"></span> Viac Ako Štandard RV Rentals. <span data-i18n="footer.all_rights_reserved">Všetky práva vyhradené.</span></p>
+            <p class="mt-2">
+                <a href="contact.html" class="hover:text-white" data-i18n="nav.contact">Kontaktujte nás</a> |
+                <a href="#" class="hover:text-white mx-2" data-i18n="footer.terms">Terms & Conditions</a> |
+                <a href="#" class="hover:text-white" data-i18n="footer.privacy">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="storage-notice.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

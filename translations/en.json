@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "our_rvs": "Our RVs",
+    "caravanning": "Caravanning",
     "pricing": "Pricing",
     "contact": "Contact"
   },
@@ -58,6 +59,32 @@
   },
   "side_menu": {
     "contact_us": "Contact Us:"
+  },
+  "caravanning_page": {
+    "title": "Caravanning – Freedom on Wheels!",
+    "subtitle": "Discover the unique combination of freedom, comfort and adventure",
+    "benefits_title": "Benefits of Caravan Travel",
+    "intro_text": "Caravan travel has become an increasingly popular way to explore the world in recent years. It offers a unique combination of freedom, comfort and adventure that traditional forms of travel simply cannot provide. Imagine having your home always with you – wherever you park, you are at home.",
+    "benefit_1": "Complete Independence",
+    "benefit_1_desc": "Travel on your own schedule",
+    "benefit_2": "Home Comfort",
+    "benefit_2_desc": "Your own bed and kitchen always with you",
+    "benefit_3": "Cost Savings",
+    "benefit_3_desc": "Save on accommodation and meals",
+    "benefit_4": "Eco-Friendly Travel",
+    "benefit_4_desc": "More environmentally friendly than flying",
+    "independence_text": "One of the greatest advantages of a caravan is complete independence. You don't have to follow hotel or restaurant opening hours, you don't have to book accommodation in advance. You can set off spontaneously, according to your current mood or weather. If you like a place, simply stay longer. If something doesn't appeal to you, continue on – without stress and restrictions.",
+    "quote_1": "Wherever you park, you are at home.",
+    "comfort_text": "A caravan provides comfort that every family will appreciate. You have your own bed, your own bathroom, kitchen, refrigerator and storage space. You don't have to pack and unpack suitcases at every location, everything is always at hand. Children can take their favorite toys, and every family member has their privacy.",
+    "savings_text": "Another great advantage is cost savings. Although the initial costs of renting or buying a caravan may be higher, in the long run you save on accommodation, meals and transportation. You can cook your own meals, sleep in nature or at campsites, and visit more places in less time.",
+    "ecological_text": "Caravan travel is also more ecological than flying and allows you to discover lesser-known places off the tourist trails. You can wake up by a lake, have lunch with a mountain view, and park by the sea in the evening – all in one day. Thanks to the caravan, every trip becomes a personal story full of experiences that you would never have in a hotel.",
+    "quote_2": "You can wake up by a lake, have lunch with a mountain view, and park by the sea in the evening – all in one day.",
+    "lifestyle_text": "Finally, the caravan lifestyle encourages slowing down and returning to simpler values – time spent with family, connection with nature, and a sense of true freedom. It's an adventure that will teach you to be flexible, grateful, and open to the world.",
+    "closing_text": "If you've never traveled by caravan before, perhaps now is the right time to try it. Just start the engine, and the journey begins!",
+    "cta_title": "Ready for Adventure?",
+    "cta_subtitle": "Browse our fleet of modern caravans and choose the right one for your dream journey.",
+    "cta_button": "View Our RVs",
+    "cta_contact": "Contact Us"
   },
   "storage_notice": {
     "message": "This website uses local storage to improve your experience, such as remembering your language preference and visitor status.",
