@@ -1,59 +1,99 @@
 /**
- * Simple i18n implementation for static websites
+ * Alternative i18n implementation that works without server
+ * This version embeds translations directly to avoid CORS issues
  */
 
-class I18nManager {
+class I18nManagerEmbedded {
     constructor() {
-        this.translations = {};
+        // Embedded translations to avoid CORS issues when opening files directly
+        this.translations = {
+            'en': null, // Will be loaded from file if possible
+            'sk': null, // Will be loaded from file if possible  
+            'hu': null  // Will be loaded from file if possible
+        };
+        
+        // Fallback embedded translations (partial, for testing)
+        this.embeddedTranslations = {
+            'hu': {
+                "nav": {
+                    "home": "Főoldal",
+                    "our_rvs": "Ford Siena 395 F",
+                    "caravanning": "Lakókocsizás",
+                    "pricing": "Árlista",
+                    "contact": "Kapcsolat"
+                },
+                "hero": {
+                    "title": "Üdvözöljük a Kenguru Campers-nél!",
+                    "subtitle": "Az Ön partnere az utakon. Béreljen modern és teljesen felszerelt lakókocsit, és éljen át felejthetetlen kalandokat Szlovákiában és egész Európában.",
+                    "cta": "Ford Siena 395 F megtekintése"
+                }
+            },
+            'sk': {
+                "nav": {
+                    "home": "Domov",
+                    "our_rvs": "Ford Siena 395 F",
+                    "caravanning": "Karavánovanie",
+                    "pricing": "Cenník",
+                    "contact": "Kontakt"
+                },
+                "hero": {
+                    "title": "Vitajte v Kenguru Campers!",
+                    "subtitle": "Sme vaším partnerom na cestách. Prenajmite si moderný a plne vybavený karavan a zažite nezabudnuteľné dobrodružstvo na Slovensku a v celej Európe.",
+                    "cta": "Pozrieť Ford Siena 395 F"
+                }
+            },
+            'en': {
+                "nav": {
+                    "home": "Home",
+                    "our_rvs": "Our RVs",
+                    "caravanning": "Caravanning",
+                    "pricing": "Pricing",
+                    "contact": "Contact"
+                },
+                "hero": {
+                    "title": "Welcome to Kenguru Campers!",
+                    "subtitle": "Your partner on the road. Rent a modern and fully equipped RV and experience unforgettable adventures in Slovakia and throughout Europe.",
+                    "cta": "View Ford Siena 395 F"
+                }
+            }
+        };
+        
         this.currentLanguage = null;
         this.defaultLanguage = 'en';
         this.languageChangeCallbacks = [];
     }
 
-    /**
-     * Initialize the i18n system
-     */
     async init() {
-        // Try to get saved language from localStorage
         const savedLanguage = localStorage.getItem('userLanguage');
         
-        // If no saved language, try to detect browser language
         if (!savedLanguage) {
             const browserLang = navigator.language.split('-')[0];
-            
-            // Check if we support this language
             if (this.isLanguageSupported(browserLang)) {
                 this.currentLanguage = browserLang;
             } else {
-                // Fall back to default language
                 this.currentLanguage = this.defaultLanguage;
             }
         } else {
             this.currentLanguage = savedLanguage;
         }
         
-        // Load the current language translations
-        await this.loadLanguage(this.currentLanguage);
+        // Try to load from file first, fall back to embedded if it fails
+        try {
+            await this.loadLanguage(this.currentLanguage);
+        } catch (e) {
+            console.log('Using embedded translations due to CORS restrictions');
+            this.translations[this.currentLanguage] = this.embeddedTranslations[this.currentLanguage];
+        }
         
-        // Apply translations to the page
         this.updatePageTranslations();
-        
-        // Update language selector if it exists
         this.updateLanguageSelector();
-        
         console.log(`Initialized i18n with language: ${this.currentLanguage}`);
     }
     
-    /**
-     * Check if a language is supported
-     */
     isLanguageSupported(lang) {
         return ['en', 'sk', 'hu'].includes(lang);
     }
     
-    /**
-     * Load language translation file
-     */
     async loadLanguage(lang) {
         if (!this.isLanguageSupported(lang)) {
             console.error(`Language ${lang} is not supported`);
@@ -66,81 +106,53 @@ class I18nManager {
                 throw new Error(`Failed to load translation file for ${lang}`);
             }
             this.translations[lang] = await response.json();
-            console.log(`Loaded translations for ${lang}`);
+            console.log(`Loaded translations for ${lang} from file`);
         } catch (error) {
-            console.error(`Error loading translations for ${lang}:`, error);
-            // If we can't load the requested language, try to fall back to default
-            if (lang !== this.defaultLanguage) {
-                console.log(`Falling back to ${this.defaultLanguage}`);
-                await this.loadLanguage(this.defaultLanguage);
-            }
+            console.log(`Could not load ${lang} from file, using embedded translations`);
+            this.translations[lang] = this.embeddedTranslations[lang];
         }
     }
     
-    /**
-     * Change the current language
-     */
     async changeLanguage(lang) {
         if (!this.isLanguageSupported(lang)) {
             console.error(`Language ${lang} is not supported`);
             return;
         }
         
-        // If we don't have this language loaded yet, load it
         if (!this.translations[lang]) {
             await this.loadLanguage(lang);
         }
         
-        // Update current language
         this.currentLanguage = lang;
-        
-        // Save to localStorage
         localStorage.setItem('userLanguage', lang);
-        
-        // Update the page
         this.updatePageTranslations();
-        
-        // Update language selector
         this.updateLanguageSelector();
-        
-        // Call any registered callbacks
         this.languageChangeCallbacks.forEach(callback => callback(lang));
-        
         console.log(`Changed language to: ${lang}`);
     }
     
-    /**
-     * Get a translation by key
-     */
     translate(key) {
-        // Split the key by dots to navigate the nested structure
         const path = key.split('.');
         let translation = this.translations[this.currentLanguage];
         
-        // Navigate through the path
         for (const segment of path) {
             if (translation && translation[segment] !== undefined) {
                 translation = translation[segment];
             } else {
                 console.warn(`Translation key not found: ${key}`);
-                return key; // Return the key if translation not found
+                return key;
             }
         }
         
         return translation;
     }
     
-    /**
-     * Update all elements with data-i18n attribute
-     */
     updatePageTranslations() {
         const elements = document.querySelectorAll('[data-i18n]');
         elements.forEach(element => {
             const key = element.getAttribute('data-i18n');
             const translation = this.translate(key);
             
-            // If the element has a data-i18n-attr attribute, set that attribute
-            // instead of innerText (useful for alt, placeholder, etc.)
             const attr = element.getAttribute('data-i18n-attr');
             if (attr) {
                 element.setAttribute(attr, translation);
@@ -150,26 +162,18 @@ class I18nManager {
         });
     }
     
-    /**
-     * Update the language selector to reflect current language
-     */
     updateLanguageSelector() {
-        // Update desktop selector
         const selector = document.getElementById('language-selector');
         if (selector) {
             selector.value = this.currentLanguage;
         }
         
-        // Update mobile selector
         const mobileSelector = document.getElementById('mobile-language-selector');
         if (mobileSelector) {
             mobileSelector.value = this.currentLanguage;
         }
     }
     
-    /**
-     * Register a callback to be called when language changes
-     */
     onLanguageChange(callback) {
         if (typeof callback === 'function') {
             this.languageChangeCallbacks.push(callback);
@@ -177,15 +181,12 @@ class I18nManager {
     }
 }
 
-// Create global i18n instance
-const i18n = new I18nManager();
+// Use the embedded version
+const i18n = new I18nManagerEmbedded();
 
-// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', async () => {
-    // Initialize i18n
     await i18n.init();
     
-    // Set up language selectors if they exist
     const languageSelector = document.getElementById('language-selector');
     if (languageSelector) {
         languageSelector.addEventListener('change', (event) => {
@@ -193,7 +194,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
     
-    // Set up mobile language selector
     const mobileLanguageSelector = document.getElementById('mobile-language-selector');
     if (mobileLanguageSelector) {
         mobileLanguageSelector.addEventListener('change', (event) => {

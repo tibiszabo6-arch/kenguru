@@ -1,0 +1,313 @@
+{
+  "nav": {
+    "home": "Főoldal",
+    "our_rvs": "Ford Siena 395 F",
+    "caravanning": "Lakókocsizás",
+    "pricing": "Árlista",
+    "contact": "Kapcsolat"
+  },
+  "hero": {
+    "title": "Üdvözöljük a Kenguru Campers-nél!",
+    "subtitle": "Az Ön partnere az utakon. Béreljen modern és teljesen felszerelt lakókocsit, és éljen át felejthetetlen kalandokat Szlovákiában és egész Európában.",
+    "cta": "Ford Siena 395 F megtekintése"
+  },
+  "about_section": {
+    "who_title": "Kik vagyunk?",
+    "who_text": "Családi vállalkozás vagyunk, tapasztalattal a lakókocsis turizmus területén. Célunk, hogy kényelmes, biztonságos és felejthetetlen utazást biztosítsunk Önnek.",
+    "what_title": "Mit kínálunk?",
+    "what_text": "Modern lakókocsi bérlése teljes felszereléssel (az evőeszköztől a napellenzőig)."
+  },
+  "new_caravan_section": {
+    "main_title": "Vadonatúj lakókocsink van az Ön számára!",
+    "main_text": "Örömmel jelentjük, hogy vadonatúj lakókocsink van. Ez a modern és teljesen felszerelt modell maximális kényelmet és biztonságot nyújt az utakon. Használja ki ezt az egyedülálló lehetőséget, és éljen át felejthetetlen kalandokat új lakókocsinkkal.",
+    "feature1_title": "Vadonatúj modell",
+    "feature1_text": "kopás nélkül, modern technológiák.",
+    "feature2_title": "Maximális kényelem és tér",
+    "feature2_text": "ideális családok vagy barátok számára.",
+    "feature3_title": "Megbízhatóság és biztonság",
+    "feature3_text": "utazzon gondok nélkül.",
+    "closing_text": "Luxus lakókocsink ideális családok, párok és mindenki számára, aki függetlenségre és kényelemre vágyik az utakon. Foglalja le még ma, és éljen át tökéletes kalandokat gondok nélkül!"
+  },
+  "features": {
+    "section_title": "Álom családi nyaralás igazi lakókocsival?",
+    "feature1": {
+      "title": "Korlátlan KM",
+      "description": "Utazzon korlátozás nélkül nagylelkű kilométer lehetőségeinkkel."
+    },
+    "feature2": {
+      "title": "Magasabb Színvonal",
+      "description": "Modern, tiszta és jól karbantartott lakókocsik az Ön kényelméért."
+    },
+    "feature3": {
+      "title": "Kiegészítő Felszerelés",
+      "description": "A konyhai készletektől a kerékpártartókig, THULE napellenző, kültéri szőnyeg, kiváló minőségű kemping székek + asztal és még sok más..."
+    },
+    "feature4": {
+      "title": "Az Ön autója nálunk",
+      "description": "Biztonságos parkolás az Ön járműve számára utazása alatt."
+    }
+  },
+  "rv_section": {
+    "title": "Ford Siena 395 F",
+    "view_details": "Részletek megtekintése",
+    "view_all": "Ford Siena 395 F megtekintése"
+  },
+  "testimonials": {
+    "title": "Mit mondanak ügyfeleink"
+  },
+  "cta_section": {
+    "title": "Tervezze meg álmai családi nyaralását.",
+    "subtitle": "Vegye fel velünk a kapcsolatot még ma, és foglalja le lakókocsiját!",
+    "call": "Hívjon:",
+    "email": "Email:",
+    "button": "Lépjen kapcsolatba most"
+  },
+  "footer": {
+    "all_rights_reserved": "Minden jog fenntartva.",
+    "terms": "Általános Szerződési Feltételek",
+    "privacy": "Adatvédelem"
+  },
+  "terms_page": {
+    "title": "Általános Szerződési Feltételek",
+    "subtitle": "Érvényes: 2024. január 1-től",
+    "toc_title": "Tartalom",
+    "back_to_top": "Vissza a tetejére",
+    "last_updated": "Utoljára frissítve",
+    "important": "Fontos",
+    "sections": {
+      "general": {
+        "title": "1. Általános feltételek",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "content2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      "rental": {
+        "title": "2. Bérlési feltételek",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.",
+        "content2": "Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum.",
+        "important": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris."
+      },
+      "payment": {
+        "title": "3. Fizetési feltételek",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.",
+        "content2": "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit."
+      },
+      "deposit": {
+        "title": "4. Biztonsági letét",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat.",
+        "content2": "Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.",
+        "content3": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
+      },
+      "insurance": {
+        "title": "5. Biztosítás és felelősség",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.",
+        "content2": "Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus."
+      },
+      "drivers": {
+        "title": "6. Vezetői követelmények",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Curabitur aliquet quam id dui posuere blandit.",
+        "content2": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat."
+      },
+      "restrictions": {
+        "title": "7. A jármű használatának korlátozásai",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat.",
+        "content2": "Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh."
+      },
+      "cancellation": {
+        "title": "8. Lemondási feltételek",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+        "content2": "Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
+      },
+      "privacy": {
+        "title": "9. Személyes adatok védelme",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+        "content2": "Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.",
+        "content3": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      "disputes": {
+        "title": "10. Vitarendezés",
+        "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat.",
+        "content2": "Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+        "content3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed magna dictum porta."
+      }
+    }
+  },
+  "language": {
+    "en": "Angol",
+    "sk": "Szlovák",
+    "hu": "Magyar"
+  },
+  "language_selector": {
+    "title": "Nyelv:"
+  },
+  "side_menu": {
+    "contact_us": "Lépjen kapcsolatba:"
+  },
+  "caravanning_page": {
+    "title": "Lakókocsizás – Szabadság kerekeken!",
+    "subtitle": "Fedezze fel a szabadság, kényelem és kaland egyedülálló kombinációját",
+    "benefits_title": "A lakókocsival való utazás előnyei",
+    "intro_text": "A lakókocsival való utazás az utóbbi években egyre népszerűbb módja a világ felfedezésének. Egyedülálló kombinációját kínálja a szabadságnak, kényelemnek és kalandnak, amit a hagyományos utazási formák egyszerűen nem tudnak nyújtani. Képzelje el, hogy otthona mindig Önnel van – bárhol parkol, ott van otthon.",
+    "benefit_1": "Teljes függetlenség",
+    "benefit_1_desc": "Utazzon saját terve szerint",
+    "benefit_2": "Otthoni kényelem",
+    "benefit_2_desc": "Saját ágy és konyha mindig Önnel",
+    "benefit_3": "Költségmegtakarítás",
+    "benefit_3_desc": "Takarítson meg a szálláson és étkezésen",
+    "benefit_4": "Környezetbarát utazás",
+    "benefit_4_desc": "Környezetkímélőbb, mint a repülés",
+    "independence_text": "A lakókocsi egyik legnagyobb előnye a teljes függetlenség. Nem kell alkalmazkodnia a szállodák vagy éttermek nyitvatartási idejéhez, nem kell előre foglalnia szállást. Spontán módon indulhat útnak, az aktuális hangulat vagy időjárás szerint. Ha valahol tetszik, egyszerűen tovább marad. Ha valami nem vonzza, folytatja útját – stressz és korlátozások nélkül.",
+    "quote_1": "Bárhol parkol, ott van otthon.",
+    "comfort_text": "A lakókocsi kényelmet biztosít, amit minden család értékel. Saját ágya, saját fürdőszobája, konyhája, hűtőszekrénye és tárolóhelye van. Nem kell ki- és bepakolnia a bőröndöket minden helyen, minden mindig kéznél van. A gyerekek magukkal vihetik kedvenc játékaikat, és minden családtagnak megvan a saját magánszférája.",
+    "savings_text": "Főzhet saját ételeket, aludhat a természetben vagy kempingekben, és több helyet látogathat meg rövidebb idő alatt.",
+    "ecological_text": "A lakókocsival való utazás környezetbarátabb is, mint a repülés, és lehetővé teszi, hogy felfedezze a turistaútvonalakon kívüli, kevésbé ismert helyeket. Felébredhet egy tó mellett, ebédelhet hegyi kilátással, és este a tenger mellett parkolhat – mindezt egyetlen nap alatt. A lakókocsival minden utazásból személyes történet lesz, tele olyan élményekkel, amelyeket szállodában soha nem élne át.",
+    "quote_2": "Felébredhet egy tó mellett, ebédelhet hegyi kilátással, és este a tenger mellett parkolhat – mindezt egyetlen nap alatt.",
+    "lifestyle_text": "Végül, a lakókocsis életstílus támogatja a lassítást és a visszatérést az egyszerűbb értékekhez – a családdal töltött idő, a természettel való kapcsolat és a valódi szabadság érzése. Ez egy kaland, amely megtanítja rugalmasnak, hálásnak és nyitottnak lenni a világ felé.",
+    "closing_text": "Ha még soha nem utazott lakókocsival, talán most van itt az ideje, hogy kipróbálja. Csak indítsa be a motort, és kezdődik az utazás!",
+    "cta_title": "Készen áll a kalandra?",
+    "cta_subtitle": "Tekintse meg modern lakókocsink, és válassza ki az időpontot álmai utazásához.",
+    "cta_button": "Ford Siena 395 F megtekintése",
+    "cta_contact": "Lépjen kapcsolatba"
+  },
+  "storage_notice": {
+    "message": "Ez a weboldal helyi tárolót használ az Ön élményének javítására, például a nyelv és a látogatói státusz megjegyzésére.",
+    "accept": "Elfogadom"
+  },
+  "rvs_page": {
+    "title": "Ford Siena 395 F",
+    "subtitle": "Tekintse meg modern és kényelmes lakókocsink. Kérjük, lépjen kapcsolatba velünk a kívánt időpontok elérhetőségének megerősítéséhez.",
+    "sleeps": "Férőhelyek",
+    "view_details_specs": "Részletek és Specifikációk megtekintése",
+    "automatic": "Automata",
+    "manual": "Manuális",
+    "pet_friendly": "Háziállat-barát",
+    "economical": "Gazdaságos",
+    "premium_features": "Prémium Funkciók",
+    "bike_rack": "Kerékpártartó"
+  },
+  "pricing_page": {
+    "title": "Árlista",
+    "subtitle": "Árlista - Kenguru Campers",
+    "seasonal_rates": "Szezonális díjak",
+    "season_summer": "Május – Szeptember",
+    "season_winter": "Október – Április",
+    "per_day": "€ / nap",
+    "deposit_title": "Kaució (visszatérítendő letét):",
+    "deposit_amount": "1500 €",
+    "price_includes": "Az ár tartalmazza:",
+    "unlimited_km": "Korlátlan kilométer",
+    "full_insurance": "Teljes körű casco biztosítás",
+    "fully_equipped": "Teljesen felszerelt lakókocsi (konyha, fürdőszoba, ágynemű)",
+    "support_24_7": "24/7 támogatás az Ön utazása alatt",
+    "reservation_conditions": "Foglalási feltételek:",
+    "min_rental": "Minimális bérlési időtartam: 4 nap",
+    "deposit_return": "A kaució a lakókocsi sértetlen állapotban történő visszaadását követő 5 munkanapon belül kerül visszatérítésre.",
+    "rv_type": "Lakókocsi Típus",
+    "low_season": "Alacsony Szezon (Okt - Ápr)",
+    "mid_season": "Közepes Szezon (Máj, Jún, Szept)",
+    "high_season": "Főszezon (Júl - Aug)",
+    "pricing_note": "Heti vagy hosszú távú bérlésnél kedvezmények érvényesek. A főszezonban minimális bérlési idő alkalmazható. Minden ár tájékoztató jellegű és változhat. Kérjük, lépjen kapcsolatba velünk pontos árajánlatért.",
+    "whats_included": "Mit tartalmaz",
+    "optional_addons": "Választható kiegészítők",
+    "addons_note": "A kiegészítők elérhetőség függvényében állnak rendelkezésre. Kérjük, foglalásnál jelezze igényét.",
+    "important_info": "Fontos információk",
+    "security_deposit": "Biztonsági letét",
+    "driver_requirements": "Vezetői követelmények",
+    "insurance": "Biztosítás",
+    "fuel_policy": "Üzemanyag szabályzat",
+    "cleaning": "Tisztítás",
+    "smoking_policy": "Dohányzási tilalom",
+    "travel_restrictions": "Utazási korlátozások",
+    "terms_note": "Foglalás előtt kérjük, olvassa el teljes Általános Szerződési Feltételeinket."
+  },
+  "contact_page": {
+    "title": "KAPCSOLAT",
+    "subtitle": "Kapcsolat - Kenguru Campers",
+    "get_in_touch": "Elérhetőségek",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "ceo": "Ügyvezető",
+    "address": "Cím",
+    "features_title": "Miért lépjen kapcsolatba velünk?",
+    "feature1_title": "Tanácsadás és tippek",
+    "feature1_desc": "Segítünk a kempingek kiválasztásában és foglalásában.",
+    "feature2_title": "Nyelvi támogatás",
+    "feature2_desc": "Beszélünk angolul és németül, így nem kell félnie a nyelvi akadályoktól.",
+    "feature3_title": "Gondtalan utazás",
+    "feature3_desc": "Értékes tanácsokat kap a problémamentes európai utazáshoz.",
+    "closing_message": "Bízza ránk, hogy segítsünk utazási álmait valóra váltani!",
+    "final_cta": "Ne habozzon kapcsolatba lépni velünk bármilyen kérdéssel vagy foglalással. Itt vagyunk Önnek!",
+    "availability": "Elérhetőség",
+    "send_message": "Küldjön üzenetet",
+    "name": "Név",
+    "email_address": "Email cím",
+    "phone_number": "Telefonszám (Opcionális)",
+    "subject": "Tárgy",
+    "message": "Üzenet",
+    "message_placeholder": "Kérjük, adja meg a kívánt bérlési dátumokat, az utasok számát és a preferált lakókocsit, ha ismeri...",
+    "send_inquiry": "Érdeklődés küldése"
+  },
+  "rv_detail": {
+    "key_details": "Főbb részletek",
+    "sleeps": "Férőhelyek",
+    "transmission": "Váltó",
+    "length": "Hossz",
+    "pet_friendly": "Háziállat-barát",
+    "fuel_type": "Üzemanyag típus",
+    "pricing": "Árazás",
+    "from": "Kezdő ár",
+    "night": "/ éjszaka (szezonon kívül)",
+    "rates_vary": "Az árak szezon szerint változnak. Tekintse meg a teljes árlistát.",
+    "availability": "Elérhetőség",
+    "availability_note": "A kívánt időpont elérhetőségének ellenőrzéséhez kérjük, lépjen kapcsolatba velünk.",
+    "inquire": "Érdeklődés",
+    "description": "Leírás",
+    "features": "Funkciók és Felszerelés"
+  },
+  "rv_detail_content": {
+    "page_title": "Lakókocsi Paraméterek",
+    "main_title": "Luxus lakókocsi – Tökéletes választás felejthetetlen kalandokhoz",
+    "intro_text": "Tökéletes módot keres arra, hogy kompromisszumok nélkül élje át a szabadságot az utakon? Bemutatjuk luxus lakókocsink, amely a legmodernebb technológiákkal van felszerelve, és mindent kínál, amire szüksége van a kényelmes és biztonságos utazáshoz.",
+    "driving_features": {
+      "title": "Erőteljes és kényelmes vezetési tulajdonságok:",
+      "feature1": "165 LE teljesítményű motor és 8 fokozatú automata váltó a sima és dinamikus vezetésért.",
+      "feature2": "Elektromos rögzítőfék az egyszerű parkoláshoz.",
+      "feature3": "Adaptív tempomat, amely biztonságos távolságot tart a többi járműtől.",
+      "feature4": "Automatikus fülke klíma és automatikus felépítmény klíma DOMETIC FJX4 2200, maximális kényelemért a forró napokon."
+    },
+    "external_equipment": {
+      "title": "Külső felszerelés:",
+      "feature1": "4,5 méteres THULE napellenző, amely kellemes árnyékot biztosít.",
+      "feature2": "FIAMMA Black kerékpártartó 4 kerékpárhoz, 60 kg teherbírással.",
+      "feature3": "Tolatókamera 12'' multimédiás rendszerrel, Apple CarPlay és Android Auto támogatással."
+    },
+    "interior_comfort": {
+      "title": "Kényelmes és tágas belső tér:",
+      "feature1": "Elülső elektromos ágy 2 személy részére (126x196 cm).",
+      "feature2": "Hátsó XXL ágy 2-3 személy részére (220x200 cm).",
+      "feature3": "Ülésből kihúzható ágy (103x206 cm).",
+      "feature4": "Elektromos ablakok és tükrök az egyszerű kezelésért.",
+      "feature5": "24'' LED SMART TV Android rendszerrel és WiFi kapcsolattal."
+    },
+    "energy_independence": {
+      "title": "Energetikai függetlenség és fenntarthatóság:",
+      "feature1": "LIFePO4 100Ah akkumulátor és 400W napelem rendszer MPPT szabályozóval.",
+      "feature2": "Indító akkumulátor töltése közvetlenül a napelem rendszerről.",
+      "feature3": "TRUMA COMBI gázfűtés integrált bojlerrel és CP Plus panellal.",
+      "feature4": "WINTER csomag szennyvíztartály fűtéssel és keret szigetelt ablakokkal."
+    },
+    "practical_equipment": {
+      "title": "Praktikus felszerelés:",
+      "feature1": "Tisztavíz tartály: 100l/20l maximális autonómiáért.",
+      "feature2": "Nagy hűtőszekrény 160l űrtartalommal.",
+      "feature3": "DOMETIC fülke ablak rolók teljes magánszféráért.",
+      "feature4": "XL bejárati ajtó ablakkal és szemetessel.",
+      "feature5": "LED napellenző világítás kellemes esti kiüléshez.",
+      "feature6": "Booster 40A hatékony töltéshez.",
+      "feature7": "Stílusos fekete ALU felnik."
+    },
+    "complete_equipment": {
+      "title": "Teljes felszerelés az Ön kényelméért:",
+      "text": "Lakókocsink teljesen fel van szerelve mindennel, amire szüksége van a kényelmes tartózkodáshoz – tányérok, evőeszközök, minden konyhai eszköz főzéshez, szerszámok, kültéri asztal székekkel. Mi átadjuk Önnek a kulcsokat, és Ön határozza meg az irányt. Semmit sem kell magával hoznia, csak beszállni és élvezni az utat."
+    }
+  }
+}

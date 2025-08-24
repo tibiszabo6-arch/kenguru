@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test i18n</title>
+    <script src="i18n.js"></script>
+</head>
+<body>
+    <h1>i18n Test Page</h1>
+    <p>If you see the translation below, i18n is working:</p>
+    <p data-i18n="nav.home">nav.home</p>
+    <p data-i18n="hero.title">hero.title</p>
+    
+    <div id="debug-info">
+        <h2>Debug Information:</h2>
+        <p>Current Language: <span id="current-lang">checking...</span></p>
+        <p>Translation Status: <span id="status">checking...</span></p>
+    </div>
+
+    <script>
+        // Debug script to check what's happening
+        document.addEventListener('DOMContentLoaded', async () => {
+            const debugLang = document.getElementById('current-lang');
+            const debugStatus = document.getElementById('status');
+            
+            // Check if i18n is loaded
+            if (typeof i18n !== 'undefined') {
+                debugStatus.textContent = 'i18n object exists';
+                
+                // Wait a bit for i18n to initialize
+                setTimeout(() => {
+                    if (i18n.currentLanguage) {
+                        debugLang.textContent = i18n.currentLanguage;
+                        
+                        // Try to manually translate
+                        try {
+                            const homeTranslation = i18n.translate('nav.home');
+                            debugStatus.textContent = `Translation for nav.home: ${homeTranslation}`;
+                        } catch (e) {
+                            debugStatus.textContent = `Error: ${e.message}`;
+                        }
+                    } else {
+                        debugLang.textContent = 'Not set';
+                    }
+                }, 1000);
+            } else {
+                debugStatus.textContent = 'i18n object not found';
+            }
+            
+            // Check for console errors
+            window.addEventListener('error', (e) => {
+                debugStatus.textContent = `Error: ${e.message}`;
+            });
+        });
+    </script>
+</body>
+</html>
