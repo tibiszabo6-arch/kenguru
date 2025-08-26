@@ -1,484 +1,1128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Conditions - Kenguru Campers | Viac Ako Štandard RV Rentals</title>
-    <meta name="description" content="Read our terms and conditions for RV rental services. Clear policies on payments, deposits, insurance, and usage restrictions.">
-    <meta name="robots" content="index, follow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Terms & Conditions - Kenguru Campers | Viac Ako Štandard RV Rentals
+    </title>
+    <meta
+      name="description"
+      content="Read our terms and conditions for RV rental services. Clear policies on payments, deposits, insurance, and usage restrictions."
+    />
+    <meta name="robots" content="index, follow" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script src="i18n.js"></script>
     <style>
-        /* Custom styles for Terms page */
-        body { 
-            display: flex; 
-            flex-direction: column; 
-            min-height: 100vh; 
+      /* Custom styles for Terms page */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex-grow: 1;
+      }
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Active TOC link */
+      .toc-active {
+        color: #3b82f6;
+        border-left: 3px solid #3b82f6;
+        padding-left: 0.75rem;
+      }
+      /* Print styles */
+      @media print {
+        header,
+        footer,
+        aside,
+        #back-to-top,
+        #mobile-toc {
+          display: none !important;
         }
-        main { 
-            flex-grow: 1; 
+        main {
+          max-width: 100% !important;
         }
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
+        .section {
+          page-break-inside: avoid;
         }
-        /* Active TOC link */
-        .toc-active {
-            color: #3b82f6;
-            border-left: 3px solid #3b82f6;
-            padding-left: 0.75rem;
-        }
-        /* Print styles */
-        @media print {
-            header, footer, aside, #back-to-top, #mobile-toc {
-                display: none !important;
-            }
-            main {
-                max-width: 100% !important;
-            }
-            .section {
-                page-break-inside: avoid;
-            }
-        }
+      }
     </style>
-</head>
-<body class="bg-gray-100 font-sans">
-    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div
+      id="menu-overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"
+    ></div>
 
-    <div id="side-menu" class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
-        <div class="p-4 flex justify-between items-center border-b border-slate-700">
-            <h2 class="text-xl font-bold">Menu</h2>
-            <button id="close-menu-button" class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Close menu">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
+    <div
+      id="side-menu"
+      class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto"
+    >
+      <div
+        class="p-4 flex justify-between items-center border-b border-slate-700"
+      >
+        <h2 class="text-xl font-bold">Menu</h2>
+        <button
+          id="close-menu-button"
+          class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-label="Close menu"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav class="p-4">
+        <ul class="space-y-4">
+          <li>
+            <a
+              href="index.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="rv-detail-example.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.our_rvs"
+              >Our RVs</a
+            >
+          </li>
+          <li>
+            <a
+              href="karavanovanie.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.caravanning"
+              >Karavánovanie</a
+            >
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.pricing"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="mt-4 border-t border-slate-700 pt-4">
+          <label
+            for="mobile-language-selector"
+            class="block text-sm text-gray-400 mb-2"
+            data-i18n="language_selector.title"
+            >Language:</label
+          >
+          <select
+            id="mobile-language-selector"
+            class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option value="en" data-i18n="language.en">English</option>
+            <option value="sk" data-i18n="language.sk">Slovak</option>
+            <option value="hu" data-i18n="language.hu">Hungarian</option>
+          </select>
         </div>
-        <nav class="p-4">
-            <ul class="space-y-4">
-                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.home">Home</a></li>
-                <li><a href="rv-detail-example.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.our_rvs">Our RVs</a></li>
-                <li><a href="karavanovanie.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.caravanning">Karavánovanie</a></li>
-                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.pricing">Pricing</a></li>
-                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.contact">Contact</a></li>
-            </ul>
-            <div class="mt-4 border-t border-slate-700 pt-4">
-                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2" data-i18n="language_selector.title">Language:</label>
-                <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <option value="en" data-i18n="language.en">English</option>
-                    <option value="sk" data-i18n="language.sk">Slovak</option>
-                    <option value="hu" data-i18n="language.hu">Hungarian</option>
-                </select>
-            </div>
-            <div class="mt-8 pt-6 border-t border-slate-700">
-                <p class="text-sm text-gray-400 mb-2" data-i18n="side_menu.contact_us">Contact Us:</p>
-                <p class="text-sm text-gray-300 mb-1">
-                    <i class="fas fa-phone fa-fw mr-2"></i> +421 907 26 26 71
-                </p>
-                <p class="text-sm text-gray-300">
-                    <i class="fas fa-envelope fa-fw mr-2"></i> kenguru.campers@gmail.com
-                </p>
-            </div>
-        </nav>
+        <div class="mt-8 pt-6 border-t border-slate-700">
+          <p
+            class="text-sm text-gray-400 mb-2"
+            data-i18n="side_menu.contact_us"
+          >
+            Contact Us:
+          </p>
+          <p class="text-sm text-gray-300 mb-1">
+            <i class="fas fa-phone fa-fw mr-2"></i> +421 907 26 26 71
+          </p>
+          <p class="text-sm text-gray-300">
+            <i class="fas fa-envelope fa-fw mr-2"></i> kenguru.campers@gmail.com
+          </p>
+        </div>
+      </nav>
     </div>
 
     <header class="bg-slate-800 text-white sticky top-0 z-30 shadow-md">
-        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
-            <div class="flex items-center">
-                <button id="mobile-menu-button" class="p-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Toggle menu" aria-expanded="false">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
-                <a href="index.html" class="flex items-center space-x-2">
-                    <img src="logo.jpg" alt="Viac Ako Štandard Logo" class="h-20 rounded" onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';">
-                </a>
-            </div>
-
-            <nav class="hidden md:flex md:items-center">
-                <ul class="flex flex-row space-x-4 text-sm font-medium">
-                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.home">Home</a></li>
-                    <li><a href="rv-detail-example.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.our_rvs">Our RVs</a></li>
-                    <li><a href="karavanovanie.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.caravanning">Karavánovanie</a></li>
-                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.pricing">Pricing</a></li>
-                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.contact">Contact</a></li>
-                </ul>
-                <div class="ml-6 relative text-gray-300">
-                    <select id="language-selector" class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <option value="en" data-i18n="language.en">English</option>
-                        <option value="sk" data-i18n="language.sk">Slovak</option>
-                        <option value="hu" data-i18n="language.hu">Hungarian</option>
-                    </select>
-                </div>
-            </nav>
+      <div
+        class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center"
+      >
+        <div class="flex items-center">
+          <button
+            id="mobile-menu-button"
+            class="p-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+          <a href="index.html" class="flex items-center space-x-2">
+            <img
+              src="logo.jpg"
+              alt="Viac Ako Štandard Logo"
+              class="h-20 rounded"
+              onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';"
+            />
+          </a>
         </div>
+
+        <nav class="hidden md:flex md:items-center">
+          <ul class="flex flex-row space-x-4 text-sm font-medium">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="rv-detail-example.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.our_rvs"
+                >Our RVs</a
+              >
+            </li>
+            <li>
+              <a
+                href="karavanovanie.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.caravanning"
+                >Karavánovanie</a
+              >
+            </li>
+            <li>
+              <a
+                href="pricing.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.pricing"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="ml-6 relative text-gray-300">
+            <select
+              id="language-selector"
+              class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="en" data-i18n="language.en">English</option>
+              <option value="sk" data-i18n="language.sk">Slovak</option>
+              <option value="hu" data-i18n="language.hu">Hungarian</option>
+            </select>
+          </div>
+        </nav>
+      </div>
     </header>
-
     <main>
-        <!-- Hero Section -->
-        <section class="bg-slate-800 text-white py-12">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-3xl md:text-4xl font-bold mb-2" data-i18n="terms_page.title">Terms & Conditions</h1>
-                <p class="text-gray-300" data-i18n="terms_page.subtitle">Effective Date: January 1, 2024</p>
-            </div>
-        </section>
-
-        <!-- Main Content -->
-        <section class="py-12 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-6xl mx-auto">
-                    <!-- Last Updated Notice -->
-                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
-                        <p class="text-sm text-blue-800">
-                            <span data-i18n="terms_page.last_updated">Last Updated</span>: January 1, 2024
-                        </p>
-                    </div>
-
-                    <!-- Mobile TOC -->
-                    <details id="mobile-toc" class="lg:hidden mb-8 bg-gray-50 rounded-lg p-4">
-                        <summary class="font-semibold cursor-pointer text-slate-800" data-i18n="terms_page.toc_title">
-                            Table of Contents
-                        </summary>
-                        <nav class="mt-4 space-y-2">
-                            <a href="#general" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.general.title">1. General Terms</a>
-                            <a href="#rental" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.rental.title">2. Rental Agreement</a>
-                            <a href="#payment" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.payment.title">3. Payment Terms</a>
-                            <a href="#deposit" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.deposit.title">4. Security Deposit</a>
-                            <a href="#insurance" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.insurance.title">5. Insurance & Liability</a>
-                            <a href="#drivers" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.drivers.title">6. Driver Requirements</a>
-                            <a href="#restrictions" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.restrictions.title">7. Vehicle Use Restrictions</a>
-                            <a href="#cancellation" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.cancellation.title">8. Cancellation Policy</a>
-                            <a href="#privacy" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.privacy.title">9. Privacy & Data Protection</a>
-                            <a href="#disputes" class="block py-1 text-sm text-gray-700 hover:text-blue-600" data-i18n="terms_page.sections.disputes.title">10. Dispute Resolution</a>
-                        </nav>
-                    </details>
-
-                    <!-- Desktop Layout -->
-                    <div class="lg:flex lg:gap-8">
-                        <!-- Desktop Sidebar TOC -->
-                        <aside class="hidden lg:block lg:w-1/4">
-                            <div class="sticky top-24 bg-white rounded-lg shadow p-6">
-                                <h3 class="font-bold text-lg mb-4 text-slate-800" data-i18n="terms_page.toc_title">Table of Contents</h3>
-                                <nav class="space-y-2">
-                                    <a href="#general" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.general.title">1. General Terms</a>
-                                    <a href="#rental" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.rental.title">2. Rental Agreement</a>
-                                    <a href="#payment" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.payment.title">3. Payment Terms</a>
-                                    <a href="#deposit" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.deposit.title">4. Security Deposit</a>
-                                    <a href="#insurance" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.insurance.title">5. Insurance & Liability</a>
-                                    <a href="#drivers" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.drivers.title">6. Driver Requirements</a>
-                                    <a href="#restrictions" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.restrictions.title">7. Vehicle Use Restrictions</a>
-                                    <a href="#cancellation" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.cancellation.title">8. Cancellation Policy</a>
-                                    <a href="#privacy" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.privacy.title">9. Privacy & Data Protection</a>
-                                    <a href="#disputes" class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600" data-i18n="terms_page.sections.disputes.title">10. Dispute Resolution</a>
-                                </nav>
-                            </div>
-                        </aside>
-
-                        <!-- Main Content Area -->
-                        <div class="lg:w-3/4">
-                            <!-- Section 1: General Terms -->
-                            <section id="general" class="section border-b border-gray-200 pb-8 mb-8">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.general.title">1. General Terms</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.general.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.general.content2">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                                <dl class="space-y-4 mb-6">
-                                    <div>
-                                        <dt class="font-semibold text-slate-700">Lorem Ipsum:</dt>
-                                        <dd class="ml-4 text-gray-700">Dolor sit amet, consectetur adipiscing elit sed do eiusmod.</dd>
-                                    </div>
-                                    <div>
-                                        <dt class="font-semibold text-slate-700">Consectetur Adipiscing:</dt>
-                                        <dd class="ml-4 text-gray-700">Tempor incididunt ut labore et dolore magna aliqua.</dd>
-                                    </div>
-                                </dl>
-                            </section>
-
-                            <!-- Section 2: Rental Agreement -->
-                            <section id="rental" class="section border-b border-gray-200 pb-8 mb-8">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.rental.title">2. Rental Agreement</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.rental.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
-                                </p>
-                                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
-                                    <p class="font-semibold text-yellow-800 mb-2" data-i18n="terms_page.important">Important:</p>
-                                    <p class="text-yellow-700" data-i18n="terms_page.sections.rental.important">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.
-                                    </p>
-                                </div>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.rental.content2">
-                                    Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum.
-                                </p>
-                                <ul class="list-disc list-inside space-y-2 mb-6 text-gray-700">
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                                    <li>Sed do eiusmod tempor incididunt ut labore</li>
-                                    <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
-                                    <li>Duis aute irure dolor in reprehenderit in voluptate</li>
-                                </ul>
-                            </section>
-
-                            <!-- Section 3: Payment Terms -->
-                            <section id="payment" class="section border-b border-gray-200 pb-8 mb-8">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.payment.title">3. Payment Terms</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.payment.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-                                </p>
-                                <h3 class="text-xl font-semibold text-slate-700 mb-3">Payment Methods</h3>
-                                <ol class="list-decimal list-inside space-y-2 mb-6 text-gray-700">
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Consectetur adipiscing elit</li>
-                                    <li>Sed do eiusmod tempor incididunt</li>
-                                    <li>Ut labore et dolore magna aliqua</li>
-                                </ol>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.payment.content2">
-                                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.
-                                </p>
-                            </section>
-
-                            <!-- Section 4: Security Deposit -->
-                            <section id="deposit" class="section border-b border-gray-200 pb-8 mb-8">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.deposit.title">4. Security Deposit</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.deposit.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat.
-                                </p>
-                                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
-                                    <p class="font-semibold text-blue-800 mb-2">Note:</p>
-                                    <p class="text-blue-700">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                    </p>
-                                </div>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.deposit.content2">
-                                    Sed porttitor lectus nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Curabitur aliquet quam id dui posuere blandit.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.deposit.content3">
-                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-                                </p>
-                            </section>
-
-                            <!-- Section 5: Insurance & Liability -->
-                            <section id="insurance" class="section border-b border-gray-200 pb-8 mb-8">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.insurance.title">5. Insurance & Liability</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.insurance.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-                                </p>
-                                <h3 class="text-xl font-semibold text-slate-700 mb-3">Coverage Includes:</h3>
-                                <ul class="list-disc list-inside space-y-2 mb-6 text-gray-700">
-                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                                    <li>Pellentesque in ipsum id orci porta dapibus</li>
-                                    <li>Proin eget tortor risus vivamus suscipit</li>
-                                    <li>Curabitur aliquet quam id dui posuere blandit</li>
-                                    <li>Vestibulum ante ipsum primis in faucibus</li>
-                                </ul>
-                                <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
-                                    <p class="font-semibold text-red-800 mb-2">Warning:</p>
-                                    <p class="text-red-700">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.
-                                    </p>
-                                </div>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.insurance.content2">
-                                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus.
-                                </p>
-                            </section>
-
-                            <!-- Section 6: Driver Requirements -->
-                            <section id="drivers" class="section border-b border-gray-200 pb-8 mb-8">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.drivers.title">6. Driver Requirements</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.drivers.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Curabitur aliquet quam id dui posuere blandit.
-                                </p>
-                                <h3 class="text-xl font-semibold text-slate-700 mb-3">Minimum Requirements:</h3>
-                                <ul class="list-disc list-inside space-y-2 mb-6 text-gray-700">
-                                    <li>Lorem ipsum dolor sit amet, minimum age 25 years</li>
-                                    <li>Consectetur adipiscing elit, valid driver's license</li>
-                                    <li>Sed do eiusmod tempor incididunt, 3 years experience</li>
-                                    <li>Ut labore et dolore magna aliqua, clean driving record</li>
-                                    <li>Quis nostrud exercitation ullamco laboris</li>
-                                    <li>Duis aute irure dolor in reprehenderit</li>
-                                </ul>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.drivers.content2">
-                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat.
-                                </p>
-                            </section>
-
-                            <!-- Section 7: Vehicle Use Restrictions -->
-                            <section id="restrictions" class="section border-b border-gray-200 pb-8 mb-8">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.restrictions.title">7. Vehicle Use Restrictions</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.restrictions.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat.
-                                </p>
-                                <h3 class="text-xl font-semibold text-slate-700 mb-3">Prohibited Uses:</h3>
-                                <ul class="list-disc list-inside space-y-2 mb-6 text-gray-700">
-                                    <li>Lorem ipsum dolor sit amet consectetur</li>
-                                    <li>Sed do eiusmod tempor incididunt ut labore</li>
-                                    <li>Ut enim ad minim veniam, quis nostrud</li>
-                                    <li>Excepteur sint occaecat cupidatat non proident</li>
-                                </ul>
-                                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
-                                    <p class="font-semibold text-yellow-800 mb-2">Smoking Policy:</p>
-                                    <p class="text-yellow-700">
-                                        Lorem ipsum dolor sit amet. Smoking is strictly prohibited in all vehicles. Additional cleaning fee of €500 applies.
-                                    </p>
-                                </div>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.restrictions.content2">
-                                    Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.
-                                </p>
-                            </section>
-
-                            <!-- Section 8: Cancellation Policy -->
-                            <section id="cancellation" class="section border-b border-gray-200 pb-8 mb-8">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.cancellation.title">8. Cancellation Policy</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.cancellation.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-                                </p>
-                                <h3 class="text-xl font-semibold text-slate-700 mb-3">Refund Schedule:</h3>
-                                <div class="overflow-x-auto mb-6">
-                                    <table class="min-w-full border border-gray-200">
-                                        <thead class="bg-gray-50">
-                                            <tr>
-                                                <th class="border border-gray-200 p-3 text-left text-sm font-semibold text-gray-700">Cancellation Period</th>
-                                                <th class="border border-gray-200 p-3 text-left text-sm font-semibold text-gray-700">Refund Amount</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="border border-gray-200 p-3 text-gray-700">30+ days before rental</td>
-                                                <td class="border border-gray-200 p-3 text-gray-700">100% refund</td>
-                                            </tr>
-                                            <tr class="bg-gray-50">
-                                                <td class="border border-gray-200 p-3 text-gray-700">14-29 days before rental</td>
-                                                <td class="border border-gray-200 p-3 text-gray-700">75% refund</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-200 p-3 text-gray-700">7-13 days before rental</td>
-                                                <td class="border border-gray-200 p-3 text-gray-700">50% refund</td>
-                                            </tr>
-                                            <tr class="bg-gray-50">
-                                                <td class="border border-gray-200 p-3 text-gray-700">3-6 days before rental</td>
-                                                <td class="border border-gray-200 p-3 text-gray-700">25% refund</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-200 p-3 text-gray-700">Less than 3 days</td>
-                                                <td class="border border-gray-200 p-3 text-gray-700">No refund</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.cancellation.content2">
-                                    Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                                </p>
-                            </section>
-
-                            <!-- Section 9: Privacy & Data Protection -->
-                            <section id="privacy" class="section border-b border-gray-200 pb-8 mb-8">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.privacy.title">9. Privacy & Data Protection</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.privacy.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.privacy.content2">
-                                    Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
-                                </p>
-                                <h3 class="text-xl font-semibold text-slate-700 mb-3">Data We Collect:</h3>
-                                <ul class="list-disc list-inside space-y-2 mb-6 text-gray-700">
-                                    <li>Lorem ipsum dolor sit amet</li>
-                                    <li>Consectetur adipiscing elit</li>
-                                    <li>Sed do eiusmod tempor incididunt</li>
-                                </ul>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.privacy.content3">
-                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </section>
-
-                            <!-- Section 10: Dispute Resolution -->
-                            <section id="disputes" class="section">
-                                <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="terms_page.sections.disputes.title">10. Dispute Resolution</h2>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.disputes.content1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada feugiat.
-                                </p>
-                                <p class="text-gray-700 leading-relaxed mb-4" data-i18n="terms_page.sections.disputes.content2">
-                                    Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                                </p>
-                                <div class="bg-gray-50 border-l-4 border-gray-400 p-4 mb-6">
-                                    <p class="font-semibold text-gray-800 mb-2">Contact Information:</p>
-                                    <p class="text-gray-700">
-                                        Kenguru Campers<br>
-                                        Phone: +421 907 26 26 71<br>
-                                        Email: kenguru.campers@gmail.com<br>
-                                        Address: Lorem ipsum dolor sit amet, Slovakia
-                                    </p>
-                                </div>
-                                <p class="text-gray-700 leading-relaxed" data-i18n="terms_page.sections.disputes.content3">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed magna dictum porta.
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Back to Top Button -->
-        <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 hidden">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-    </main>
-
-    <footer class="bg-slate-800 text-gray-400 py-8">
-        <div class="container mx-auto px-4 text-center text-sm">
-            <p>&copy; <span id="currentYear"></span> Viac Ako Štandard RV Rentals. <span data-i18n="footer.all_rights_reserved">Všetky práva vyhradené.</span></p>
-            <p class="mt-2">
-                <a href="contact.html" class="hover:text-white" data-i18n="nav.contact">Kontaktujte nás</a> |
-                <a href="terms.html" class="hover:text-white mx-2" data-i18n="footer.terms">Terms & Conditions</a> |
-                <a href="#" class="hover:text-white" data-i18n="footer.privacy">Privacy Policy</a>
-            </p>
+      <!-- Hero Section -->
+      <section class="bg-slate-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+          <h1 class="text-3xl md:text-4xl font-bold mb-2">
+            VŠEOBECNÉ OBCHODNÉ PODMIENKY
+          </h1>
+          <p class="text-gray-300">Kenguru Campers, s. r. o.</p>
         </div>
-    </footer>
+      </section>
 
-    <script src="script.js"></script>
-    <script src="storage-notice.js"></script>
-    <script>
-        // Set current year in footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
+      <!-- Main Content -->
+      <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="max-w-6xl mx-auto">
+            <!-- Company Info Notice -->
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
+              <p class="text-sm text-blue-800">
+                <strong>Kenguru Campers, s. r. o.</strong><br />
+                Orechová 1749/43, 941 10 Tvrdošovce<br />
+                IČO: 56 950 667<br />
+                Zapísané v Obchodnom registri Okresného súdu Nitra, odd. Sro,
+                vl.č. 66193/N
+              </p>
+            </div>
 
-        // Back to Top Button
-        const backToTopButton = document.getElementById('back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('hidden');
-            } else {
-                backToTopButton.classList.add('hidden');
-            }
-        });
+            <!-- Mobile TOC -->
+            <details
+              id="mobile-toc"
+              class="lg:hidden mb-8 bg-gray-50 rounded-lg p-4"
+            >
+              <summary class="font-semibold cursor-pointer text-slate-800">
+                Obsah
+              </summary>
+              <nav class="mt-4 space-y-2">
+                <a
+                  href="#uvod"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >I. ÚVODNÉ USTANOVENIA</a
+                >
+                <a
+                  href="#prenajimatel"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >II. PRÁVA A POVINNOSTI PRENAJÍMATEĽA</a
+                >
+                <a
+                  href="#najomca"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >III. PRÁVA A POVINNOSTI NÁJOMCU</a
+                >
+                <a
+                  href="#platby"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >IV. PLATOBNÉ PODMIENKY</a
+                >
+                <a
+                  href="#vozidlo"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >V. PREVZATIE A VRÁTENIE VOZIDLA</a
+                >
+                <a
+                  href="#storno"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >VI. STORNO PODMIENKY</a
+                >
+                <a
+                  href="#ochrana"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >VII. OCHRANA OSOBNÝCH ÚDAJOV</a
+                >
+                <a
+                  href="#dialka"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >VIII. ZMLUVA NA DIAĽKU</a
+                >
+                <a
+                  href="#pravo"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >IX. ROZHODNÉ PRÁVO</a
+                >
+                <a
+                  href="#zaver"
+                  class="block py-1 text-sm text-gray-700 hover:text-blue-600"
+                  >X. ZÁVEREČNÉ USTANOVENIA</a
+                >
+              </nav>
+            </details>
 
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+            <!-- Desktop Layout -->
+            <div class="lg:flex lg:gap-8">
+              <!-- Desktop Sidebar TOC -->
+              <aside class="hidden lg:block lg:w-1/4">
+                <div class="sticky top-24 bg-white rounded-lg shadow p-6">
+                  <h3 class="font-bold text-lg mb-4 text-slate-800">Obsah</h3>
+                  <nav class="space-y-2">
+                    <a
+                      href="#uvod"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >I. ÚVODNÉ USTANOVENIA</a
+                    >
+                    <a
+                      href="#prenajimatel"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >II. PRÁVA A POVINNOSTI PRENAJÍMATEĽA</a
+                    >
+                    <a
+                      href="#najomca"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >III. PRÁVA A POVINNOSTI NÁJOMCU</a
+                    >
+                    <a
+                      href="#platby"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >IV. PLATOBNÉ PODMIENKY</a
+                    >
+                    <a
+                      href="#vozidlo"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >V. PREVZATIE A VRÁTENIE VOZIDLA</a
+                    >
+                    <a
+                      href="#storno"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >VI. STORNO PODMIENKY</a
+                    >
+                    <a
+                      href="#ochrana"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >VII. OCHRANA OSOBNÝCH ÚDAJOV</a
+                    >
+                    <a
+                      href="#dialka"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >VIII. ZMLUVA NA DIAĽKU</a
+                    >
+                    <a
+                      href="#pravo"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >IX. ROZHODNÉ PRÁVO</a
+                    >
+                    <a
+                      href="#zaver"
+                      class="block py-2 text-sm text-gray-700 hover:text-blue-600 transition-colors pl-3 border-l-2 border-transparent hover:border-blue-600"
+                      >X. ZÁVEREČNÉ USTANOVENIA</a
+                    >
+                  </nav>
+                </div>
+              </aside>
 
-        // Optional: Highlight active section in TOC
-        const sections = document.querySelectorAll('section[id]');
-        const tocLinks = document.querySelectorAll('a[href^="#"]');
+              <!-- Main Content Area -->
+              <div class="lg:w-3/4">
+                <!-- Section I: ÚVODNÉ USTANOVENIA -->
+                <section
+                  id="uvod"
+                  class="section border-b border-gray-200 pb-8 mb-8"
+                >
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    I. ÚVODNÉ USTANOVENIA
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      <strong>1.1</strong> Tieto Všeobecné obchodné podmienky
+                      (ďalej len „VOP") sú obchodnými podmienkami spoločnosti
+                      Kenguru Campers, s. r. o., Orechová 1749/43, 941 10
+                      Tvrdošovce, IČO: 56 950 667,zap. v Obchodnom registri
+                      Okresného súdu Nitra, odd. Sro, vl.č. 66193/N (ďalej ako
+                      „Prenajímateľ"). VOP sú neoddeliteľnou súčasťou každej
+                      Zmluvy o prenájme obytného motorového vozidla (ďalej len
+                      „Zmluva"), uzatvorenej medzi Prenajímateľom na jednej
+                      strane a fyzickou alebo právnickou osobou ako nájomcom
+                      (ďalej len „Nájomca" a spolu s Prenajímateľom ako „Zmluvné
+                      strany") na strane druhej. Zmluva upravuje vzájomné práva
+                      a povinnosti Zmluvných strán pri prenájme prenajatého
+                      vozidla.
+                    </p>
 
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
+                    <p>
+                      <strong>1.2</strong> Zmluvný vzťah vzniká uzavretím
+                      Zmluvy, či už formou jej podpisu oboma zmluvnými stranami
+                      v listinnej forme alebo si strany môžu podpísanú zmluvu
+                      navzájom doručiť aj formou emailu na ich kontaktné adresy
+                      uvedené v záhlaví Zmluvy.
+                    </p>
 
-            tocLinks.forEach(link => {
-                link.classList.remove('toc-active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('toc-active');
-                }
-            });
-        });
-    </script>
-</body>
+                    <p>
+                      <strong>1.3</strong> V prípade uzavretia Zmluvy s
+                      nájomcom, ktorý je spotrebiteľom, sa na právny vzťah
+                      vzťahujú osobitné ustanovenia zákona č. 108/2024 Z.z. o
+                      ochrane spotrebiteľa a o zmene a doplnení niektorých
+                      zákonov, v platnom znení.
+                    </p>
+
+                    <p>
+                      <strong>1.4</strong> Dohľad nad dodržiavaním zákona
+                      vykonáva Slovenská obchodná inšpekcia /SOI/.<br />
+                      Názov a adresa orgánu dozoru alebo dohľadu, ktorému
+                      činnosť poskytovateľa služieb podlieha:<br />
+                      <strong>Inšpektorát SOI pre Nitriansky kraj</strong><br />
+                      Staničná 9, P. O. BOX 49A, 950 50 Nitra<br />
+                      1. Odbor výkonu dozoru<br />
+                      e-mail: nr@soi.sk<br />
+                      tel. č. 037/772 02 16, fax č. 037/772 00 24
+                    </p>
+                  </div>
+                </section>
+
+                <!-- Section II: PRÁVA A POVINNOSTI PRENAJÍMATEĽA -->
+                <section
+                  id="prenajimatel"
+                  class="section border-b border-gray-200 pb-8 mb-8"
+                >
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    II. PRÁVA A POVINNOSTI PRENAJÍMATEĽA
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      <strong>2.1</strong> Prenajímateľ odovzdá nájomcovi
+                      vybrané obytné vozidlo, ktorého presná špecifikácia je
+                      uvedená Zmluve o prenájme obytného vozidla (ďalej len
+                      „Vozidlo“).
+                    </p>
+                    <p>
+                      <strong>2.2</strong> Prenajímateľ je povinný vozidlo
+                      odovzdať v stave spôsobilom na dohodnuté užívanie v súlade
+                      s účelom nájmu uvedeným v Zmluve.
+                    </p>
+                    <p>
+                      <strong>2.3</strong> Prenajímateľ odovzdá Nájomcovi spolu
+                      s vozidlom osvedčenie o evidencii vozidla (časť I),
+                      potvrdenie o uzavretí zmluvy o poistení zodpovednosti za
+                      škodu spôsobenú prevádzkou motorového vozidla (biela
+                      karta) a povinnú výbavu Vozidla.
+                    </p>
+                    <p>
+                      <strong>2.4</strong> Vozidlo sa odovzdáva Nájomcovi ďalej
+                      s inventárom (kuchynské riady, príbory, vybavenie toalety,
+                      periny, obliečky atď., ktorého presný popis a počet kusov
+                      je uvedený v preberacom protokole, ktorý Zmluvné strany
+                      vyplnia a podpíšu pri prevzatí vozidla (ďalej ako
+                      „Preberací protokol“).
+                    </p>
+                    <p>
+                      <strong>2.5</strong> Vozidlo sa odovzdáva Nájomcovi s
+                      plnou palivovou nádržou.
+                    </p>
+                  </div>
+                </section>
+
+                <!-- Section III: PRÁVA A POVINNOSTI NÁJOMCU -->
+                <section
+                  id="najomca"
+                  class="section border-b border-gray-200 pb-8 mb-8"
+                >
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    III. PRÁVA A POVINNOSTI NÁJOMCU
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p><strong>3.1 Nájomca je povinný:</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                      <li>
+                        <strong>a)</strong> užívať Vozidlo výlučne na dohodnutý
+                        účel nájmu podľa Zmluvy;
+                      </li>
+                      <li>
+                        <strong>b)</strong> pri prevádzke Vozidla dodržiavať
+                        pravidlá cestnej premávky a právne predpisy;
+                      </li>
+                      <li>
+                        <strong>c)</strong> pri používaní Vozidla rešpektovať
+                        predpísaný maximálny počet prepravovaných osôb, ako aj
+                        maximálnu prípustnú hmotnosť Vozidla;
+                      </li>
+                      <li>
+                        <strong>d)</strong> starať sa o Vozidlo a prevádzkovať
+                        ho tak, aby nedošlo k poškodeniu interiéru ani exteriéru
+                        Vozidla, vrátane zariadenia a inventáru Vozidla a
+                        chrániť ho pred stratou, odcudzením poškodením alebo
+                        zničením,
+                      </li>
+                      <li>
+                        <strong>e)</strong> udržiavať Vozidlo čisté a odovzdať
+                        ho Prenajímateľovi po skončení nájmu v stave, v akom ho
+                        prevzal s prihliadnutím na bežné opotrebenie,
+                      </li>
+                      <li>
+                        <strong>f)</strong> Vozidlo vrátiť s plnou palivovou
+                        nádržou s tým, že musí použiť rovnaké palivo, ako je
+                        uvedené v Zmluve a zároveň tankovanie tohto paliva
+                        preukázať pokladničným blokom o tankovaní
+                      </li>
+                      <li>
+                        <strong>g)</strong> Vozidlo vrátiť s vyprázdnenou
+                        nádržou na odpadovú vodu a WC,
+                      </li>
+                      <li>
+                        <strong>h)</strong> starať sa o zariadenie a vybavenie
+                        Vozidla a Vozidlo vrátiť kompletne s celým vybavením,
+                        ktoré s Vozidlom prevzal v súlade s Preberacím
+                        protokolom,
+                      </li>
+                      <li>
+                        <strong>i)</strong> Vozidlo parkovať len na bezpečných a
+                        povolených miestach,
+                      </li>
+                      <li>
+                        <strong>j)</strong> pred každou jazdou skontrolovať
+                        technický stav Vozidla a uistiť sa, že je bezpečne
+                        pripravené na jazdu.
+                      </li>
+                    </ul>
+
+                    <p><strong>3.2 Nájomca nie je oprávnený:</strong></p>
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                      <li>
+                        <strong>a)</strong> využívať Vozidlo na akýkoľvek iný
+                        ako dohodnutý účel, a to najmä Nájomca nie je oprávnený
+                        prepravovať vo vozidle napr. stavebný materiál, chemické
+                        prípravky, nábytky, predmety nesúvisiace s dohodnutým
+                        účelom, nádoby naplnené pohonnými hmotami, akýkoľvek iný
+                        horľavý materiál a pod.,
+                      </li>
+                      <li>
+                        <strong>b)</strong> prevážať vo Vozidle domáce zvieratá
+                        okrem prípadu, keď je to výslovne povolené
+                        Prenajímateľom,
+                      </li>
+                      <li>
+                        <strong>c)</strong> využívať Vozidlo na podnikateľské
+                        účely,
+                      </li>
+                      <li>
+                        <strong>d)</strong> vykonávať žiadne zmeny alebo úpravy
+                        (lepenie, skrutkovanie, vŕtanie, a pod.) na Vozidle bez
+                        písomného súhlasu Prenajímateľa,
+                      </li>
+                      <li>
+                        <strong>e)</strong> vo Vozidle fajčiť, zakladať oheň,
+                        nakladať s otvoreným ohňom alebo akýmkoľvek iným
+                        spôsobom vystavovať Vozidlo poškodeniu dymom, ohňom,
+                        zápachom,
+                      </li>
+                      <li>
+                        <strong>f)</strong> používať Vozidlo mimo verejných
+                        ciest,
+                      </li>
+                      <li><strong>g)</strong> používať Vozidlo na súťaže,</li>
+                      <li>
+                        <strong>h)</strong> vnútri Vozidla prevážať bicykle,
+                        lyže a iné predmety, ktoré by mohli Vozidlo poškodiť.
+                      </li>
+                    </ul>
+
+                    <p>
+                      <strong>3.3</strong> Vodič Vozidla musí mať minimálny vek
+                      25 rokov, platný vodičský preukaz skupiny B, ktorého
+                      držiteľom musí byť minimálne 3 roky.
+                    </p>
+
+                    <p>
+                      <strong>3.4</strong> Nájomca zodpovedá za škodu spôsobenú
+                      na Vozidle, na jeho exteriéry, interiéry, technológii a či
+                      zariadení Vozidla, vrátane inventáru Vozidla. Po dobu
+                      užívania Vozidla zodpovedá Nájomca za všetky dopravné a
+                      iné priestupky. V prípade, ak Prenajímateľ uhradí za
+                      Nájomcu sankciu za porušenie dopravných alebo iných
+                      priestupkov, zaväzuje sa Nájomca túto sankciu v plnom
+                      rozsahu nahradiť Prenajímateľovi. Nájomca si je v tejto
+                      súvislosti vedomý, že Prenajímateľ môže za týmto účelom
+                      jeho osobné údaje v nevyhnutnom rozsahu poskytnúť polícii
+                      alebo inému orgánu, prešetrujúcemu porušenie dopravných
+                      predpisov, či už na Slovensku, alebo v zahraničí.
+                    </p>
+
+                    <p>
+                      <strong>3.5</strong> Nájomca zodpovedá za škodu spôsobenú
+                      prevádzkou Vozidla Prenajímateľovi, tretím osobám alebo na
+                      majetku tretích osôb.
+                    </p>
+
+                    <p>
+                      <strong>3.6</strong> Nájomca je povinný bezodkladne (do 24
+                      hodín) nahlásiť Prenajímateľovi akúkoľvek dopravnú nehodu,
+                      poškodenie Vozidla, poruchy na Vozidle, odcudzenie Vozidla
+                      alebo škodu spôsobenú Nájomcom iným účastníkom premávky
+                      alebo tretím osobám (škodovú udalosť) alebo na majetku
+                      tretích osôb.
+                    </p>
+
+                    <p>
+                      <strong>3.7</strong> Nájomca je povinný bezodkladne (do 24
+                      hodín) nahlásiť polícii dopravnú nehodu alebo poistnú
+                      udalosť, ktorej účastníkom je Vozidlo. Nájomca je povinný
+                      každú dopravnú nehodu alebo poistnú udalosť riadne
+                      zadokumentovať vyhotovením fotodokumentácie, záznamu o
+                      nehode, zistením totožnosti účastníkov nehody/ poistnej
+                      udalosti a zabezpečením prípadne aj iných dôkazov, ktoré
+                      sa na mieste udalostí nachádzajú.
+                    </p>
+
+                    <p>
+                      <strong>3.8</strong> Nájomca je oprávnený používať vozidlo
+                      výlučne na území krajín Európskej Únie + Nórska,
+                      Švajčiarska a Veľkej Británie.
+                    </p>
+
+                    <p>
+                      <strong>3.9</strong> Nájomca je povinný dodržiavať
+                      maximálny počet kilometrov, dohodnutý v Zmluve, ak nebol v
+                      Zmluve dohodnutý neobmedzený počet kilometrov.
+                    </p>
+
+                    <p>
+                      <strong>3.10</strong> Všetky práva a povinnosti Nájomcu
+                      uvedené v týchto VOP alebo v Zmluve sa vzťahujú aj na
+                      osoby, ktoré budú Vozidlo užívať spolu s Nájomcom. Zároveň
+                      Nájomca podpisom týchto VOP vyhlasuje, že všetky tieto
+                      osoby o právach a povinnostiach vyplývajúcich zo Zmluvy a
+                      z VOP upovedomil a zároveň preberá zodpovednosť za ich
+                      dodržiavanie. Nájomca zároveň berie na vedomie, že v
+                      prípade, že na Vozidle vznikne akákoľvek škoda, ktorú
+                      spôsobila niektorá z osôb, ktoré užívajú vozidlo spolu s
+                      Nájomcom, Nájomca za túto škodu zodpovedá, ako by ju
+                      spôsobil sám. Právo na uplatnenie regresného nároku
+                      Nájomcu voči škodcovi týmto nie je dotknuté v žiadnom
+                      rozsahu.
+                    </p>
+                  </div>
+                </section>
+
+                <!-- Section IV: PLATOBNÉ PODMIENKY -->
+                <section
+                  id="platby"
+                  class="section border-b border-gray-200 pb-8 mb-8"
+                >
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    IV. PLATOBNÉ PODMIENKY
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      <strong>4.1</strong> Cena za prenájom (ďalej ako
+                      „Nájomné") je určená podľa cenníka, ktorý je zverejnený na
+                      webovom sídle Prenajímateľa (www.kengurucampers.sk). V
+                      cene Nájomného je zahrnuté:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                      <li>prenájom Vozidla</li>
+                      <li>povinné vybavenie vozidla</li>
+                      <li>povinné zmluvné poistenie vozidla</li>
+                      <li>
+                        havarijné poistenie vozidla v poisťovni Generali
+                        (spoluúčasť 200 € nie je v cene nájmu)
+                      </li>
+                      <li>diaľničné známky (SR)</li>
+                      <li>vybavenie vozidla podľa preberacieho protokolu</li>
+                    </ul>
+
+                    <p>
+                      <strong>4.2</strong> Nájomné nezahŕňa iné náklady na
+                      prevádzku Vozidla neuvedené v bode 4.1 a tieto hradí
+                      Nájomca v celom rozsahu vrátane pohonných hmôt, cestných
+                      poplatkov iných ako výslovne uvedených diaľničných známok,
+                      opráv vozidla a výmeny pneumatík, ktoré vznikli zavinením
+                      Nájomcu a iných výdavkov.
+                    </p>
+
+                    <p>
+                      <strong>4.3</strong> Nájomca znáša rovnako aj pokuty a iné
+                      sankcie uložené za porušenie akýchkoľvek právnych
+                      predpisov počas doby prenájmu Vozidla, vrátane pokuty za
+                      prekročenie rýchlosti, za parkovanie na nepovolenom
+                      mieste, za nezaplatenie mýta, porušenie iných dopravných
+                      predpisov, za jazdu pod vplyvom alkoholu alebo iných
+                      návykových látok, za odťah vozidla v prípade porušenia
+                      dopravných predpisov a iné.
+                    </p>
+
+                    <p>
+                      <strong>4.4</strong> Nájomca znáša náklady na opravu
+                      poškodení vozidla a jeho vybavenia, vzniknutých počas
+                      užívania vozidla nájomcom, ktoré presahujú rozsah bežného
+                      opotrebenia a za ktoré zodpovedá nájomca alebo osoby,
+                      ktoré spolu s nájomcom užívajú Vozidlo.
+                    </p>
+
+                    <p>
+                      <strong>4.5</strong> Nájomca znáša náklady na opravu
+                      vozidla, ktoré nie sú kryté havarijným poistením alebo pri
+                      ktorých príslušná poisťovňa odmietla poistné plnenie.
+                    </p>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+                      <p class="font-semibold text-yellow-800 mb-2">
+                        Dôležité upozornenie:
+                      </p>
+                      <p class="text-yellow-700">
+                        <strong>4.6</strong> Nájomca berie na vedomie, že
+                        markíza na Vozidle nie je súčasťou havarijného poistenia
+                        a v prípade jej poškodenia Nájomca znáša celý náklad na
+                        jej opravu.
+                      </p>
+                    </div>
+
+                    <p>
+                      <strong>4.7</strong> Nájomca pred začatím dobu nájmu a
+                      pred prevzatím Vozidla zloží v prospech Prenajímateľa
+                      zábezpeku, ktorej výška bude určená v Zmluve. Zábezpeka
+                      bude slúžiť na pokrytie prípadných nárokov na náhradu
+                      škody, ktoré vzniknú v súvislosti s prenájmom Vozidla.
+                    </p>
+                  </div>
+                </section>
+                <!-- Section V: PREVZATIE A VRÁTENIE VOZIDLA -->
+                <section
+                  id="vozidlo"
+                  class="section border-b border-gray-200 pb-8 mb-8"
+                >
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    V. PREVZATIE A VRÁTENIE VOZIDLA
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      <strong>5.1</strong> Vozidlo sa preberá a odovzdáva na
+                      adrese: <strong>Orechová 43, 941 10 Tvrdošovce</strong>.
+                      Zmluvné strany sa môžu dohodnúť na inom mieste prevzatia
+                      alebo odovzdania vozidla, v takom prípade bude za túto
+                      službu účtovaný osobitný poplatok vo výške dohodnutej v
+                      Zmluve.
+                    </p>
+
+                    <p>
+                      <strong>5.2</strong> Minimálna doba prenájmu je 4 dni.
+                    </p>
+
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
+                      <p class="font-semibold text-blue-800 mb-2">
+                        Časy prevzatia a vrátenia:
+                      </p>
+                      <p class="text-blue-700">
+                        <strong>5.3</strong> Nájomca je oprávnený si Vozidlo
+                        prevziať v prvý deň trvania nájmu najskôr o
+                        <strong>16.00 hod.</strong> a je povinný Vozidlo vrátiť
+                        prenajímateľovi v posledný deň trvania nájmu najneskôr o
+                        <strong>12.00 hod.</strong>
+                      </p>
+                    </div>
+
+                    <p>
+                      <strong>5.4</strong> Pri prevzatí bude spísaný Preberací
+                      protokol, ktorý obidve zmluvné strany podpíšu. V
+                      Preberacom protokole bude podrobne zdokumentovaný
+                      technický stav vozidla, vrátane všetkých existujúcich
+                      poškodení, opotrebovania a nedostatkov, zoznam odovzdaných
+                      dokladov a podrobný zoznam inventáru Vozidla.
+                    </p>
+
+                    <p>
+                      <strong>5.5</strong> Nájomca je povinný skontrolovať
+                      Vozidlo pri prevzatí a uviesť všetky svoje prípadné
+                      pripomienky v Preberacom protokole. Po podpísaní
+                      Preberacieho protokolu sa predpokladá, že nájomca prebral
+                      Vozidlo v stave, ktorý je v protokole uvedený.
+                    </p>
+
+                    <p>
+                      <strong>5.6</strong> Nájomca je povinný vrátiť Vozidlo v
+                      dohodnutom čase na adrese podľa bodu 5.1. Vozidlo musí byť
+                      vrátené v čistom stave, s vyprázdnenou nádržou na odpadovú
+                      vodu, s vyčistenou WC kazetou, s plnou palivovou nádržou,
+                      so všetkým príslušenstvom a dokladmi odovzdanými nájomcovi
+                      pri prevzatí Vozidla.
+                    </p>
+
+                    <p>
+                      <strong>5.7</strong> Pri vrátení Vozidla prenajímateľ
+                      vykonaná kontrolu jeho stavu. Ak budú zistené akékoľvek
+                      poškodenia alebo znečistenie alebo ak nebude doplnená
+                      palivová nádrž, bude voči Nájomcovi uplatnení nárok na
+                      náhradu škody a účtovaný servisný poplatok vo výške
+                      dohodnutej v Zmluve. Po kontrole Vozidla bude spísaný
+                      protokol o vrátení Vozidla alebo bude informácia o vrátení
+                      Vozidla poznačená v preberacom protokole.
+                    </p>
+
+                    <p>
+                      <strong>5.8</strong> Predĺženie doby nájmu alebo skoršie
+                      vrátenie Vozidla je možné len po dohode s Prenajímateľom.
+                      V prípade predčasného vrátenia Vozidla sa Nájomné a ani
+                      jeho časť nevracia.
+                    </p>
+                  </div>
+                </section>
+                <!-- Section VI: STORNO PODMIENKY -->
+                <section
+                  id="storno"
+                  class="section border-b border-gray-200 pb-8 mb-8"
+                >
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    VI. STORNO PODMIENKY
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      <strong>6.1</strong> Zrušenie rezervácie je možné
+                      odstúpením od Zmluvy zo strany Nájomcu. V prípade
+                      odstúpenia od zmluvy bude Prenajímateľ účtovať Nájomcovi
+                      odstupné (storno poplatok) v nasledovných výškach:
+                    </p>
+
+                    <div class="overflow-x-auto">
+                      <table class="min-w-full border border-gray-200 mt-4">
+                        <thead class="bg-gray-50">
+                          <tr>
+                            <th
+                              class="border border-gray-200 p-3 text-left text-sm font-semibold text-gray-700"
+                            >
+                              Doba odstúpenia
+                            </th>
+                            <th
+                              class="border border-gray-200 p-3 text-left text-sm font-semibold text-gray-700"
+                            >
+                              Storno poplatok
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="bg-green-50">
+                            <td
+                              class="border border-gray-200 p-3 text-gray-700"
+                            >
+                              <strong>a)</strong> viac ako 30 dní pred začiatkom
+                              doby nájmu
+                            </td>
+                            <td
+                              class="border border-gray-200 p-3 text-green-700 font-semibold"
+                            >
+                              bez poplatku
+                            </td>
+                          </tr>
+                          <tr class="bg-yellow-50">
+                            <td
+                              class="border border-gray-200 p-3 text-gray-700"
+                            >
+                              <strong>b)</strong> 15 - 30 dní pred začiatkom
+                              doby nájmu
+                            </td>
+                            <td
+                              class="border border-gray-200 p-3 text-yellow-700 font-semibold"
+                            >
+                              30 % z Nájomného
+                            </td>
+                          </tr>
+                          <tr class="bg-red-50">
+                            <td
+                              class="border border-gray-200 p-3 text-gray-700"
+                            >
+                              <strong>c)</strong> menej ako 15 dní pred
+                              začiatkom doby nájmu
+                            </td>
+                            <td
+                              class="border border-gray-200 p-3 text-red-700 font-semibold"
+                            >
+                              100 % z Nájomného
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Section VII: OCHRANA OSOBNÝCH ÚDAJOV -->
+                <section
+                  id="ochrana"
+                  class="section border-b border-gray-200 pb-8 mb-8"
+                >
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    VII. OCHRANA OSOBNÝCH ÚDAJOV
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      <strong>7.1</strong> Prenajímateľ ako prevádzkovateľ
+                      osobných údajov v zmysle Nariadenia Európskeho parlamentu
+                      a Rady (EÚ) 2016/679 (ďalej len „GDPR") (a zákona č.
+                      18/2018 Z.z. o ochrane osobných údajov, v platnom znení),
+                      týmto poskytuje Nájomcovi ako dotknutej osobe informácie o
+                      spracovaní osobných údajov.
+                    </p>
+
+                    <p>
+                      <strong>7.2</strong> Osobné údaje Nájomcu budú spracúvané
+                      za účelom predzmluvných rokovaní, uzavretia, evidencie a
+                      plnenia zo Zmluvy, ako aj za účelom splnenia zákonných
+                      povinností Prenajímateľa (najmä v oblasti účtovníctva,
+                      daňových predpisov a iné), a po zániku zmluvy tiež za
+                      účelom ochrany oprávnených záujmov prenajímateľa a na
+                      účely prípadného uplatnenia právnych nárokov
+                      Prenajímateľa.
+                    </p>
+                    <p>
+                      <strong>7.3</strong> Osobné údaje môžu byť poskytnuté
+                      tretím osobám, ak je to potrebné na splnenie vyššie
+                      uvedených účelov alebo orgánom verejnej moci na základe
+                      zákona a v súlade so zákonom.
+                    </p>
+
+                    <p>
+                      <strong>7.4</strong> Osobné údaje budú uchovávané po dobu
+                      trvania Zmluvy a následne počas lehôt stanovených
+                      príslušnými právnymi predpismi (napr. zákonom o
+                      účtovníctve), prípadne po dobu nevyhnutnú na ochranu práv
+                      Prenajímateľa pre účely uplatnenia právnych nárokov
+                      vyplývajúcich zo Zmluvy. Nájomca má ako dotknutá osoba
+                      právo požadovať od prevádzkovateľa/ Prenajímateľa prístup
+                      k svojim osobným údajom, ich opravu, vymazanie, obmedzenie
+                      spracúvania, ako aj právo namietať proti spracúvaniu, a to
+                      v súlade s právnymi predpismi najmä v prípade, ak si
+                      neželá dostávať propagačné informácie v rámci priameho
+                      marketingu a právo podať sťažnosť dozornému orgánu, ktorým
+                      je Úrad na ochranu osobných údajov Slovenskej republiky.
+                    </p>
+
+                    <p>
+                      <strong>7.5</strong> Prenajímateľ vykoná primerané
+                      technické a organizačné opatrenia na ochranu osobných
+                      údajov pred stratou, zneužitím alebo neoprávneným
+                      prístupom.
+                    </p>
+                  </div>
+                </section>
+
+                <!-- Section VIII: ZMLUVA NA DIAĽKU -->
+                <section
+                  id="dialka"
+                  class="section border-b border-gray-200 pb-8 mb-8"
+                >
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    VIII. ZMLUVA NA DIAĽKU
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      <strong>8.1</strong> Tento článok sa vzťahuje na prípady,
+                      keď je Zmluva, ktorej zmluvnou stranou je spotrebiteľ,
+                      uzavretá výlučne prostredníctvom jedného alebo viacerých
+                      prostriedkov diaľkovej komunikácie bez súčasnej fyzickej
+                      prítomnosti Prenajímateľa a Nájomcu, najmä využitím online
+                      rozhrania, elektronickej pošty, telefónu, faxu, adresného
+                      listu alebo ponukového katalógu (§ 14 zákona č. 108/2024
+                      Z.z. o ochrane spotrebiteľa).
+                    </p>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+                      <p class="font-semibold text-yellow-800 mb-2">
+                        Dôležité:
+                      </p>
+                      <p class="text-yellow-700">
+                        <strong>8.2</strong> Nakoľko predmetom Zmluvy je
+                        prenájom vozidla, pri ktorom Prenajímateľ poskytuje
+                        príslušnú službu v presne dohodnutom čase a v presne
+                        dohodnutej lehote, spotrebiteľ v zmysle § 19 ods. 1
+                        písm. l) zákona č. 108/2024 Z.z. o ochrane spotrebiteľa
+                        nemá právo odstúpiť od zmluvy bez uvedenia dôvodu podľa
+                        § 19 ods. 1 zákona.
+                      </p>
+                    </div>
+
+                    <p>
+                      <strong>8.3</strong> Poučenie o alternatívnom riešení
+                      sporov: v prípade, že spotrebiteľ nie je spokojný so
+                      spôsobom, akým Prenajímateľ vybavil jeho reklamáciu, alebo
+                      ak sa domnieva, že Prenajímateľ porušil jeho práva, má
+                      právo obrátiť sa na Prenajímateľa so žiadosťou o nápravu.
+                      Ak Prenajímateľ na túto žiadosť odmietne, odpovie
+                      zamietnutím alebo na ňu neodpovie do 30 dní odo dňa jej
+                      odoslania, spotrebiteľ má právo podať návrh na začatie
+                      alternatívneho riešenia sporu subjektu alternatívneho
+                      riešenia sporov podľa zákona č. 391/2015 Z.z. Príslušným
+                      subjektom je najmä Slovenská obchodná inšpekcia, Bajkalská
+                      21/A, P.O. BOX 29, 827 99 Bratislava, webová stránka:
+                      www.soi.sk.
+                    </p>
+                  </div>
+                </section>
+
+                <!-- Section IX: ROZHODNÉ PRÁVO -->
+                <section
+                  id="pravo"
+                  class="section border-b border-gray-200 pb-8 mb-8"
+                >
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    IX. ROZHODNÉ PRÁVO
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      <strong>9.1</strong> Právne vzťahy medzi Prenajímateľom a
+                      Nájomcom vo všetkých vzťahoch týkajúcich sa Zmluvy alebo
+                      nárokov uplatňovaných zo Zmluvy alebo na základe Zmluvy sa
+                      spravujú právnymi predpismi Slovenskej republiky. Pokiaľ
+                      nie je v osobitnej zmluve uvedené inak, Zmluvné strany si
+                      dohodli právomoc súdov Slovenskej republiky.
+                    </p>
+                  </div>
+                </section>
+
+                <!-- Section X: ZÁVEREČNÉ USTANOVENIA -->
+                <section id="zaver" class="section">
+                  <h2 class="text-2xl font-bold text-slate-800 mb-4">
+                    X. ZÁVEREČNÉ USTANOVENIA
+                  </h2>
+                  <div class="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      <strong>10.1</strong> V prípade uzavretia Zmluvy s
+                      Nájomcom, ktorý je spotrebiteľom, môžu strany v prípade
+                      sporu využiť alternatívne riešenie sporov. Možnosť obrátiť
+                      sa na súd tým nie je dotknutá. Nájomca - spotrebiteľ, je
+                      oprávnený uplatniť vady poskytnutej služby – nájmu
+                      karavanu reklamáciou u Prenajímateľa písomným oznámením. V
+                      prípade, že Nájomca - spotrebiteľ nie je spokojný so
+                      spôsobom, ktorým Prenajímateľ vybavil jeho reklamáciu
+                      alebo sa domnieva, že Prenajímateľ porušil jeho práva,
+                      Nájomca - spotrebiteľ má právo obrátiť sa na Prenajímateľa
+                      so žiadosťou o nápravu. Ak Prenajímateľ na žiadosť odpovie
+                      zamietavo alebo na takúto žiadosť neodpovie v lehote do 30
+                      kalendárnych dní odo dňa jej odoslania Nájomcom –
+                      spotrebiteľom, Nájomca - spotrebiteľ má právo podať návrh
+                      na začatie alternatívneho riešenia sporu podľa ustanovenia
+                      § 12 a nasl. zákona č. 391/2015 Z. z. o alternatívnom
+                      riešení spotrebiteľských sporov a o zmene a doplnení
+                      niektorých zákonov. Nájomca – spotrebiteľ má právo vybrať
+                      si subjekt alternatívneho riešenia sporu. Aktuálny zoznam
+                      subjektov alternatívneho riešenia sporov a bližšie
+                      informácie o alternatívnom riešení spotrebiteľských sporov
+                      je uvedený na stránke Ministerstva hospodárstva Slovenskej
+                      republiky; odkaz:
+                      <a
+                        href="https://www.mhsr.sk/obchod/ochranaspotrebitela/alternativne-riesenie-spotrebitelskych-sporov-1"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >https://www.mhsr.sk/obchod/ochranaspotrebitela/alternativne-riesenie-spotrebitelskych-sporov-1</a
+                      >. Sťažnosť podľa tohto odseku môže byť podaná aj
+                      prostredníctvom platformy alternatívneho riešenia sporov
+                      <a
+                        href="http://ec.europa.eu/consumers/odr/index_en.htm"
+                        target="_blank"
+                        class="text-blue-600 hover:underline"
+                        >http://ec.europa.eu/consumers/odr/index_en.htm</a
+                      >
+                      v súlade s Nariadením Európskeho parlamentu a Rady (EÚ) č.
+                      524/2013 z 21. mája 2013 o riešení spotrebiteľských sporov
+                      online.
+                    </p>
+                    <p>
+                      <strong>10.2</strong> V prípade, že sú niektoré práva a
+                      povinnosti Zmluvných strán upravené odlišne v týchto VOP a
+                      v Zmluve, podmienky uvedené v Zmluve majú prednosť.
+                    </p>
+                    <p>
+                      <strong>10.3</strong> Nájomca týmto potvrdzuje, že si
+                      prečítal ustanovenia týchto VOP, ich obsahu porozumel a na
+                      znak súhlasu s nimi ich podpisuje svojim vlastnoručným
+                      podpisom.
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
