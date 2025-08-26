@@ -63,6 +63,7 @@
     "button": "Get in Touch Now"
   },
   "footer": {
+    "copyright": "© {year} Viac Ako Štandard RV Rentals. All rights reserved.",
     "all_rights_reserved": "All rights reserved.",
     "terms": "Terms & Conditions",
     "privacy": "Privacy Policy"

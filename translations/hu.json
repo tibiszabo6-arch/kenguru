@@ -63,9 +63,11 @@
     "button": "Lépjen kapcsolatba most"
   },
   "footer": {
-    "all_rights_reserved": "Minden jog fenntartva.",
+    "copyright": "© {year} Viac Ako Štandard Lakókocsi Kölcsönzés. Minden jog fenntartva.",
+    "contact_us": "Lépjen kapcsolatba velünk",
     "terms": "Általános Szerződési Feltételek",
-    "privacy": "Adatvédelem"
+    "privacy": "Adatvédelmi irányelvek",
+    "all_rights_reserved": "Minden jog fenntartva."
   },
   "terms_page": {
     "title": "Általános Szerződési Feltételek",
@@ -140,7 +142,12 @@
     "title": "Nyelv:"
   },
   "side_menu": {
-    "contact_us": "Lépjen kapcsolatba:"
+    "menu": "Menü",
+    "language": "Nyelv:",
+    "contact_us": "Lépjen kapcsolatba velünk:"
+  },
+  "page_title": {
+    "home": "Viac Ako Štandard Lakókocsi Kölcsönzés - A Kaland Itt Kezdődik"
   },
   "caravanning_page": {
     "title": "Lakókocsizás – Szabadság kerekeken!",

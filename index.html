@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viac Ako Štandard RV Rentals - Your Adventure Starts Here</title>
+    <title data-i18n="page_title.home">Viac Ako Štandard RV Rentals - Your Adventure Starts Here</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="i18n.js"></script>
@@ -46,7 +46,7 @@
 
     <div id="side-menu" class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
         <div class="p-4 flex justify-between items-center border-b border-slate-700">
-            <h2 class="text-xl font-bold">Menu</h2>
+            <h2 class="text-xl font-bold" data-i18n="side_menu.menu">Menu</h2>
             <button id="close-menu-button" class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Close menu">
                 <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -62,7 +62,7 @@
                 <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.contact">Contact</a></li>
             </ul>
             <div class="mt-4 border-t border-slate-700 pt-4">
-                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2">Language:</label>
+                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2" data-i18n="side_menu.language">Language:</label>
                 <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="en" data-i18n="language.en">English</option>
                     <option value="sk" data-i18n="language.sk">Slovak</option>
@@ -70,7 +70,7 @@
                 </select>
             </div>
             <div class="mt-8 pt-6 border-t border-slate-700">
-                <p class="text-sm text-gray-400 mb-2">Contact Us:</p>
+                <p class="text-sm text-gray-400 mb-2" data-i18n="side_menu.contact_us">Contact Us:</p>
                 <p class="text-sm text-gray-300 mb-1">
                     <i class="fas fa-phone fa-fw mr-2"></i> +421 907 26 26 71
                 </p>
@@ -220,11 +220,11 @@
         <section class="cta-secondary-bg relative text-white">
              <div class="absolute inset-0 bg-slate-800 opacity-70"></div>
              <div class="relative container mx-auto px-4 py-20 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 shadow-text">Naplánujte si rodinnú dovolenku snov.</h2>
-                <p class="text-lg md:text-xl mb-8 shadow-text">Kontaktujte nás už dnes a rezervujte si svoj karavan!</p>
-                <p class="text-lg mb-2 shadow-text">Volajte: <a href="tel:+421911468941" class="hover:underline font-semibold">+421 907 26 26 71</a></p>
-                <p class="text-lg mb-8 shadow-text">Email: <a href="mailto:info@nasekaravany.sk" class="hover:underline font-semibold">kenguru.campers@gmail.com</a></p>
-                <a href="contact.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 shadow-text" data-i18n="cta_section.title">Naplánujte si rodinnú dovolenku snov.</h2>
+                <p class="text-lg md:text-xl mb-8 shadow-text" data-i18n="cta_section.subtitle">Kontaktujte nás už dnes a rezervujte si svoj karavan!</p>
+                <p class="text-lg mb-2 shadow-text"><span data-i18n="cta_section.call">Volajte:</span> <a href="tel:+421911468941" class="hover:underline font-semibold">+421 907 26 26 71</a></p>
+                <p class="text-lg mb-8 shadow-text"><span data-i18n="cta_section.email">Email:</span> <a href="mailto:info@nasekaravany.sk" class="hover:underline font-semibold">kenguru.campers@gmail.com</a></p>
+                <a href="contact.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5" data-i18n="cta_section.button">
                     Get in Touch Now
                 </a>
             </div>
@@ -233,11 +233,11 @@
 
     <footer class="bg-slate-800 text-gray-400 py-8">
         <div class="container mx-auto px-4 text-center text-sm">
-            <p>&copy; <span id="currentYear"></span> Viac Ako Štandard RV Rentals. Všetky práva vyhradené.</p>
+            <p data-i18n="footer.copyright">&copy; Viac Ako Štandard RV Rentals. Všetky práva vyhradené.</p>
             <p class="mt-2">
-                <a href="contact.html" class="hover:text-white">Kontaktujte nás</a> |
-                <a href="terms.html" class="hover:text-white mx-2">Terms & Conditions</a> |
-                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="contact.html" class="hover:text-white" data-i18n="footer.contact_us">Kontaktujte nás</a> |
+                <a href="terms.html" class="hover:text-white mx-2" data-i18n="footer.terms">Terms & Conditions</a> |
+                <a href="#" class="hover:text-white" data-i18n="footer.privacy">Privacy Policy</a>
             </p>
             </div>
     </footer>

@@ -135,17 +135,24 @@ class I18nManager {
      */
     updatePageTranslations() {
         const elements = document.querySelectorAll('[data-i18n]');
+        const currentYear = new Date().getFullYear();
+
         elements.forEach(element => {
             const key = element.getAttribute('data-i18n');
-            const translation = this.translate(key);
-            
+            let translation = this.translate(key);
+
+            // Replace year placeholder
+            if (typeof translation === 'string') {
+                translation = translation.replace('{year}', currentYear);
+            }
+
             // If the element has a data-i18n-attr attribute, set that attribute
             // instead of innerText (useful for alt, placeholder, etc.)
             const attr = element.getAttribute('data-i18n-attr');
             if (attr) {
                 element.setAttribute(attr, translation);
             } else {
-                element.innerText = translation;
+                element.innerHTML = translation; // Use innerHTML to support spans in translations
             }
         });
     }
