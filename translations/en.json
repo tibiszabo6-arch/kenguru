@@ -64,9 +64,10 @@
   },
   "footer": {
     "copyright": "© {year} Viac Ako Štandard RV Rentals. All rights reserved.",
-    "all_rights_reserved": "All rights reserved.",
+    "contact_us": "Contact Us",
     "terms": "Terms & Conditions",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "all_rights_reserved": "All rights reserved."
   },
   "terms_page": {
     "title": "Terms & Conditions",
@@ -132,6 +133,9 @@
       }
     }
   },
+  "page_title": {
+    "home": "Viac Ako Štandard RV Rentals - Your Adventure Starts Here"
+  },
   "language": {
     "en": "English",
     "sk": "Slovak"
@@ -140,6 +144,8 @@
     "title": "Language:"
   },
   "side_menu": {
+    "menu": "Menu",
+    "language": "Language:",
     "contact_us": "Contact Us:"
   },
   "caravanning_page": {
