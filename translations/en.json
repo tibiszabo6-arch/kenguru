@@ -138,7 +138,8 @@
   },
   "language": {
     "en": "English",
-    "sk": "Slovak"
+    "sk": "Slovak",
+    "hu": "Hungarian"
   },
   "language_selector": {
     "title": "Language:"
