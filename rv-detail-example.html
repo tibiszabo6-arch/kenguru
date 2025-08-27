@@ -122,6 +122,49 @@
             overflow: hidden;
         }
         
+        /* Ensure proper centering and max-width */
+        .main-content {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        
+        /* Override any default margins/padding */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Ensure sections are properly centered */
+        .centered-section {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        /* Debug layout - temporary visual aid */
+        .debug-layout {
+            border: 2px dashed red;
+            background-color: rgba(255, 0, 0, 0.05);
+        }
+        
+        /* Force grid layout for RV details */
+        @media (min-width: 1024px) {
+            .rv-detail-grid {
+                display: grid !important;
+                grid-template-columns: 2fr 1fr !important;
+                gap: 2rem !important;
+            }
+            
+            .rv-detail-images {
+                grid-column: 1;
+            }
+            
+            .rv-detail-info {
+                grid-column: 2;
+            }
+        }
+        
         /* Mobile responsive adjustments */
         @media (max-width: 768px) {
             .lightbox-close {
@@ -208,7 +251,7 @@
     </div>
 
     <header class="bg-slate-800 text-white sticky top-0 z-30 shadow-md">
-        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
             <div class="flex items-center">
                 <button id="mobile-menu-button" class="p-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Toggle menu" aria-expanded="false">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -242,15 +285,15 @@
     <main>
         <section class="rv-detail-hero-bg text-white py-12 mb-8">
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="relative container mx-auto px-4">
+            <div class="relative max-w-7xl mx-auto px-4">
                 <h1 class="text-3xl md:text-4xl font-bold shadow-text" data-i18n="rv_detail_content.page_title">Parametre Karavanu</h1>
             </div>
         </section>
         
-        <section class="container mx-auto px-4 pb-12">
+        <section class="centered-section pb-12 debug-layout">
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div class="lg:col-span-2">
+        <div class="rv-detail-grid grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="rv-detail-images lg:col-span-2">
                  <div class="grid grid-cols-1 gap-4">
                      <img src="2.jpg" alt="Family Cruiser Main View" class="w-full h-auto rounded-lg shadow-md object-cover gallery-image max-h-96 object-contain" onclick="openLightbox(0)" onerror="this.onerror=null; this.src='https://placehold.co/800x500/cccccc/333333?text=Image+Error';">
                     <div class="grid grid-cols-3 sm:grid-cols-4 gap-2">
@@ -260,7 +303,7 @@
                     </div>
                 </div>
             </div>
-            <div class="lg:col-span-1">
+            <div class="rv-detail-info lg:col-span-1">
                 <div class="bg-white p-6 rounded-lg shadow-lg sticky top-24"> 
                     <h2 class="text-2xl font-semibold text-slate-700 mb-4 border-b pb-2" data-i18n="rv_detail.key_details">Key Details</h2>
                     <ul class="space-y-2 text-gray-700 mb-6">
@@ -287,6 +330,7 @@
             </div>
         </div>
 
+        <div class="max-w-7xl mx-auto px-4">
         <div class="bg-white p-8 rounded-lg shadow-lg mt-8">
             <h1 class="text-3xl font-bold text-slate-800 mb-4" data-i18n="rv_detail_content.main_title">Luxusný obytný karavan – Vaša dokonalá voľba pre nezabudnuteľné dobrodružstvá</h1>
             <p class="text-lg text-gray-700 leading-relaxed" data-i18n="rv_detail_content.intro_text">Hľadáte dokonalý spôsob, ako zažiť slobodu na cestách bez kompromisov v komforte? Predstavujeme vám náš luxusný obytný karavan, ktorý je vybavený najmodernejšími technológiami a ponúka všetko, čo potrebujete na pohodlné a bezpečné cestovanie.</p>
@@ -441,12 +485,13 @@
                 <p class="text-gray-700 leading-relaxed" data-i18n="rv_detail_content.complete_equipment.text">Náš obytný karavan je plne vybavený všetkým, čo potrebujete pre pohodlný pobyt – taniere, príbor, všetky kuchynské potreby na varenie, náradie, vonkajší stôl so stoličkami. My vám odovzdáme kľúče a vy si určíte smer. Nič si nemusíte nosiť so sebou, stačí nasadnúť a užívať si cestu.</p>
             </div>
         </div>
+        </div>
         </section>
 
         </main>
 
     <footer class="bg-slate-800 text-gray-400 py-8 mt-12">
-        <div class="container mx-auto px-4 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
             <p>&copy; <span id="currentYear"></span> Viac Ako Štandard RV Rentals. Všetky práva vyhradené.</p>
              <p class="mt-2">
                 <a href="contact.html" class="hover:text-white">Kontaktujte nás</a> |
