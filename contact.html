@@ -1,258 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Viac Ako Štandard RV Rentals</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us -Kenguru Campers, s. r. o.</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script src="i18n.js"></script>
     <style>
-        /* Optional custom styles */
-        .contact-hero-bg {
-            background-image: url('pictures/outside10.jpg');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        .shadow-text {
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-        }
+      /* Optional custom styles */
+      .contact-hero-bg {
+        background-image: url("pictures/outside10.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+      .shadow-text {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      }
     </style>
-</head>
-<body class="bg-gray-100 font-sans">
-    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div
+      id="menu-overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"
+    ></div>
 
-    <div id="side-menu" class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
-        <div class="p-4 flex justify-between items-center border-b border-slate-700">
-            <h2 class="text-xl font-bold">Menu</h2>
-            <button id="close-menu-button" class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Close menu">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
+    <div
+      id="side-menu"
+      class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto"
+    >
+      <div
+        class="p-4 flex justify-between items-center border-b border-slate-700"
+      >
+        <h2 class="text-xl font-bold">Menu</h2>
+        <button
+          id="close-menu-button"
+          class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-label="Close menu"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav class="p-4">
+        <ul class="space-y-4">
+          <li>
+            <a
+              href="index.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="rv-detail-example.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.our_rvs"
+              >Our RVs</a
+            >
+          </li>
+          <li>
+            <a
+              href="karavanovanie.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.caravanning"
+              >Karavánovanie</a
+            >
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.pricing"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-2 px-3 text-white bg-blue-600 rounded"
+              aria-current="page"
+              data-i18n="nav.contact"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="terms.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.terms"
+              >Terms & Conditions</a
+            >
+          </li>
+        </ul>
+        <div class="mt-4 border-t border-slate-700 pt-4">
+          <label
+            for="mobile-language-selector"
+            class="block text-sm text-gray-400 mb-2"
+            data-i18n="language_selector.title"
+            >Language:</label
+          >
+          <select
+            id="mobile-language-selector"
+            class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option value="en" data-i18n="language.en">English</option>
+            <option value="sk" data-i18n="language.sk">Slovak</option>
+            <option value="hu" data-i18n="language.hu">Hungarian</option>
+          </select>
         </div>
-        <nav class="p-4">
-            <ul class="space-y-4">
-                <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.home">Home</a></li>
-                <li><a href="rv-detail-example.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.our_rvs">Our RVs</a></li>
-                <li><a href="karavanovanie.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.caravanning">Karavánovanie</a></li>
-                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.pricing">Pricing</a></li>
-                <li><a href="contact.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page" data-i18n="nav.contact">Contact</a></li>
-                <li><a href="terms.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.terms">Terms & Conditions</a></li>
-            </ul>
-            <div class="mt-4 border-t border-slate-700 pt-4">
-                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2" data-i18n="language_selector.title">Language:</label>
-                <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <option value="en" data-i18n="language.en">English</option>
-                    <option value="sk" data-i18n="language.sk">Slovak</option>
-                    <option value="hu" data-i18n="language.hu">Hungarian</option>
-                </select>
-            </div>
-            <div class="mt-8 pt-6 border-t border-slate-700">
-                <p class="text-sm text-gray-400 mb-2" data-i18n="side_menu.contact_us">Contact Us:</p>
-                <p class="text-sm text-gray-300 mb-1">
-                    <i class="fas fa-phone fa-fw mr-2"></i> +421 907 26 26 71
-                </p>
-                <p class="text-sm text-gray-300">
-                    <i class="fas fa-envelope fa-fw mr-2"></i> kenguru.campers@gmail.com
-                </p>
-            </div>
-        </nav>
+        <div class="mt-8 pt-6 border-t border-slate-700">
+          <p
+            class="text-sm text-gray-400 mb-2"
+            data-i18n="side_menu.contact_us"
+          >
+            Contact Us:
+          </p>
+          <p class="text-sm text-gray-300 mb-1">
+            <i class="fas fa-phone fa-fw mr-2"></i> +421 907 26 26 71
+          </p>
+          <p class="text-sm text-gray-300">
+            <i class="fas fa-envelope fa-fw mr-2"></i> kenguru.campers@gmail.com
+          </p>
+        </div>
+      </nav>
     </div>
 
     <header class="bg-slate-800 text-white sticky top-0 z-30 shadow-md">
-        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
-            <div class="flex items-center">
-                <button id="mobile-menu-button" class="p-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Toggle menu" aria-expanded="false">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
-                <a href="index.html" class="flex items-center space-x-2">
-                    <img src="logo.jpg" alt="Viac Ako Štandard Logo" class="h-20 rounded" onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';">
-                </a>
-            </div>
-
-            <nav class="hidden md:flex md:items-center">
-                <ul class="flex flex-row space-x-4 text-sm font-medium">
-                    <li><a href="index.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.home">Home</a></li>
-                    <li><a href="rv-detail-example.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.our_rvs">Our RVs</a></li>
-                    <li><a href="karavanovanie.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.caravanning">Karavánovanie</a></li>
-                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.pricing">Pricing</a></li>
-                    <li><a href="contact.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page" data-i18n="nav.contact">Contact</a></li>
-                    <li><a href="terms.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.terms">Terms & Conditions</a></li>
-                </ul>
-                <div class="ml-6 relative text-gray-300">
-                    <select id="language-selector" class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <option value="en" data-i18n="language.en">English</option>
-                        <option value="sk" data-i18n="language.sk">Slovak</option>
-                        <option value="hu" data-i18n="language.hu">Hungarian</option>
-                    </select>
-                </div>
-            </nav>
+      <div
+        class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center"
+      >
+        <div class="flex items-center">
+          <button
+            id="mobile-menu-button"
+            class="p-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+          <a href="index.html" class="flex items-center space-x-2">
+            <img
+              src="logo.jpg"
+              alt="Viac Ako Štandard Logo"
+              class="h-20 rounded"
+              onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';"
+            />
+          </a>
         </div>
+
+        <nav class="hidden md:flex md:items-center">
+          <ul class="flex flex-row space-x-4 text-sm font-medium">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="rv-detail-example.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.our_rvs"
+                >Our RVs</a
+              >
+            </li>
+            <li>
+              <a
+                href="karavanovanie.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.caravanning"
+                >Karavánovanie</a
+              >
+            </li>
+            <li>
+              <a
+                href="pricing.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.pricing"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0"
+                aria-current="page"
+                data-i18n="nav.contact"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="terms.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.terms"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+          <div class="ml-6 relative text-gray-300">
+            <select
+              id="language-selector"
+              class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="en" data-i18n="language.en">English</option>
+              <option value="sk" data-i18n="language.sk">Slovak</option>
+              <option value="hu" data-i18n="language.hu">Hungarian</option>
+            </select>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="contact-hero-bg text-white py-16">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="relative container mx-auto px-4">
-                <h1 class="text-4xl font-bold mb-4 text-center shadow-text" data-i18n="contact_page.title">KONTAKT</h1>
-                <p class="text-lg mb-10 text-center shadow-text" data-i18n="contact_page.subtitle">Kontakt - Kenguru Campers</p>
-            </div>
-        </section>
-        
-        <section class="container mx-auto px-4 py-12">
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div>
-                <!-- Contact Information Box -->
-                <div class="bg-white p-8 rounded-lg shadow-lg mb-6">
-                    <h2 class="text-2xl font-semibold text-slate-700 mb-6" data-i18n="contact_page.get_in_touch">Kontaktné informácie</h2>
-                    <div class="space-y-4 text-gray-700">
-                        <p class="flex items-center">
-                            <i class="fas fa-phone fa-fw w-5 mr-3 text-blue-500" aria-hidden="true"></i>
-                            <strong data-i18n="contact_page.phone">Telefón:</strong>
-                            <a href="tel:+421907262671" class="ml-2 text-blue-600 hover:underline">+421 907 26 26 71</a>
-                        </p>
-                        <p class="flex items-center">
-                            <i class="fas fa-envelope fa-fw w-5 mr-3 text-blue-500" aria-hidden="true"></i>
-                            <strong data-i18n="contact_page.email">E-mail:</strong>
-                            <a href="mailto:kenguru.campers@gmail.com" class="ml-2 text-blue-600 hover:underline">kenguru.campers@gmail.com</a>
-                        </p>
-                        <p class="flex items-center">
-                            <i class="fas fa-user-tie fa-fw w-5 mr-3 text-purple-500" aria-hidden="true"></i>
-                            <strong data-i18n="contact_page.ceo">Konateľ:</strong>
-                            <span class="ml-2">Tibor Szabó, Mgr.</span>
-                        </p>
-                        <p class="flex items-start">
-                            <i class="fas fa-map-marker-alt fa-fw w-5 mr-3 text-red-500 mt-1" aria-hidden="true"></i>
-                            <span>
-                                <strong data-i18n="contact_page.address">Adresa:</strong>
-                                <span class="ml-2">Orechová 43, 941 10 Tvrdošovce</span>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Features Section -->
-                <div class="bg-gray-50 p-6 rounded-lg shadow mb-6">
-                    <h3 class="text-xl font-semibold text-slate-700 mb-4" data-i18n="contact_page.features_title">Prečo nás kontaktovať?</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <span class="text-green-500 text-2xl mr-3 mt-1">✅</span>
-                            <div>
-                                <h4 class="font-semibold text-gray-800" data-i18n="contact_page.feature1_title">Poradenstvo a tipy</h4>
-                                <p class="text-gray-600 text-sm" data-i18n="contact_page.feature1_desc">Pomôžeme vám s výberom a rezerváciou kempingov.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <span class="text-green-500 text-2xl mr-3 mt-1">✅</span>
-                            <div>
-                                <h4 class="font-semibold text-gray-800" data-i18n="contact_page.feature2_title">Jazyková podpora</h4>
-                                <p class="text-gray-600 text-sm" data-i18n="contact_page.feature2_desc">Hovoríme anglicky a nemecky, takže sa nemusíte báť jazykových bariér.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <span class="text-green-500 text-2xl mr-3 mt-1">✅</span>
-                            <div>
-                                <h4 class="font-semibold text-gray-800" data-i18n="contact_page.feature3_title">Bezstarostné cestovanie</h4>
-                                <p class="text-gray-600 text-sm" data-i18n="contact_page.feature3_desc">Získajte cenné rady na bezproblémové cestovanie po Európe.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Closing Messages -->
-                <div class="bg-blue-50 p-6 rounded-lg shadow border-l-4 border-blue-500 mb-6">
-                    <p class="text-gray-700 mb-3 italic" data-i18n="contact_page.closing_message">Nechajte na nás, aby sme vám pomohli premeniť vaše cestovateľské sny na skutočnosť!</p>
-                    <p class="text-gray-800 font-semibold" data-i18n="contact_page.final_cta">Neváhajte nás kontaktovať s akýmikoľvek otázkami alebo rezerváciou. Sme tu pre vás!</p>
-                </div>
-
-                <!-- Google Calendar -->
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-xl font-semibold text-slate-700 mb-4">
-                        <i class="fas fa-calendar-alt mr-2 text-green-500"></i>
-                        <span data-i18n="contact_page.availability">Dostupnosť</span>
-                    </h3>
-                    <div class="w-full">
-                        <iframe src="https://calendar.google.com/calendar/embed?src=sevenpastfour%40gmail.com&ctz=Europe%2FPrague" 
-                                style="border: 0" 
-                                width="100%" 
-                                height="500" 
-                                frameborder="0" 
-                                scrolling="no">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold text-slate-700 mb-6" data-i18n="contact_page.send_message">Send Us a Message</h2>
-                <form id="contact-form" action="#YOUR_FORMSPREE_ENDPOINT#" method="POST">
-                    <div class="mb-4">
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="contact_page.name">Name <span class="text-red-500">*</span></label>
-                        <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Your Full Name" aria-required="true">
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="contact_page.email_address">Email Address <span class="text-red-500">*</span></label>
-                        <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="you@example.com" aria-required="true">
-                    </div>
-                    <div class="mb-4">
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="contact_page.phone_number">Phone Number (Optional)</label>
-                        <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="+421 9xx xxx xxx">
-                    </div>
-                    <div class="mb-4">
-                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="contact_page.subject">Subject <span class="text-red-500">*</span></label>
-                        <input type="text" id="subject" name="subject" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Rental Inquiry" aria-required="true">
-                    </div>
-                    <div class="mb-6">
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1" data-i18n="contact_page.message">Message <span class="text-red-500">*</span></label>
-                        <textarea id="message" name="message" rows="5" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" placeholder="Please include your desired rental dates, number of travelers, and preferred RV if known..." data-i18n-attr="placeholder" data-i18n="contact_page.message_placeholder" aria-required="true"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow hover:shadow-md" data-i18n="contact_page.send_inquiry">
-                            Send Inquiry
-                        </button>
-                    </div>
-                     <p id="form-status" class="mt-4 text-sm text-center" aria-live="polite"></p>
-                </form>
-            </div>
+      <section class="contact-hero-bg text-white py-16">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative container mx-auto px-4">
+          <h1
+            class="text-4xl font-bold mb-4 text-center shadow-text"
+            data-i18n="contact_page.title"
+          >
+            KONTAKT
+          </h1>
+          <p
+            class="text-lg mb-10 text-center shadow-text"
+            data-i18n="contact_page.subtitle"
+          >
+            Kontakt - Kenguru Campers
+          </p>
         </div>
-        </section>
+      </section>
+
+      <section class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div>
+            <!-- Contact Information Box -->
+            <div class="bg-white p-8 rounded-lg shadow-lg mb-6">
+              <h2
+                class="text-2xl font-semibold text-slate-700 mb-6"
+                data-i18n="contact_page.get_in_touch"
+              >
+                Kontaktné informácie
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p class="flex items-center">
+                  <i
+                    class="fas fa-phone fa-fw w-5 mr-3 text-blue-500"
+                    aria-hidden="true"
+                  ></i>
+                  <strong data-i18n="contact_page.phone">Telefón:</strong>
+                  <a
+                    href="tel:+421907262671"
+                    class="ml-2 text-blue-600 hover:underline"
+                    >+421 907 26 26 71</a
+                  >
+                </p>
+                <p class="flex items-center">
+                  <i
+                    class="fas fa-envelope fa-fw w-5 mr-3 text-blue-500"
+                    aria-hidden="true"
+                  ></i>
+                  <strong data-i18n="contact_page.email">E-mail:</strong>
+                  <a
+                    href="mailto:kenguru.campers@gmail.com"
+                    class="ml-2 text-blue-600 hover:underline"
+                    >kenguru.campers@gmail.com</a
+                  >
+                </p>
+                <p class="flex items-center">
+                  <i
+                    class="fas fa-user-tie fa-fw w-5 mr-3 text-purple-500"
+                    aria-hidden="true"
+                  ></i>
+                  <strong data-i18n="contact_page.ceo">Konateľ:</strong>
+                  <span class="ml-2">Tibor Szabó, Mgr.</span>
+                </p>
+                <p class="flex items-start">
+                  <i
+                    class="fas fa-map-marker-alt fa-fw w-5 mr-3 text-red-500 mt-1"
+                    aria-hidden="true"
+                  ></i>
+                  <span>
+                    <strong data-i18n="contact_page.address">Adresa:</strong>
+                    <span class="ml-2">Orechová 43, 941 10 Tvrdošovce</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow mb-6">
+              <h3
+                class="text-xl font-semibold text-slate-700 mb-4"
+                data-i18n="contact_page.features_title"
+              >
+                Prečo nás kontaktovať?
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <span class="text-green-500 text-2xl mr-3 mt-1">✅</span>
+                  <div>
+                    <h4
+                      class="font-semibold text-gray-800"
+                      data-i18n="contact_page.feature1_title"
+                    >
+                      Poradenstvo a tipy
+                    </h4>
+                    <p
+                      class="text-gray-600 text-sm"
+                      data-i18n="contact_page.feature1_desc"
+                    >
+                      Pomôžeme vám s výberom a rezerváciou kempingov.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-green-500 text-2xl mr-3 mt-1">✅</span>
+                  <div>
+                    <h4
+                      class="font-semibold text-gray-800"
+                      data-i18n="contact_page.feature2_title"
+                    >
+                      Jazyková podpora
+                    </h4>
+                    <p
+                      class="text-gray-600 text-sm"
+                      data-i18n="contact_page.feature2_desc"
+                    >
+                      Hovoríme anglicky a nemecky, takže sa nemusíte báť
+                      jazykových bariér.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <span class="text-green-500 text-2xl mr-3 mt-1">✅</span>
+                  <div>
+                    <h4
+                      class="font-semibold text-gray-800"
+                      data-i18n="contact_page.feature3_title"
+                    >
+                      Bezstarostné cestovanie
+                    </h4>
+                    <p
+                      class="text-gray-600 text-sm"
+                      data-i18n="contact_page.feature3_desc"
+                    >
+                      Získajte cenné rady na bezproblémové cestovanie po Európe.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Closing Messages -->
+            <div
+              class="bg-blue-50 p-6 rounded-lg shadow border-l-4 border-blue-500 mb-6"
+            >
+              <p
+                class="text-gray-700 mb-3 italic"
+                data-i18n="contact_page.closing_message"
+              >
+                Nechajte na nás, aby sme vám pomohli premeniť vaše cestovateľské
+                sny na skutočnosť!
+              </p>
+              <p
+                class="text-gray-800 font-semibold"
+                data-i18n="contact_page.final_cta"
+              >
+                Neváhajte nás kontaktovať s akýmikoľvek otázkami alebo
+                rezerváciou. Sme tu pre vás!
+              </p>
+            </div>
+
+            <!-- Google Calendar -->
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-xl font-semibold text-slate-700 mb-4">
+                <i class="fas fa-calendar-alt mr-2 text-green-500"></i>
+                <span data-i18n="contact_page.availability">Dostupnosť</span>
+              </h3>
+              <div class="w-full">
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?src=sevenpastfour%40gmail.com&ctz=Europe%2FPrague"
+                  style="border: 0"
+                  width="100%"
+                  height="500"
+                  frameborder="0"
+                  scrolling="no"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h2
+              class="text-2xl font-semibold text-slate-700 mb-6"
+              data-i18n="contact_page.send_message"
+            >
+              Send Us a Message
+            </h2>
+            <form
+              id="contact-form"
+              action="#YOUR_FORMSPREE_ENDPOINT#"
+              method="POST"
+            >
+              <div class="mb-4">
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  data-i18n="contact_page.name"
+                  >Name <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Your Full Name"
+                  aria-required="true"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  data-i18n="contact_page.email_address"
+                  >Email Address <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="you@example.com"
+                  aria-required="true"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  data-i18n="contact_page.phone_number"
+                  >Phone Number (Optional)</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="+421 9xx xxx xxx"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  data-i18n="contact_page.subject"
+                  >Subject <span class="text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Rental Inquiry"
+                  aria-required="true"
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  data-i18n="contact_page.message"
+                  >Message <span class="text-red-500">*</span></label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Please include your desired rental dates, number of travelers, and preferred RV if known..."
+                  data-i18n-attr="placeholder"
+                  data-i18n="contact_page.message_placeholder"
+                  aria-required="true"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow hover:shadow-md"
+                  data-i18n="contact_page.send_inquiry"
+                >
+                  Send Inquiry
+                </button>
+              </div>
+              <p
+                id="form-status"
+                class="mt-4 text-sm text-center"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-slate-800 text-gray-400 py-8 mt-12">
-        <div class="container mx-auto px-4 text-center text-sm">
-            <p>&copy; <span id="currentYear"></span> Viac Ako Štandard RV Rentals. Všetky práva vyhradené.</p>
-             <p class="mt-2">
-                <a href="contact.html" class="hover:text-white">Kontaktujte nás</a> |
-                <a href="terms.html" class="hover:text-white mx-2">Terms & Conditions</a> |
-                <a href="#" class="hover:text-white">Privacy Policy</a>
-            </p>
-        </div>
+      <div class="container mx-auto px-4 text-center text-sm">
+        <p>
+          &copy; <span id="currentYear"></span> Kenguru Campers, s. r. o. Všetky
+          práva vyhradené.
+        </p>
+        <p class="mt-2">
+          <a href="contact.html" class="hover:text-white">Kontaktujte nás</a> |
+          <a href="terms.html" class="hover:text-white mx-2"
+            >Terms & Conditions</a
+          >
+          |
+          <a href="#" class="hover:text-white">Privacy Policy</a>
+        </p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
     <script src="storage-notice.js"></script>
     <script>
-        // Simple JS to prefill subject based on URL parameter from RV detail page
-        const urlParams = new URLSearchParams(window.location.search);
-        const inquirySubject = urlParams.get('inquiry');
-        if (inquirySubject) {
-            const subjectInput = document.getElementById('subject');
-            if(subjectInput) {
-                subjectInput.value = `Inquiry about: ${decodeURIComponent(inquirySubject.replace(/\+/g, ' '))}`; // Decode URL component
-            }
-            const messageTextarea = document.getElementById('message');
-             if(messageTextarea) {
-                messageTextarea.placeholder = `Please provide desired dates and number of travelers for the ${decodeURIComponent(inquirySubject.replace(/\+/g, ' '))}...`;
-            }
+      // Simple JS to prefill subject based on URL parameter from RV detail page
+      const urlParams = new URLSearchParams(window.location.search);
+      const inquirySubject = urlParams.get("inquiry");
+      if (inquirySubject) {
+        const subjectInput = document.getElementById("subject");
+        if (subjectInput) {
+          subjectInput.value = `Inquiry about: ${decodeURIComponent(
+            inquirySubject.replace(/\+/g, " ")
+          )}`; // Decode URL component
         }
+        const messageTextarea = document.getElementById("message");
+        if (messageTextarea) {
+          messageTextarea.placeholder = `Please provide desired dates and number of travelers for the ${decodeURIComponent(
+            inquirySubject.replace(/\+/g, " ")
+          )}...`;
+        }
+      }
 
-        // Basic Formspree submission handling example (optional, if you want AJAX submission)
-        /*
+      // Basic Formspree submission handling example (optional, if you want AJAX submission)
+      /*
         const form = document.getElementById('contact-form');
         const status = document.getElementById('form-status');
 
@@ -299,5 +626,5 @@
         }
         */
     </script>
-</body>
+  </body>
 </html>

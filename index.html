@@ -1,234 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title.home">Viac Ako Štandard RV Rentals - Your Adventure Starts Here</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title.home">
+      kengurucampers - Your Adventure Starts Here
+    </title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script src="i18n.js"></script>
     <style>
-        /* Optional: Add custom styles or overrides here */
-        .hero-bg {
-            background-image: url('2.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .cta-secondary-bg {
-            background-image: url('pictures/outside11.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        /* Add shadow for better text visibility on background images */
-        .shadow-text {
-             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-        }
-        
-        /* Welcome animation styles */
-        .welcome-overlay {
-            pointer-events: none;
-            overflow: hidden;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes fadeOut {
-            from { opacity: 1; }
-            to { opacity: 0; }
-        }
-    </style>
-</head>
-<body class="bg-gray-100 font-sans">
-    <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
+      /* Optional: Add custom styles or overrides here */
+      .hero-bg {
+        background-image: url("2.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .cta-secondary-bg {
+        background-image: url("pictures/outside11.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      /* Add shadow for better text visibility on background images */
+      .shadow-text {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      }
 
-    <div id="side-menu" class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
-        <div class="p-4 flex justify-between items-center border-b border-slate-700">
-            <h2 class="text-xl font-bold" data-i18n="side_menu.menu">Menu</h2>
-            <button id="close-menu-button" class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Close menu">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
+      /* Welcome animation styles */
+      .welcome-overlay {
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div
+      id="menu-overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"
+    ></div>
+
+    <div
+      id="side-menu"
+      class="fixed top-0 left-0 h-full w-64 bg-slate-800 text-white z-50 transform -translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto"
+    >
+      <div
+        class="p-4 flex justify-between items-center border-b border-slate-700"
+      >
+        <h2 class="text-xl font-bold" data-i18n="side_menu.menu">Menu</h2>
+        <button
+          id="close-menu-button"
+          class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-label="Close menu"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav class="p-4">
+        <ul class="space-y-4">
+          <li>
+            <a
+              href="index.html"
+              class="block py-2 px-3 text-white bg-blue-600 rounded"
+              aria-current="page"
+              data-i18n="nav.home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="rv-detail-example.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.our_rvs"
+              >Our RVs</a
+            >
+          </li>
+          <li>
+            <a
+              href="karavanovanie.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.caravanning"
+              >Karavánovanie</a
+            >
+          </li>
+          <li>
+            <a
+              href="pricing.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.pricing"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.contact"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="terms.html"
+              class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white"
+              data-i18n="nav.terms"
+              >Terms & Conditions</a
+            >
+          </li>
+        </ul>
+        <div class="mt-4 border-t border-slate-700 pt-4">
+          <label
+            for="mobile-language-selector"
+            class="block text-sm text-gray-400 mb-2"
+            data-i18n="side_menu.language"
+            >Language:</label
+          >
+          <select
+            id="mobile-language-selector"
+            class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <option value="en" data-i18n="language.en">English</option>
+            <option value="sk" data-i18n="language.sk">Slovak</option>
+            <option value="hu" data-i18n="language.hu">Hungarian</option>
+          </select>
         </div>
-        <nav class="p-4">
-            <ul class="space-y-4">
-                <li><a href="index.html" class="block py-2 px-3 text-white bg-blue-600 rounded" aria-current="page" data-i18n="nav.home">Home</a></li>
-                <li><a href="rv-detail-example.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.our_rvs">Our RVs</a></li>
-                <li><a href="karavanovanie.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.caravanning">Karavánovanie</a></li>
-                <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.pricing">Pricing</a></li>
-                <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.contact">Contact</a></li>
-                <li><a href="terms.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white" data-i18n="nav.terms">Terms & Conditions</a></li>
-            </ul>
-            <div class="mt-4 border-t border-slate-700 pt-4">
-                <label for="mobile-language-selector" class="block text-sm text-gray-400 mb-2" data-i18n="side_menu.language">Language:</label>
-                <select id="mobile-language-selector" class="bg-slate-700 rounded py-1 px-2 w-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <option value="en" data-i18n="language.en">English</option>
-                    <option value="sk" data-i18n="language.sk">Slovak</option>
-                    <option value="hu" data-i18n="language.hu">Hungarian</option>
-                </select>
-            </div>
-            <div class="mt-8 pt-6 border-t border-slate-700">
-                <p class="text-sm text-gray-400 mb-2" data-i18n="side_menu.contact_us">Contact Us:</p>
-                <p class="text-sm text-gray-300 mb-1">
-                    <i class="fas fa-phone fa-fw mr-2"></i> +421 907 26 26 71
-                </p>
-                <p class="text-sm text-gray-300">
-                    <i class="fas fa-envelope fa-fw mr-2"></i> kenguru.campers@gmail.com
-                </p>
-            </div>
-        </nav>
+        <div class="mt-8 pt-6 border-t border-slate-700">
+          <p
+            class="text-sm text-gray-400 mb-2"
+            data-i18n="side_menu.contact_us"
+          >
+            Contact Us:
+          </p>
+          <p class="text-sm text-gray-300 mb-1">
+            <i class="fas fa-phone fa-fw mr-2"></i> +421 907 26 26 71
+          </p>
+          <p class="text-sm text-gray-300">
+            <i class="fas fa-envelope fa-fw mr-2"></i> kenguru.campers@gmail.com
+          </p>
+        </div>
+      </nav>
     </div>
 
     <header class="bg-slate-800 text-white sticky top-0 z-30 shadow-md">
-        <div class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center">
-            <div class="flex items-center">
-                <button id="mobile-menu-button" class="p-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-label="Toggle menu" aria-expanded="false">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
-                <a href="index.html" class="flex items-center space-x-2">
-                    <img src="logo.jpg" alt="Viac Ako Štandard Logo" class="h-20 rounded" onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';">
-                </a>
-            </div>
-
-            <nav class="hidden md:flex md:items-center">
-                <ul class="flex flex-row space-x-4 text-sm font-medium">
-                    <li><a href="index.html" class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0" aria-current="page" data-i18n="nav.home">Home</a></li>
-                    <li><a href="rv-detail-example.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.our_rvs">Our RVs</a></li>
-                    <li><a href="karavanovanie.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.caravanning">Karavánovanie</a></li>
-                    <li><a href="pricing.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.pricing">Pricing</a></li>
-                    <li><a href="contact.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.contact">Contact</a></li>
-                    <li><a href="terms.html" class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0" data-i18n="nav.terms">Terms & Conditions</a></li>
-                </ul>
-                <div class="ml-6 relative text-gray-300">
-                    <select id="language-selector" class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <option value="en" data-i18n="language.en">English</option>
-                        <option value="sk" data-i18n="language.sk">Slovak</option>
-                        <option value="hu" data-i18n="language.hu">Hungarian</option>
-                    </select>
-                </div>
-            </nav>
+      <div
+        class="container mx-auto px-4 py-3 flex flex-wrap justify-between items-center"
+      >
+        <div class="flex items-center">
+          <button
+            id="mobile-menu-button"
+            class="p-2 mr-2 rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+          <a href="index.html" class="flex items-center space-x-2">
+            <img
+              src="logo.jpg"
+              alt="Viac Ako Štandard Logo"
+              class="h-20 rounded"
+              onerror="this.onerror=null; this.src='https://placehold.co/150x50/cccccc/333333?text=Logo+Error';"
+            />
+          </a>
         </div>
+
+        <nav class="hidden md:flex md:items-center">
+          <ul class="flex flex-row space-x-4 text-sm font-medium">
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-white bg-blue-600 rounded md:bg-transparent md:text-blue-500 md:p-0"
+                aria-current="page"
+                data-i18n="nav.home"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="rv-detail-example.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.our_rvs"
+                >Our RVs</a
+              >
+            </li>
+            <li>
+              <a
+                href="karavanovanie.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.caravanning"
+                >Karavánovanie</a
+              >
+            </li>
+            <li>
+              <a
+                href="pricing.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.pricing"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.contact"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="terms.html"
+                class="block py-2 px-3 text-gray-300 rounded hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                data-i18n="nav.terms"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+          <div class="ml-6 relative text-gray-300">
+            <select
+              id="language-selector"
+              class="bg-slate-700 rounded py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="en" data-i18n="language.en">English</option>
+              <option value="sk" data-i18n="language.sk">Slovak</option>
+              <option value="hu" data-i18n="language.hu">Hungarian</option>
+            </select>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="hero-bg relative text-white">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="relative container mx-auto px-4 py-24 md:py-32 lg:py-40 text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight shadow-text" data-i18n="hero.title">VIAC AKO ŠTANDARD</h1>
-                <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto shadow-text" data-i18n="hero.subtitle">Pohodlné postele veľké ako letisko, praktická kuchyňa a otočné predné sedadlá. Užite si každý kilometer v našich luxusných karavanoch.</p>
-                <a href="rv-detail-example.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5" data-i18n="hero.cta">
-                    Explore Our RVs
-                </a>
+      <section class="hero-bg relative text-white">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div
+          class="relative container mx-auto px-4 py-24 md:py-32 lg:py-40 text-center"
+        >
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight shadow-text"
+            data-i18n="hero.title"
+          >
+            Kenguru Campers, s. r. o.
+          </h1>
+          <p
+            class="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto shadow-text"
+            data-i18n="hero.subtitle"
+          >
+            Pohodlné postele veľké ako letisko, praktická kuchyňa a otočné
+            predné sedadlá. Užite si každý kilometer v našich luxusných
+            karavanoch.
+          </p>
+          <a
+            href="rv-detail-example.html"
+            class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            data-i18n="hero.cta"
+          >
+            Explore Our RVs
+          </a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="bg-white p-8 rounded-lg shadow-md">
+              <h2
+                class="text-2xl font-bold text-slate-800 mb-4"
+                data-i18n="about_section.who_title"
+              >
+                Kto sme?
+              </h2>
+              <p
+                class="text-gray-700 leading-relaxed"
+                data-i18n="about_section.who_text"
+              >
+                Sme rodinná spoločnosť so skúsenosťami v oblasti karavaningu.
+                Naším cieľom je poskytnúť vám pohodlné, bezpečné a
+                nezabudnuteľné cestovanie.
+              </p>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    <div class="bg-white p-8 rounded-lg shadow-md">
-                        <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="about_section.who_title">Kto sme?</h2>
-                        <p class="text-gray-700 leading-relaxed" data-i18n="about_section.who_text">Sme rodinná spoločnosť so skúsenosťami v oblasti karavaningu. Naším cieľom je poskytnúť vám pohodlné, bezpečné a nezabudnuteľné cestovanie.</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-lg shadow-md">
-                        <h2 class="text-2xl font-bold text-slate-800 mb-4" data-i18n="about_section.what_title">Čo ponúkame?</h2>
-                        <p class="text-gray-700 leading-relaxed" data-i18n="about_section.what_text">Prenájom moderný karavan s kompletným vybavením – kuchyňa, kúpeľňa, pohodlné spanie a množstvo ďalšieho.</p>
-                    </div>
-                </div>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+              <h2
+                class="text-2xl font-bold text-slate-800 mb-4"
+                data-i18n="about_section.what_title"
+              >
+                Čo ponúkame?
+              </h2>
+              <p
+                class="text-gray-700 leading-relaxed"
+                data-i18n="about_section.what_text"
+              >
+                Prenájom moderný karavan s kompletným vybavením – kuchyňa,
+                kúpeľňa, pohodlné spanie a množstvo ďalšieho.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- New Caravan Announcement Section -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center" data-i18n="new_caravan_section.main_title">Máme pre vás úplne nový karavan!</h2>
-                    <p class="text-lg text-gray-700 mb-10 text-center leading-relaxed" data-i18n="new_caravan_section.main_text">S radosťou vám oznamujeme, že máme úplne nový karavan. Tento moderný a plne vybavený model vám poskytne maximálny komfort a bezpečnosť na cestách. Využite túto jedinečnú príležitosť a zažite nezabudnuteľné dobrodružstvo s naším novým karavanom.</p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-                        <div class="text-center bg-gray-50 p-6 rounded-lg">
-                            <div class="text-green-500 text-4xl mb-3">✅</div>
-                            <h3 class="font-bold text-lg mb-2 text-slate-700" data-i18n="new_caravan_section.feature1_title">Úplne nový model</h3>
-                            <p class="text-gray-600" data-i18n="new_caravan_section.feature1_text">bez opotrebenia, moderné technológie.</p>
-                        </div>
-                        <div class="text-center bg-gray-50 p-6 rounded-lg">
-                            <div class="text-green-500 text-4xl mb-3">✅</div>
-                            <h3 class="font-bold text-lg mb-2 text-slate-700" data-i18n="new_caravan_section.feature2_title">Maximálny komfort a priestor</h3>
-                            <p class="text-gray-600" data-i18n="new_caravan_section.feature2_text">ideálny pre rodiny alebo priateľov.</p>
-                        </div>
-                        <div class="text-center bg-gray-50 p-6 rounded-lg">
-                            <div class="text-green-500 text-4xl mb-3">✅</div>
-                            <h3 class="font-bold text-lg mb-2 text-slate-700" data-i18n="new_caravan_section.feature3_title">Spoľahlivosť a bezpečnosť</h3>
-                            <p class="text-gray-600" data-i18n="new_caravan_section.feature3_text">cestujte bez starostí.</p>
-                        </div>
-                    </div>
-                    
-                    <p class="text-gray-700 text-center leading-relaxed text-lg" data-i18n="new_caravan_section.closing_text">Náš luxusný obytný karavan je ideálny pre rodiny, páry a všetkých, ktorí túžia po nezávislosti a pohodlí na cestách. Rezervujte si ho ešte dnes a zažite dokonalé dobrodružstvo bez starostí!</p>
-                </div>
+      <!-- New Caravan Announcement Section -->
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <h2
+              class="text-3xl font-bold text-slate-800 mb-6 text-center"
+              data-i18n="new_caravan_section.main_title"
+            >
+              Máme pre vás úplne nový karavan!
+            </h2>
+            <p
+              class="text-lg text-gray-700 mb-10 text-center leading-relaxed"
+              data-i18n="new_caravan_section.main_text"
+            >
+              S radosťou vám oznamujeme, že máme úplne nový karavan. Tento
+              moderný a plne vybavený model vám poskytne maximálny komfort a
+              bezpečnosť na cestách. Využite túto jedinečnú príležitosť a zažite
+              nezabudnuteľné dobrodružstvo s naším novým karavanom.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <div class="text-center bg-gray-50 p-6 rounded-lg">
+                <div class="text-green-500 text-4xl mb-3">✅</div>
+                <h3
+                  class="font-bold text-lg mb-2 text-slate-700"
+                  data-i18n="new_caravan_section.feature1_title"
+                >
+                  Úplne nový model
+                </h3>
+                <p
+                  class="text-gray-600"
+                  data-i18n="new_caravan_section.feature1_text"
+                >
+                  bez opotrebenia, moderné technológie.
+                </p>
+              </div>
+              <div class="text-center bg-gray-50 p-6 rounded-lg">
+                <div class="text-green-500 text-4xl mb-3">✅</div>
+                <h3
+                  class="font-bold text-lg mb-2 text-slate-700"
+                  data-i18n="new_caravan_section.feature2_title"
+                >
+                  Maximálny komfort a priestor
+                </h3>
+                <p
+                  class="text-gray-600"
+                  data-i18n="new_caravan_section.feature2_text"
+                >
+                  ideálny pre rodiny alebo priateľov.
+                </p>
+              </div>
+              <div class="text-center bg-gray-50 p-6 rounded-lg">
+                <div class="text-green-500 text-4xl mb-3">✅</div>
+                <h3
+                  class="font-bold text-lg mb-2 text-slate-700"
+                  data-i18n="new_caravan_section.feature3_title"
+                >
+                  Spoľahlivosť a bezpečnosť
+                </h3>
+                <p
+                  class="text-gray-600"
+                  data-i18n="new_caravan_section.feature3_text"
+                >
+                  cestujte bez starostí.
+                </p>
+              </div>
             </div>
-        </section>
 
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold text-slate-800 mb-12" data-i18n="features.section_title">Rodinná dovolenka snov s poriadnym karavanom?</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
-                        <i class="fas fa-infinity fa-2x text-blue-600 mb-4"></i>
-                        <h3 class="text-lg font-semibold text-slate-700 mb-2" data-i18n="features.feature1.title">Neobmedzené KM</h3>
-                        <p class="text-sm text-gray-600" data-i18n="features.feature1.description">Travel without limits with our generous mileage options.</p>
-                    </div>
-                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
-                        <i class="fas fa-star fa-2x text-yellow-500 mb-4"></i>
-                        <h3 class="text-lg font-semibold text-slate-700 mb-2" data-i18n="features.feature2.title">Vyšší Štandard</h3>
-                        <p class="text-sm text-gray-600" data-i18n="features.feature2.description">Modern, clean, and well-maintained RVs for your comfort.</p>
-                    </div>
-                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
-                        <i class="fas fa-gift fa-2x text-green-500 mb-4"></i>
-                        <h3 class="text-lg font-semibold text-slate-700 mb-2" data-i18n="features.feature3.title">Doplnková Výbava</h3>
-                        <p class="text-sm text-gray-600" data-i18n="features.feature3.description">From kitchen kits to bike racks, we have the extras you need.</p>
-                    </div>
-                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300">
-                        <i class="fas fa-parking fa-2x text-red-500 mb-4"></i>
-                        <h3 class="text-lg font-semibold text-slate-700 mb-2" data-i18n="features.feature4.title">Vaše Auto u Nás</h3>
-                        <p class="text-sm text-gray-600" data-i18n="features.feature4.description">Secure parking available for your vehicle while you travel.</p>
-                    </div>
-                </div>
+            <p
+              class="text-gray-700 text-center leading-relaxed text-lg"
+              data-i18n="new_caravan_section.closing_text"
+            >
+              Náš luxusný obytný karavan je ideálny pre rodiny, páry a všetkých,
+              ktorí túžia po nezávislosti a pohodlí na cestách. Rezervujte si ho
+              ešte dnes a zažite dokonalé dobrodružstvo bez starostí!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+          <h2
+            class="text-3xl font-bold text-slate-800 mb-12"
+            data-i18n="features.section_title"
+          >
+            Rodinná dovolenka snov s poriadnym karavanom?
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300"
+            >
+              <i class="fas fa-infinity fa-2x text-blue-600 mb-4"></i>
+              <h3
+                class="text-lg font-semibold text-slate-700 mb-2"
+                data-i18n="features.feature1.title"
+              >
+                Neobmedzené KM
+              </h3>
+              <p
+                class="text-sm text-gray-600"
+                data-i18n="features.feature1.description"
+              >
+                Travel without limits with our generous mileage options.
+              </p>
             </div>
-        </section>
-
-
-
-        <section class="cta-secondary-bg relative text-white">
-             <div class="absolute inset-0 bg-slate-800 opacity-70"></div>
-             <div class="relative container mx-auto px-4 py-20 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 shadow-text" data-i18n="cta_section.title">Naplánujte si rodinnú dovolenku snov.</h2>
-                <p class="text-lg md:text-xl mb-8 shadow-text" data-i18n="cta_section.subtitle">Kontaktujte nás už dnes a rezervujte si svoj karavan!</p>
-                <p class="text-lg mb-2 shadow-text"><span data-i18n="cta_section.call">Volajte:</span> <a href="tel:+421911468941" class="hover:underline font-semibold">+421 907 26 26 71</a></p>
-                <p class="text-lg mb-8 shadow-text"><span data-i18n="cta_section.email">Email:</span> <a href="mailto:info@nasekaravany.sk" class="hover:underline font-semibold">kenguru.campers@gmail.com</a></p>
-                <a href="contact.html" class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5" data-i18n="cta_section.button">
-                    Get in Touch Now
-                </a>
+            <div
+              class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300"
+            >
+              <i class="fas fa-star fa-2x text-yellow-500 mb-4"></i>
+              <h3
+                class="text-lg font-semibold text-slate-700 mb-2"
+                data-i18n="features.feature2.title"
+              >
+                Vyšší Štandard
+              </h3>
+              <p
+                class="text-sm text-gray-600"
+                data-i18n="features.feature2.description"
+              >
+                Modern, clean, and well-maintained RVs for your comfort.
+              </p>
             </div>
-        </section>
+            <div
+              class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300"
+            >
+              <i class="fas fa-gift fa-2x text-green-500 mb-4"></i>
+              <h3
+                class="text-lg font-semibold text-slate-700 mb-2"
+                data-i18n="features.feature3.title"
+              >
+                Doplnková Výbava
+              </h3>
+              <p
+                class="text-sm text-gray-600"
+                data-i18n="features.feature3.description"
+              >
+                From kitchen kits to bike racks, we have the extras you need.
+              </p>
+            </div>
+            <div
+              class="flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition duration-300"
+            >
+              <i class="fas fa-parking fa-2x text-red-500 mb-4"></i>
+              <h3
+                class="text-lg font-semibold text-slate-700 mb-2"
+                data-i18n="features.feature4.title"
+              >
+                Vaše Auto u Nás
+              </h3>
+              <p
+                class="text-sm text-gray-600"
+                data-i18n="features.feature4.description"
+              >
+                Secure parking available for your vehicle while you travel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-secondary-bg relative text-white">
+        <div class="absolute inset-0 bg-slate-800 opacity-70"></div>
+        <div class="relative container mx-auto px-4 py-20 text-center">
+          <h2
+            class="text-3xl md:text-4xl font-bold mb-4 shadow-text"
+            data-i18n="cta_section.title"
+          >
+            Naplánujte si rodinnú dovolenku snov.
+          </h2>
+          <p
+            class="text-lg md:text-xl mb-8 shadow-text"
+            data-i18n="cta_section.subtitle"
+          >
+            Kontaktujte nás už dnes a rezervujte si svoj karavan!
+          </p>
+          <p class="text-lg mb-2 shadow-text">
+            <span data-i18n="cta_section.call">Volajte:</span>
+            <a href="tel:+421911468941" class="hover:underline font-semibold"
+              >+421 907 26 26 71</a
+            >
+          </p>
+          <p class="text-lg mb-8 shadow-text">
+            <span data-i18n="cta_section.email">Email:</span>
+            <a
+              href="mailto:info@nasekaravany.sk"
+              class="hover:underline font-semibold"
+              >kenguru.campers@gmail.com</a
+            >
+          </p>
+          <a
+            href="contact.html"
+            class="inline-block bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            data-i18n="cta_section.button"
+          >
+            Get in Touch Now
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-slate-800 text-gray-400 py-8">
-        <div class="container mx-auto px-4 text-center text-sm">
-            <p data-i18n="footer.copyright">&copy; Viac Ako Štandard RV Rentals. Všetky práva vyhradené.</p>
-            <p class="mt-2">
-                <a href="contact.html" class="hover:text-white" data-i18n="footer.contact_us">Kontaktujte nás</a> |
-                <a href="terms.html" class="hover:text-white mx-2" data-i18n="footer.terms">Terms & Conditions</a> |
-                <a href="#" class="hover:text-white" data-i18n="footer.privacy">Privacy Policy</a>
-            </p>
-            </div>
+      <div class="container mx-auto px-4 text-center text-sm">
+        <p data-i18n="footer.copyright">
+          &copy; Kenguru Campers, s. r. o. Všetky práva vyhradené.
+        </p>
+        <p class="mt-2">
+          <a
+            href="contact.html"
+            class="hover:text-white"
+            data-i18n="footer.contact_us"
+            >Kontaktujte nás</a
+          >
+          |
+          <a
+            href="terms.html"
+            class="hover:text-white mx-2"
+            data-i18n="footer.terms"
+            >Terms & Conditions</a
+          >
+          |
+          <a href="#" class="hover:text-white" data-i18n="footer.privacy"
+            >Privacy Policy</a
+          >
+        </p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
     <script src="storage-notice.js"></script>
-</body>
+  </body>
 </html>
