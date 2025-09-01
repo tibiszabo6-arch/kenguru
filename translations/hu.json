@@ -64,7 +64,7 @@
     "button": "Lépjen kapcsolatba most"
   },
   "footer": {
-    "copyright": "© {year}  Kenguru Campers, s. r. o. Lakókocsi Kölcsönzés. Minden jog fenntartva.",
+    "copyright": "© {year} Kenguru Campers, s. r. o. Minden jog fenntartva.",
     "contact_us": "Lépjen kapcsolatba velünk",
     "terms": "Általános Szerződési Feltételek",
     "privacy": "Adatvédelmi irányelvek",
@@ -213,7 +213,14 @@
     "availability_note": "A kívánt időpont elérhetőségének ellenőrzéséhez kérjük, lépjen kapcsolatba velünk.",
     "inquire": "Érdeklődés",
     "description": "Leírás",
-    "features": "Funkciók és Felszerelés"
+    "features": "Funkciók és Felszerelés",
+    "motor": "Motor",
+    "solar_system": "Napelem rendszer",
+    "battery": "Akkumulátor",
+    "water_tank": "Víztartály",
+    "winter_package": "TÉLI csomag",
+    "yes": "Igen",
+    "full_pricing_details": "teljes árlista"
   },
   "rv_detail_content": {
     "page_title": "Lakókocsi Paraméterek",
