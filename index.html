@@ -6,6 +6,37 @@
     <title data-i18n="page_title.home">
       kengurucampers - Your Adventure Starts Here
     </title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Premium camper and RV rental in Slovakia. Start your adventure with kengurucampers - fully equipped motorhomes for unforgettable road trips across Slovakia and Europe.">
+    <meta name="keywords" content="camper rental Slovakia, RV rental Slovakia, motorhome rental, karavany prenájom, obytný automobil, cestovanie po Slovensku">
+    <meta name="author" content="Kenguru Campers">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kengurucampers.sk/">
+    <meta property="og:title" content="Kenguru Campers - Premium RV Rental in Slovakia">
+    <meta property="og:description" content="Premium camper and RV rental in Slovakia. Fully equipped motorhomes for unforgettable adventures.">
+    <meta property="og:image" content="https://kengurucampers.sk/logo.jpg">
+    <meta property="og:site_name" content="Kenguru Campers">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kengurucampers.sk/">
+    <meta property="twitter:title" content="Kenguru Campers - Premium RV Rental in Slovakia">
+    <meta property="twitter:description" content="Premium camper and RV rental in Slovakia. Fully equipped motorhomes for unforgettable adventures.">
+    <meta property="twitter:image" content="https://kengurucampers.sk/logo.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kengurucampers.sk/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -53,6 +84,55 @@
         }
       }
     </style>
+    
+    <!-- JSON-LD Structured Data for Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Kenguru Campers",
+      "description": "Premium camper and RV rental service in Slovakia. Fully equipped motorhomes for road trip adventures.",
+      "url": "https://kengurucampers.sk",
+      "logo": "https://kengurucampers.sk/logo.jpg",
+      "image": "https://kengurucampers.sk/logo.jpg",
+      "@type": "RVPark",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Slovakia",
+        "addressRegion": "Slovakia"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "48.669026",
+        "longitude": "19.699024"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": ["Slovak", "English"]
+      },
+      "serviceType": "RV Rental",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Slovakia"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Camper Rental Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Motorhome Rental",
+              "description": "Fully equipped motorhomes for road trips"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
   </head>
   <body class="bg-gray-100 font-sans">
     <div

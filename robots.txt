@@ -1,0 +1,26 @@
+# Robots.txt for kengurucampers.sk
+# Allow all search engines to crawl the entire site
+
+User-agent: *
+Allow: /
+
+# Block crawling of specific directories that shouldn't be indexed
+Disallow: /.git/
+Disallow: /pictures/temp/
+Disallow: /admin/
+Disallow: /_backup/
+
+# Allow access to important files
+Allow: /pictures/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.webp
+
+# Sitemap location
+Sitemap: https://kengurucampers.sk/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
