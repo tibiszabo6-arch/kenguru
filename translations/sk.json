@@ -41,7 +41,7 @@
     },
     "feature3": {
       "title": "Doplnková Výbava",
-      "description": "Od kuchynských súprav, po nosiče bicyklov, Markiza THULE, koberec do exterieru, vysoko kvalitné kempingové stoličky + stôl a mnoho ďalšieho..."
+      "description": "Od kuchynských súprav, po nosiče bicyklov, Markiza THULE, koberec do exterieru, vysoko kvalitné kempingové stoličky + stôl a mnoho ďalšieho..."
     },
     "feature4": {
       "title": "Vaše Auto u nás",
@@ -64,8 +64,8 @@
     "button": "Kontaktujte Nás Teraz"
   },
   "footer": {
-    "copyright": "© {year} Kenguru Campers, s. r. o. RV Rentals. Všetky práva vyhradené.",
-    "contact_us": "Kontaktujte nás",
+    "copyright": "© {year} Kenguru Campers, s. r. o. Všetky práva vyhradené.",
+    "contact_us": "Kontakt",
     "terms": "Obchodné Podmienky",
     "privacy": "Ochrana Súkromia",
     "all_rights_reserved": "Všetky práva vyhradené."
@@ -78,9 +78,6 @@
     "last_updated": "Naposledy aktualizované",
     "important": "Dôležité"
   },
-  "page_title": {
-    "home": "Kenguru Campers, s. r. o. RV Rentals - Your Adventure Starts Here"
-  },
   "language": {
     "en": "Angličtina",
     "sk": "Slovenčina",
@@ -92,7 +89,10 @@
   "side_menu": {
     "menu": "Menu",
     "language": "Jazyk:",
-    "contact_us": "Kontaktujte Nás:"
+    "contact_us": "Kontakt:"
+  },
+  "page_title": {
+    "home": "Kenguru Campers, s. r. o."
   },
   "caravanning_page": {
     "title": "Karavánovanie – Sloboda na kolesách!",
@@ -118,7 +118,7 @@
     "cta_title": "Pripravení na dobrodružstvo?",
     "cta_subtitle": "Prezrite si náš moderný karavan a vyberte si termín pre vašu cestu snov.",
     "cta_button": "Pozrieť Ford Siena 395 F",
-    "cta_contact": "Kontaktujte nás"
+    "cta_contact": "Kontakt"
   },
   "storage_notice": {
     "message": "Táto webová stránka používa lokálne úložisko na zlepšenie vašich skúseností, napríklad na zapamätanie jazyka a status návštevníka.",
@@ -151,7 +151,7 @@
     "fully_equipped": "Plne vybavený karavan (kuchyňa, kúpeľňa, posteľná bielizeň)",
     "support_24_7": "Podpora 24/7 počas Vášho výletu",
     "reservation_conditions": "Podmienky rezervácie:",
-    "min_rental": "Minimálna dĺžka prenájmu: 4 dni ",
+    "min_rental": "Minimálna dĺžka prenájmu: 4 dni",
     "deposit_return": "Kaucia sa vracia do 5 pracovných dní po vrátení karavanu v nepoškodenom stave.",
     "rv_type": "Typ Karavanu",
     "low_season": "Nízka Sezóna (Okt - Apr)",
@@ -211,9 +211,16 @@
     "rates_vary": "Sadzby sa líšia podľa sezóny. Pozrite si kompletný cenník.",
     "availability": "Dostupnosť",
     "availability_note": "Pre kontrolu dostupnosti Vášho požadovaného termínu nás prosím kontaktujte.",
-    "inquire": "Kontaktujte nás",
+    "inquire": "Kontakt",
     "description": "Popis",
-    "features": "Funkcie a Vybavenie"
+    "features": "Funkcie a Vybavenie",
+    "motor": "Motor",
+    "solar_system": "Solárny systém",
+    "battery": "Batéria",
+    "water_tank": "Nádrž na vodu",
+    "winter_package": "ZIMNÝ balíček",
+    "yes": "Áno",
+    "full_pricing_details": "kompletný cenník"
   },
   "rv_detail_content": {
     "page_title": "Parametre Karavanu",
