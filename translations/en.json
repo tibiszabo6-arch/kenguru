@@ -8,9 +8,9 @@
     "terms": "Terms & Conditions"
   },
   "hero": {
-    "title": "MORE THAN STANDARD",
-    "subtitle": "Comfortable beds as big as an airport, practical kitchen and rotating front seats. Enjoy every kilometer in our luxury caravans.",
-    "cta": "Explore Ford Siena 395 F"
+    "title": "Welcome to Kenguru Campers!",
+    "subtitle": "Your partner on the road. Rent a modern and fully equipped caravan and experience unforgettable adventures in Slovakia and across Europe.",
+    "cta": "View Ford Siena 395 F"
   },
   "about_section": {
     "who_title": "Who We Are",
@@ -41,7 +41,7 @@
     },
     "feature3": {
       "title": "Additional Equipment",
-      "description": "From kitchen kits to bike racks, we have the extras you need."
+      "description": "From kitchen kits to bike racks, THULE awning, outdoor carpet, high-quality camping chairs + table, and much more..."
     },
     "feature4": {
       "title": "Your Car With Us",
@@ -64,8 +64,8 @@
     "button": "Get in Touch Now"
   },
   "footer": {
-    "copyright": "© {year}Kenguru Campers, s. r. o. RV Rentals. All rights reserved.",
-    "contact_us": "Contact Us",
+    "copyright": "© {year} Kenguru Campers, s. r. o. All rights reserved.",
+    "contact_us": "Contact",
     "terms": "Terms & Conditions",
     "privacy": "Privacy Policy",
     "all_rights_reserved": "All rights reserved."
@@ -78,9 +78,6 @@
     "last_updated": "Last Updated",
     "important": "Important"
   },
-  "page_title": {
-    "home": "Kenguru Campers, s. r. o. - Your Adventure Starts Here"
-  },
   "language": {
     "en": "English",
     "sk": "Slovak",
@@ -92,7 +89,10 @@
   "side_menu": {
     "menu": "Menu",
     "language": "Language:",
-    "contact_us": "Contact Us:"
+    "contact_us": "Contact:"
+  },
+  "page_title": {
+    "home": "Kenguru Campers, s. r. o."
   },
   "caravanning_page": {
     "title": "Caravanning – Freedom on Wheels!",
@@ -110,7 +110,7 @@
     "independence_text": "One of the greatest advantages of a caravan is complete independence. You don't have to follow hotel or restaurant opening hours, you don't have to book accommodation in advance. You can set off spontaneously, according to your current mood or weather. If you like a place, simply stay longer. If something doesn't appeal to you, continue on – without stress and restrictions.",
     "quote_1": "Wherever you park, you are at home.",
     "comfort_text": "A caravan provides comfort that every family will appreciate. You have your own bed, your own bathroom, kitchen, refrigerator and storage space. You don't have to pack and unpack suitcases at every location, everything is always at hand. Children can take their favorite toys, and every family member has their privacy.",
-    "savings_text": "Another great advantage is cost savings. Although the initial costs of renting or buying a caravan may be higher, in the long run you save on accommodation, meals and transportation. You can cook your own meals, sleep in nature or at campsites, and visit more places in less time.",
+    "savings_text": "You can cook your own meals, sleep in nature or at campsites, and visit more places in less time.",
     "ecological_text": "Caravan travel is also more ecological than flying and allows you to discover lesser-known places off the tourist trails. You can wake up by a lake, have lunch with a mountain view, and park by the sea in the evening – all in one day. Thanks to the caravan, every trip becomes a personal story full of experiences that you would never have in a hotel.",
     "quote_2": "You can wake up by a lake, have lunch with a mountain view, and park by the sea in the evening – all in one day.",
     "lifestyle_text": "Finally, the caravan lifestyle encourages slowing down and returning to simpler values – time spent with family, connection with nature, and a sense of true freedom. It's an adventure that will teach you to be flexible, grateful, and open to the world.",
@@ -118,7 +118,7 @@
     "cta_title": "Ready for Adventure?",
     "cta_subtitle": "Browse our modern caravan and choose the date for your dream journey.",
     "cta_button": "View Ford Siena 395 F",
-    "cta_contact": "Contact Us"
+    "cta_contact": "Contact"
   },
   "storage_notice": {
     "message": "This website uses local storage to improve your experience, such as remembering your language preference and visitor status.",
@@ -137,9 +137,22 @@
     "bike_rack": "Bike Rack"
   },
   "pricing_page": {
-    "title": "Rental Pricing",
-    "subtitle": "Transparent pricing for your perfect RV adventure. Rates vary by season and rental duration.",
-    "seasonal_rates": "Seasonal Rates (Example Per Night)",
+    "title": "Pricing",
+    "subtitle": "Pricing - Kenguru Campers",
+    "seasonal_rates": "Seasonal Rates",
+    "season_summer": "May - September",
+    "season_winter": "October - April",
+    "per_day": "€ / day",
+    "deposit_title": "Deposit (refundable):",
+    "deposit_amount": "1500 €",
+    "price_includes": "The price includes:",
+    "unlimited_km": "Unlimited kilometers",
+    "full_insurance": "Full casco insurance",
+    "fully_equipped": "Fully equipped caravan (kitchen, bathroom, bedding)",
+    "support_24_7": "24/7 support during your trip",
+    "reservation_conditions": "Reservation conditions:",
+    "min_rental": "Minimum rental period: 4 days",
+    "deposit_return": "The deposit is returned within 5 working days after the caravan is returned in undamaged condition.",
     "rv_type": "RV Type",
     "low_season": "Low Season (Oct - Apr)",
     "mid_season": "Mid Season (May, Jun, Sep)",
@@ -159,14 +172,23 @@
     "terms_note": "Please review our full Terms & Conditions for complete details before booking."
   },
   "contact_page": {
-    "title": "Contact Us",
-    "subtitle": "Have questions or ready to inquire about an RV rental? We'd love to hear from you!",
-    "get_in_touch": "Get In Touch Directly",
+    "title": "CONTACT",
+    "subtitle": "Contact - Kenguru Campers",
+    "get_in_touch": "Contact Information",
     "phone": "Phone",
     "email": "Email",
+    "ceo": "CEO",
     "address": "Address",
-    "appointment_note": "(Please call for appointment)",
-    "hours": "Hours",
+    "features_title": "Why contact us?",
+    "feature1_title": "Advice and tips",
+    "feature1_desc": "We will help you with the selection and booking of campsites.",
+    "feature2_title": "Language support",
+    "feature2_desc": "We speak English and German, so you don't have to worry about language barriers.",
+    "feature3_title": "Carefree travel",
+    "feature3_desc": "Get valuable advice for a hassle-free trip in Europe.",
+    "closing_message": "Let us help you turn your travel dreams into reality!",
+    "final_cta": "Do not hesitate to contact us with any questions or reservations. We are here for you!",
+    "availability": "Availability",
     "send_message": "Send Us a Message",
     "name": "Name",
     "email_address": "Email Address",
@@ -185,12 +207,66 @@
     "fuel_type": "Fuel Type",
     "pricing": "Pricing",
     "from": "From",
-    "night": "/ night (Low Season)",
+    "night": "/ night (off-season)",
     "rates_vary": "Rates vary by season. See full pricing details.",
     "availability": "Availability",
     "availability_note": "Please contact us to check availability for your desired dates.",
     "inquire": "Inquire About This RV",
     "description": "Description",
-    "features": "Features & Amenities"
+    "features": "Features & Amenities",
+    "motor": "Motor",
+    "solar_system": "Solar system",
+    "battery": "Battery",
+    "water_tank": "Water tank",
+    "winter_package": "WINTER package",
+    "yes": "Yes",
+    "full_pricing_details": "full pricing details"
+  },
+  "rv_detail_content": {
+    "page_title": "RV Parameters",
+    "main_title": "Luxury RV – The perfect choice for unforgettable adventures",
+    "intro_text": "Looking for the perfect way to experience freedom on the road without compromising on comfort? We present our luxury RV, equipped with the latest technologies, offering everything you need for a comfortable and safe journey.",
+    "driving_features": {
+      "title": "Powerful and comfortable driving features:",
+      "feature1": "165 HP engine and 8-speed automatic transmission for a smooth and dynamic ride.",
+      "feature2": "Electric parking brake for easy parking.",
+      "feature3": "Adaptive cruise control that maintains a safe distance from other vehicles.",
+      "feature4": "Automatic cabin air conditioning and automatic body air conditioning DOMETIC FJX4 2200, for maximum comfort on hot days."
+    },
+    "external_equipment": {
+      "title": "External equipment:",
+      "feature1": "4.5-meter THULE awning, which provides pleasant shade.",
+      "feature2": "FIAMMA Black bike rack for 4 bikes, with a load capacity of 60 kg.",
+      "feature3": "Reversing camera with 12'' multimedia system supporting Apple CarPlay and Android Auto."
+    },
+    "interior_comfort": {
+      "title": "Comfortable and spacious interior:",
+      "feature1": "Front electric bed for 2 people (126x196 cm).",
+      "feature2": "Rear XXL bed for 2-3 people (220x200 cm).",
+      "feature3": "Pull-out bed from the seat (103x206 cm).",
+      "feature4": "Electric windows and mirrors for easy operation.",
+      "feature5": "24'' LED SMART TV with Android and WiFi connection."
+    },
+    "energy_independence": {
+      "title": "Energy independence and sustainability:",
+      "feature1": "LIFePO4 100Ah battery and 400W solar panel system with MPPT controller.",
+      "feature2": "Charging the starter battery directly from the solar panel system.",
+      "feature3": "TRUMA COMBI gas heating with integrated boiler and CP Plus panel.",
+      "feature4": "WINTER package with waste water tank heating and frame insulated windows."
+    },
+    "practical_equipment": {
+      "title": "Practical equipment:",
+      "feature1": "Clean water tank: 100l/20l for maximum autonomy.",
+      "feature2": "Large refrigerator with a capacity of 160l.",
+      "feature3": "DOMETIC cabin window blinds for complete privacy.",
+      "feature4": "XL entrance door with window and trash can.",
+      "feature5": "LED awning lighting for a pleasant evening sitting.",
+      "feature6": "Booster 40A for efficient charging.",
+      "feature7": "Stylish black ALU rims."
+    },
+    "complete_equipment": {
+      "title": "Complete equipment for your comfort:",
+      "text": "Our RV is fully equipped with everything you need for a comfortable stay – plates, cutlery, all kitchen utensils for cooking, tools, outdoor table with chairs. We hand you the keys, and you set the direction. You don't have to bring anything with you, just get in and enjoy the ride."
+    }
   }
 }
