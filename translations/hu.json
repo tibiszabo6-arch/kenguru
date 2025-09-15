@@ -65,7 +65,7 @@
   },
   "footer": {
     "copyright": "© {year} Kenguru Campers, s. r. o. Minden jog fenntartva.",
-    "contact_us": "Lépjen kapcsolatba velünk",
+    "contact_us": "Kapcsolat",
     "terms": "Általános Szerződési Feltételek",
     "privacy": "Adatvédelmi irányelvek",
     "all_rights_reserved": "Minden jog fenntartva."
@@ -89,10 +89,10 @@
   "side_menu": {
     "menu": "Menü",
     "language": "Nyelv:",
-    "contact_us": "Lépjen kapcsolatba velünk:"
+    "contact_us": "Kapcsolat:"
   },
   "page_title": {
-    "home": "Kenguru Campers, s. r. o. Lakókocsi Kölcsönzés - A Kaland Itt Kezdődik"
+    "home": "Kenguru Campers, s. r. o."
   },
   "caravanning_page": {
     "title": "Lakókocsizás – Szabadság kerekeken!",
